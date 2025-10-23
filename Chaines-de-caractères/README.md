@@ -133,3 +133,17 @@ const phrase = "Les chaussettes de l'archiduchesse sont sèches";
 Compte le nombre de fois que la lettre s apparaît dans la phrase.
 
 Affiche le résultat dans la console.
+
+# Exercice 13 — Supprimer les espaces d’une phrase
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = " J’aime le JavaScript ! ";
+
+
+Supprime tous les espaces au début et à la fin de la phrase.
+
+Affiche la phrase sans ces espaces.
