@@ -32,3 +32,12 @@ Affiche le nombre de caractères dans cette phrase.
 Déclare une variable texte contenant une phrase.
 
 Affiche la première lettre et la dernière lettre de la phrase.
+
+# Chaines-de-caractères — Exercice 4
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable texte contenant une phrase.
+
+Transforme la phrase en majuscules puis affiche le résultat.
