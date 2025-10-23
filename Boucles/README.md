@@ -55,3 +55,8 @@ Exemple : 5! = 5 × 4 × 3 × 2 × 1 = 120
 
 Énoncé :
 Écris un programme qui affiche le mot "Hello" 10 fois, chacun sur une ligne séparée mais en utilisant une boucle while cette fois-ci.
+
+# Boucles — Exercice 9
+
+Énoncé :
+Écris un programme qui affiche tous les nombres de 1 à 100, mais seulement les multiples de 7.
