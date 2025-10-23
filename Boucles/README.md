@@ -51,3 +51,7 @@ La factorielle de n (notée n!) est le produit de tous les entiers de 1 à n.
 
 Exemple : 5! = 5 × 4 × 3 × 2 × 1 = 120
 
+# Boucles — Exercice 8
+
+Énoncé :
+Écris un programme qui affiche le mot "Hello" 10 fois, chacun sur une ligne séparée mais en utilisant une boucle while cette fois-ci.
