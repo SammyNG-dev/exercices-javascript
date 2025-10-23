@@ -82,3 +82,15 @@ Déclare une variable mot contenant :
 const mot = "Bonjour";
 
 Affiche le mot à l’envers : "ruojnoB"
+
+# Exercice 9 — Compter le nombre de voyelles
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "Le renard brun rapide saute par-dessus le chien paresseux";
+
+
+Compte et affiche le nombre de voyelles (a, e, i, o, u, y) dans la phrase.
