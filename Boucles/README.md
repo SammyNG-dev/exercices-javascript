@@ -60,3 +60,16 @@ Exemple : 5! = 5 × 4 × 3 × 2 × 1 = 120
 
 Énoncé :
 Écris un programme qui affiche tous les nombres de 1 à 100, mais seulement les multiples de 7.
+
+# Boucles — Exercice 10
+
+Énoncé :
+Écris un programme qui affiche un triangle d’étoiles de 5 lignes comme ceci :
+
+```
+*
+**
+***
+****
+*****
+```
