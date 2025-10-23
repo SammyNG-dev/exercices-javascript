@@ -70,3 +70,20 @@ Exemples attendus :
 
 Tu n’as pas le droit d’utiliser de fonctions toutes faites comme Math.sign().
 Fais-le uniquement avec des conditions if, else if, else.
+
+# Exercice 7 – Vérification de notes
+
+Énoncé :
+Écris un programme qui :
+
+Prend une variable note (nombre entre 0 et 20).
+
+Affiche une appréciation selon la note :
+
+Note	Appréciation
+0–9	    "Échec"
+10–12	"Passable"
+13–16	"Bien"
+17–20	"Très bien"
+
+➡️ Objectif : t’entraîner à enchaîner plusieurs conditions avec if ... else if ... else.
