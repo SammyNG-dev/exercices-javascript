@@ -41,3 +41,13 @@ Pour les multiples de 5, affiche "Buzz"
 Pour les multiples de 3 et 5, affiche "FizzBuzz"
 
 Sinon, affiche le nombre lui-même
+
+# Boucles — Exercice 7
+
+Énoncé :
+Écris un programme qui calcule la factorielle d’un nombre n.
+
+La factorielle de n (notée n!) est le produit de tous les entiers de 1 à n.
+
+Exemple : 5! = 5 × 4 × 3 × 2 × 1 = 120
+
