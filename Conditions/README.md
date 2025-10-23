@@ -87,3 +87,15 @@ Note	Appréciation
 17–20	"Très bien"
 
 ➡️ Objectif : t’entraîner à enchaîner plusieurs conditions avec if ... else if ... else.
+
+# Exercice 8 — Vérifier si trois longueurs peuvent former un triangle
+
+Énoncé :
+Écris un programme qui prend trois longueurs a, b et c, puis affiche :
+
+"Triangle possible" si ces longueurs peuvent former un triangle,
+
+"Triangle impossible" sinon.
+
+💡 Rappel : trois côtés peuvent former un triangle si et seulement si
+chacun d’eux est strictement inférieur à la somme des deux autres.
