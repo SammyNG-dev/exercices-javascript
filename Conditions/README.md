@@ -56,3 +56,17 @@ ou si elle est divisible par 400.
 Énoncé :
 
 Écris un programme qui prend trois nombres et affiche le plus grand des trois.
+
+# Exercice 6 – Pair ou impair (version améliorée)
+
+👉 Écris un programme qui affiche si un nombre est pair ou impair,
+mais cette fois-ci, il doit aussi indiquer si le nombre est positif, négatif ou nul.
+
+Exemples attendus :
+
+4 → “Le nombre est pair et positif”
+-7 → “Le nombre est impair et négatif”
+0 → “Le nombre est pair et nul”
+
+Tu n’as pas le droit d’utiliser de fonctions toutes faites comme Math.sign().
+Fais-le uniquement avec des conditions if, else if, else.
