@@ -119,3 +119,17 @@ const phrase = "Les développeurs aiment JavaScript";
 Vérifie si la phrase se termine par le mot "JavaScript".
 
 Affiche "La phrase se termine par JavaScript" ou "La phrase ne se termine pas par JavaScript".
+
+# Exercice 12 — Compter les occurrences d’une lettre
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "Les chaussettes de l'archiduchesse sont sèches";
+
+
+Compte le nombre de fois que la lettre s apparaît dans la phrase.
+
+Affiche le résultat dans la console.
