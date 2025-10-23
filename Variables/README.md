@@ -1,4 +1,4 @@
-## Exercices sur les variables
+# Exercices sur les variables
 
 Il y a un fichier par exercice
 
@@ -6,24 +6,24 @@ Dans le dossier "Variables", lancez :
 
 ```node exoX.js.``` (X est le numéro du fichier.)
 
-# Exercice 1 – Bonjour !
+## Exercice 1 – Bonjour !
 
 Crée une variable prenom contenant ton prénom, puis affiche dans la console :
 ```
 "Bonjour, [ton prénom] !"
 ```
 
-# Exercice 2 – Calcul simple
+## Exercice 2 – Calcul simple
 
 Déclare deux variables a et b avec les valeurs de ton choix, puis affiche la somme, la différence, le produit et le quotient de ces deux nombres.
 
-# Exercice 3 – Changement de valeur
+## Exercice 3 – Changement de valeur
 
 Crée une variable temperature initialisée à 20.
 Affiche sa valeur, puis change-la pour 25 et affiche à nouveau sa valeur.
 Observe ce qui se passe.
 
-# Exercice 4 – Types et concaténation
+## Exercice 4 – Types et concaténation
 
 Crée trois variables :
 
@@ -35,13 +35,13 @@ Affiche ensuite une phrase du type :
 
 "Je m'appelle [nom], j'ai [âge] ans et j'habite à [ville]."
 
-# Exercice 5 – Constantes et let
+## Exercice 5 – Constantes et let
 
 Crée une constante PI valant 3.14.
 Tente de modifier sa valeur et observe ce qui se passe.
 Explique la différence entre let et const (en commentaire dans ton code).
 
-# Exercice 6 – Types de données
+## Exercice 6 – Types de données
 
 Crée une variable pour chaque type suivant :
 
@@ -53,7 +53,7 @@ objet
 
 Affiche le type de chacune à l’aide de typeof.
 
-# Exercice 7 – Échange de valeurs
+## Exercice 7 – Échange de valeurs
 
 Déclare deux variables :
 
@@ -63,12 +63,12 @@ let y = 10;
 
 Échange leurs valeurs sans utiliser de troisième variable temporaire.
 
-# Exercice 8 — Conversion de types
+## Exercice 8 — Conversion de types
 
 Crée une variable contenant le nombre 42 sous forme de chaîne de caractères ("42").
 Transforme-la ensuite en nombre, additionne 8, et affiche le résultat dans la console.
 
-# Exercice 9 — Température
+## Exercice 9 — Température
 
 Déclare une variable celsius avec une valeur de ton choix.
 Crée une autre variable fahrenheit qui contient la conversion selon la formule :
@@ -78,20 +78,20 @@ Crée une autre variable fahrenheit qui contient la conversion selon la formule 
 Affiche le résultat avec un texte clair, par exemple :
 25°C = 77°F
 
-# Exercice 10 — Interpolation de chaînes
+## Exercice 10 — Interpolation de chaînes
 
 Crée deux variables : prenom et age.
 Affiche dans la console :
 Bonjour, je m'appelle [prenom] et j'ai [age] ans.
 ➡️ Fais-le avec les backticks (`) et sans utiliser l’opérateur +.
 
-# Exercice 11 — Incrémentation
+## Exercice 11 — Incrémentation
 
 Crée une variable compteur valant 0.
 Fais-la augmenter de 1, puis encore de 1, en utilisant l’opérateur d’incrémentation (++).
 Affiche la valeur finale.
 
-# Exercice 12 — Échange de trois variables
+## Exercice 12 — Échange de trois variables
 
 Tu connais déjà l’échange entre deux variables.
 Maintenant, essaie d’échanger les valeurs de trois variables (a, b, c) de sorte que :
@@ -106,10 +106,9 @@ Sans utiliser de tableau ni de structure complexe
 
 Ne pas utiliser de tableau ([a, b, c] = ...)
 Ne pas utiliser de structures avancées (objets, fonctions, etc.)
-<<<<<<< HEAD
 Tu peux utiliser une seule variable temporaire si nécessaire.
 
-# Exercice 13 — Concaténation et espaces
+## Exercice 13 — Concaténation et espaces
 
 Crée trois variables :
 
@@ -133,7 +132,7 @@ Tu peux utiliser l’opérateur + pour concaténer, ou les backticks ` pour l’
 
 Assure-toi qu’il y ait un espace entre chaque mot.
 
-# Exercice 14 — Conversion et manipulation numérique (version variables)
+## Exercice 14 — Conversion et manipulation numérique (version variables)
 
 Crée une variable nombre contenant un nombre sous forme de chaîne de caractères, par exemple "42".
 
@@ -152,6 +151,3 @@ Affiche le résultat final avec console.log().
 Utilise la conversion de type (Number() ou parseInt()).
 
 Tout doit rester dans des variables, pas de conditions ni de fonctions.
-=======
-Tu peux utiliser une seule variable temporaire si nécessaire.
->>>>>>> 29fa03a (réalisation de l'exercice 12)

@@ -1,11 +1,11 @@
-## Exercices sur les conditions
+# Exercices sur les conditions
 Il y a un fichier par exercice
 
 Dans le dossier "Variables", lancez : 
 
 ```node exoX.js.``` (X est le numéro du fichier.)
 
-# Exercice 1 — Nombre positif ou négatif
+## Exercice 1 — Nombre positif ou négatif
 
 Crée une variable nombre et donne-lui une valeur (positive, négative ou zéro).
 
@@ -17,7 +17,7 @@ Utilise une condition if...else pour afficher dans la console :
 
 ➡️ Objectif : t’entraîner à tester différentes conditions et à utiliser if, else if et else.
 
-# Exercice 2 — Pair ou impair
+## Exercice 2 — Pair ou impair
 
 Crée une variable nombre et donne-lui une valeur entière.
 
@@ -28,7 +28,7 @@ Utilise une condition if...else pour afficher dans la console :
 
 ➡️ Objectif : s’entraîner à utiliser l’opérateur modulo % et les conditions simples.
 
-# Exercice 3 — Vérification d’âge
+## Exercice 3 — Vérification d’âge
 
 Crée une variable age avec un nombre entier représentant l’âge d’une personne.
 
@@ -40,7 +40,7 @@ Utilise une condition if...else if...else pour afficher dans la console :
 
 ➡️ Objectif : s’entraîner à enchaîner plusieurs conditions et à utiliser else if.
 
-# Exercice 4 — Conditions
+## Exercice 4 — Conditions
 
 Énoncé :
 Demande à l’utilisateur d’entrer une année, puis affiche si cette année est bissextile ou non.
@@ -51,13 +51,13 @@ Une année est bissextile si :
 elle est divisible par 4 et pas par 100,
 ou si elle est divisible par 400.
 
-# Exercice 5 – Comparaison de trois nombres
+## Exercice 5 – Comparaison de trois nombres
 
 Énoncé :
 
 Écris un programme qui prend trois nombres et affiche le plus grand des trois.
 
-# Exercice 6 – Pair ou impair (version améliorée)
+## Exercice 6 – Pair ou impair (version améliorée)
 
 👉 Écris un programme qui affiche si un nombre est pair ou impair,
 mais cette fois-ci, il doit aussi indiquer si le nombre est positif, négatif ou nul.
@@ -71,7 +71,7 @@ Exemples attendus :
 Tu n’as pas le droit d’utiliser de fonctions toutes faites comme Math.sign().
 Fais-le uniquement avec des conditions if, else if, else.
 
-# Exercice 7 – Vérification de notes
+## Exercice 7 – Vérification de notes
 
 Énoncé :
 Écris un programme qui :
@@ -88,7 +88,7 @@ Note	Appréciation
 
 ➡️ Objectif : t’entraîner à enchaîner plusieurs conditions avec if ... else if ... else.
 
-# Exercice 8 — Vérifier si trois longueurs peuvent former un triangle
+## Exercice 8 — Vérifier si trois longueurs peuvent former un triangle
 
 Énoncé :
 Écris un programme qui prend trois longueurs a, b et c, puis affiche :
@@ -100,7 +100,7 @@ Note	Appréciation
 💡 Rappel : trois côtés peuvent former un triangle si et seulement si
 chacun d’eux est strictement inférieur à la somme des deux autres.
 
-# Exercice 9 — Jour de la semaine
+## Exercice 9 — Jour de la semaine
 
 Énoncé :
 Écris un programme qui prend une variable jour contenant un nombre entre 1 et 7.
@@ -116,7 +116,7 @@ Et si la valeur ne correspond à aucun jour, affiche
 
 💡 Tu peux utiliser soit une série de if...else if, soit un switch si tu veux t’entraîner à le découvrir.
 
-# Exercice 10 — Vérification du mot de passe
+## Exercice 10 — Vérification du mot de passe
 
 Énoncé :
 Écris un programme qui vérifie si le mot de passe saisi par l’utilisateur correspond au mot de passe attendu.
