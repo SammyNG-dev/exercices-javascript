@@ -15,3 +15,8 @@ Dans le dossier "Variables", lancez :
 
 Énoncé :
 Écris un programme qui affiche tous les nombres pairs entre 1 et 20.
+
+# Boucles — Exercice 3
+
+Énoncé :
+Écris un programme qui affiche la table de multiplication de 5 (de 1×5 à 10×5).
