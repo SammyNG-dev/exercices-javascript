@@ -20,3 +20,8 @@ Dans le dossier "Variables", lancez :
 
 Énoncé :
 Écris un programme qui affiche la table de multiplication de 5 (de 1×5 à 10×5).
+
+# Boucles — Exercice 4
+
+Énoncé :
+Écris un programme qui calcule la somme des nombres de 1 à 100.
