@@ -106,3 +106,16 @@ const phrase = "Le JavaScript est un langage puissant et populaire";
 
 
 Compte le nombre de mots dans cette phrase et l’affiche dans la console.
+
+# Exercice 11 — Vérifier si une phrase se termine par un mot donné
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "Les développeurs aiment JavaScript";
+
+Vérifie si la phrase se termine par le mot "JavaScript".
+
+Affiche "La phrase se termine par JavaScript" ou "La phrase ne se termine pas par JavaScript".
