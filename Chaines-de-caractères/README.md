@@ -41,3 +41,12 @@ Affiche la première lettre et la dernière lettre de la phrase.
 Déclare une variable texte contenant une phrase.
 
 Transforme la phrase en majuscules puis affiche le résultat.
+
+# Chaines-de-caractères — Exercice 5
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable texte contenant une phrase.
+
+Remplace tous les espaces par des tirets - et affiche le résultat.
