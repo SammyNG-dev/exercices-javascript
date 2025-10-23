@@ -50,3 +50,9 @@ Une année est bissextile si :
 
 elle est divisible par 4 et pas par 100,
 ou si elle est divisible par 400.
+
+# Exercice 5 – Comparaison de trois nombres
+
+Énoncé :
+
+Écris un programme qui prend trois nombres et affiche le plus grand des trois.
