@@ -71,3 +71,14 @@ const phrase = "JavaScript est un langage génial";
 
 
 Affiche seulement les 10 premiers caractères de la phrase.
+
+# Exercice 8 — Inverser une chaîne de caractères
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable mot contenant :
+
+const mot = "Bonjour";
+
+Affiche le mot à l’envers : "ruojnoB"
