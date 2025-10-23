@@ -25,3 +25,19 @@ Dans le dossier "Variables", lancez :
 
 Énoncé :
 Écris un programme qui calcule la somme des nombres de 1 à 100.
+
+# Boucles — Exercice 5
+
+Énoncé :
+Écris un programme qui affiche tous les nombres de 10 à 1 dans l’ordre décroissant.
+
+# Boucles — Exercice 6
+
+Énoncé :
+Écris un programme qui affiche les nombres de 1 à 50, mais :
+
+Pour les multiples de 3, affiche "Fizz"
+Pour les multiples de 5, affiche "Buzz"
+Pour les multiples de 3 et 5, affiche "FizzBuzz"
+
+Sinon, affiche le nombre lui-même
