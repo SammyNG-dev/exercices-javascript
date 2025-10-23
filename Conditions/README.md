@@ -99,3 +99,20 @@ Note	Appréciation
 
 💡 Rappel : trois côtés peuvent former un triangle si et seulement si
 chacun d’eux est strictement inférieur à la somme des deux autres.
+
+# Exercice 9 — Jour de la semaine
+
+Énoncé :
+Écris un programme qui prend une variable jour contenant un nombre entre 1 et 7.
+Selon la valeur, ton programme doit afficher :
+
+"Lundi" si jour = 1
+"Mardi" si jour = 2
+...
+"Dimanche" si jour = 7
+
+Et si la valeur ne correspond à aucun jour, affiche
+"Valeur invalide".
+
+💡 Tu peux utiliser soit une série de if...else if, soit un switch si tu veux t’entraîner à le découvrir.
+
