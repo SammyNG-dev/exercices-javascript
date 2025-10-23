@@ -116,3 +116,17 @@ Et si la valeur ne correspond à aucun jour, affiche
 
 💡 Tu peux utiliser soit une série de if...else if, soit un switch si tu veux t’entraîner à le découvrir.
 
+# Exercice 10 — Vérification du mot de passe
+
+Énoncé :
+Écris un programme qui vérifie si le mot de passe saisi par l’utilisateur correspond au mot de passe attendu.
+
+Crée une variable motDePasseAttendu (par exemple "azerty123") et une variable motDePasseSaisi (par exemple "azerty123" ou "bonjour").
+
+Le programme doit afficher :
+
+"Accès autorisé" si les deux mots de passe sont identiques,
+"Accès refusé" sinon.
+
+💡 Pour aller un peu plus loin, tu peux ajouter une condition supplémentaire :
+si le mot de passe saisi est vide (""), affiche "Aucun mot de passe saisi".
