@@ -14,3 +14,13 @@ Dans le dossier "Variables", lancez :
 Déclare une variable prenom et une variable nom.
 
 Affiche dans la console : "Bonjour, <prenom> <nom> !".
+
+# Chaines-de-caractères — Exercice 2
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant une phrase.
+
+Affiche le nombre de caractères dans cette phrase.
+
