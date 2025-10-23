@@ -58,4 +58,16 @@ Remplace tous les espaces par des tirets - et affiche le résultat.
 
 const phrase = "Le petit chat est sur le toit.";
 
-S’il est présent, affiche "Le mot 'chat' est présent", sinon affiche "Le mot 'chat' est absent".
+S’il est présent, affiche "Le mot 'chat' est présent", sinon affiche "Le mot 'chat' est absent"
+
+# Exercice 7 — Extraire une partie de phrase
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "JavaScript est un langage génial";
+
+
+Affiche seulement les 10 premiers caractères de la phrase.
