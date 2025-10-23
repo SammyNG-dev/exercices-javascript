@@ -143,7 +143,19 @@ Déclare une variable phrase contenant :
 
 const phrase = " J’aime le JavaScript ! ";
 
-
 Supprime tous les espaces au début et à la fin de la phrase.
 
 Affiche la phrase sans ces espaces.
+
+# Exercice 14 — Mettre en majuscule la première lettre de chaque mot
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "le javascript est génial";
+
+Transforme la phrase pour que chaque mot commence par une majuscule.
+
+Affiche le résultat : "Le Javascript Est Génial"
