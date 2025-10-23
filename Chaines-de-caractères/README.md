@@ -94,3 +94,15 @@ const phrase = "Le renard brun rapide saute par-dessus le chien paresseux";
 
 
 Compte et affiche le nombre de voyelles (a, e, i, o, u, y) dans la phrase.
+
+# Exercice 10 — Compter les mots dans une phrase
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable phrase contenant :
+
+const phrase = "Le JavaScript est un langage puissant et populaire";
+
+
+Compte le nombre de mots dans cette phrase et l’affiche dans la console.
