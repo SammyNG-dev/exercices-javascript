@@ -24,3 +24,11 @@ Déclare une variable phrase contenant une phrase.
 
 Affiche le nombre de caractères dans cette phrase.
 
+# Chaines-de-caractères — Exercice 3
+
+Énoncé :
+Écris un programme qui :
+
+Déclare une variable texte contenant une phrase.
+
+Affiche la première lettre et la dernière lettre de la phrase.
