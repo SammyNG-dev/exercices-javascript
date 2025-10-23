@@ -39,3 +39,14 @@ Utilise une condition if...else if...else pour afficher dans la console :
 "Senior" si age est supérieur à 60
 
 ➡️ Objectif : s’entraîner à enchaîner plusieurs conditions et à utiliser else if.
+
+# Exercice 4 — Conditions
+
+Énoncé :
+Demande à l’utilisateur d’entrer une année, puis affiche si cette année est bissextile ou non.
+
+👉 Rappel :
+Une année est bissextile si :
+
+elle est divisible par 4 et pas par 100,
+ou si elle est divisible par 400.
