@@ -111,3 +111,16 @@ couleur: "bleu"
 
 * Si oui, affiche `"Garage présent"`.
 * Sinon, affiche `"Pas de garage"`.
+
+### **Exercice 10 — Compter le nombre de propriétés**
+
+**Énoncé :**
+Crée un objet `telephone` avec les propriétés :
+
+```js
+marque: "Samsung"
+modele: "Galaxy S21"
+prix: 799
+```
+
+➡️ Affiche le **nombre total de propriétés** de l’objet.
