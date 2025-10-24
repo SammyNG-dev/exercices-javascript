@@ -97,5 +97,17 @@ Affiche ensuite l’objet `profil`.
 Crée une variable `cle` avec la valeur `"statut"`.
 Crée un objet `compte` vide.
 
-➡️ Ajoute une propriété à `compte` dont la **clé est la valeur de `cle`** et la valeur est `"actif"`.
-Affiche ensuite l’objet `compte`.
+### **Exercice 9 — Vérifier l’existence d’une propriété**
+
+**Énoncé :**
+Crée un objet `maison` avec les propriétés :
+
+```js
+piece: 4
+couleur: "bleu"
+```
+
+➡️ Vérifie si la propriété `garage` existe dans `maison`.
+
+* Si oui, affiche `"Garage présent"`.
+* Sinon, affiche `"Pas de garage"`.
