@@ -77,3 +77,16 @@ Crée un objet `film` avec les propriétés :
 1. Ajoute une propriété `duree` avec la valeur `"2h28"`.
 2. Supprime la propriété `annee`.
 3. Affiche l’objet final.
+
+### **Exercice 7 — Fusionner deux objets**
+
+**Énoncé :**
+Crée deux objets :
+
+```js
+const user = { nom: "Alice", age: 25 };
+const contact = { email: "alice@mail.com", ville: "Paris" };
+```
+
+➡️ Fusionne-les dans un seul objet nommé `profil`.
+Affiche ensuite l’objet `profil`.
