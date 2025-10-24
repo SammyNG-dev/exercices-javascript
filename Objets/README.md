@@ -33,3 +33,14 @@ année: 2020
 Modifie la propriété année pour qu’elle soit 2021.
 
 Affiche l’objet complet dans la console.
+
+## Exercice 3 — Ajout de propriété
+
+Énoncé :
+Crée un objet livre avec les propriétés suivantes :
+```
+titre: "1984"
+auteur: "George Orwell"
+```
+➡️ Puis ajoute dynamiquement une propriété année avec la valeur 1949,
+et affiche l’objet complet.
