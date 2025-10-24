@@ -62,3 +62,18 @@ ou
 ```
 Dupont n’est pas admis
 ```
+
+## Exercice 6 — Ajouter et supprimer des propriétés
+
+**Énoncé :**
+Crée un objet `film` avec les propriétés :
+
+* `titre` : `"Inception"`
+* `realisateur` : `"Christopher Nolan"`
+* `annee` : `2010`
+
+➡️ Ensuite :
+
+1. Ajoute une propriété `duree` avec la valeur `"2h28"`.
+2. Supprime la propriété `annee`.
+3. Affiche l’objet final.
