@@ -137,3 +137,17 @@ duree: "2h28"
 ```
 
 ➡️ Affiche uniquement **les valeurs** (`"Inception"`, `"Christopher Nolan"`, `"2h28"`) dans la console, **une par ligne**.
+
+### **Exercice 12 — Copier un objet**
+
+**Énoncé :**
+Crée un objet `original` :
+
+```js
+a: 1
+b: 2
+c: 3
+```
+
+➡️ Crée une **copie indépendante** de cet objet nommée `copie`.
+Modifie `copie.a = 10` et affiche **les deux objets** pour vérifier que `original` n’a pas été modifié.
