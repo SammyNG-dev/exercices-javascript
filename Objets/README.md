@@ -78,7 +78,7 @@ Crée un objet `film` avec les propriétés :
 2. Supprime la propriété `annee`.
 3. Affiche l’objet final.
 
-### **Exercice 7 — Fusionner deux objets**
+## **Exercice 7 — Fusionner deux objets**
 
 **Énoncé :**
 Crée deux objets :
@@ -91,13 +91,13 @@ const contact = { email: "alice@mail.com", ville: "Paris" };
 ➡️ Fusionne-les dans un seul objet nommé `profil`.
 Affiche ensuite l’objet `profil`.
 
-### **Exercice 8 — Clés dynamiques**
+## **Exercice 8 — Clés dynamiques**
 
 **Énoncé :**
 Crée une variable `cle` avec la valeur `"statut"`.
 Crée un objet `compte` vide.
 
-### **Exercice 9 — Vérifier l’existence d’une propriété**
+## **Exercice 9 — Vérifier l’existence d’une propriété**
 
 **Énoncé :**
 Crée un objet `maison` avec les propriétés :
@@ -112,7 +112,7 @@ couleur: "bleu"
 * Si oui, affiche `"Garage présent"`.
 * Sinon, affiche `"Pas de garage"`.
 
-### **Exercice 10 — Compter le nombre de propriétés**
+## **Exercice 10 — Compter le nombre de propriétés**
 
 **Énoncé :**
 Crée un objet `telephone` avec les propriétés :
@@ -125,7 +125,7 @@ prix: 799
 
 ➡️ Affiche le **nombre total de propriétés** de l’objet.
 
-### **Exercice 11 — Parcourir les valeurs d’un objet**
+## **Exercice 11 — Parcourir les valeurs d’un objet**
 
 **Énoncé :**
 Crée un objet `film` :
@@ -138,7 +138,7 @@ duree: "2h28"
 
 ➡️ Affiche uniquement **les valeurs** (`"Inception"`, `"Christopher Nolan"`, `"2h28"`) dans la console, **une par ligne**.
 
-### **Exercice 12 — Copier un objet**
+## **Exercice 12 — Copier un objet**
 
 **Énoncé :**
 Crée un objet `original` :
@@ -152,7 +152,7 @@ c: 3
 ➡️ Crée une **copie indépendante** de cet objet nommée `copie`.
 Modifie `copie.a = 10` et affiche **les deux objets** pour vérifier que `original` n’a pas été modifié.
 
-### **Exercice 13 — Propriété non modifiable**
+## **Exercice 13 — Propriété non modifiable**
 
 **Énoncé :**
 Crée un objet `armoire` avec une propriété :
