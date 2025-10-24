@@ -43,3 +43,16 @@ Crée un tableau `couleurs` contenant :
 
 ➡️ Change le deuxième élément en `"Jaune"`.
 ➡️ Affiche ensuite le tableau entier pour vérifier la modification.
+
+## **Exercice 4 — Ajouter et supprimer des éléments**
+
+**Énoncé :**
+Crée un tableau `animaux` contenant :
+
+```js
+"Chat", "Chien", "Lapin"
+```
+
+➡️ Ajoute `"Oiseau"` à la fin du tableau.
+➡️ Supprime `"Chat"` du début du tableau.
+➡️ Affiche le tableau final.
