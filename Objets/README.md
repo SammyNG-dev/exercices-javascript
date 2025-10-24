@@ -5,7 +5,7 @@ Dans le dossier "Variables", lancez :
 
 ```node exoX.js.``` (X est le numéro du fichier.)
 
-# Objets — Exercice 1
+## Objets — Exercice 1
 
 Énoncé :
 Écris un programme qui :
@@ -18,3 +18,18 @@ age: 30
 ```
 
 Affiche chaque propriété de l’objet dans la console.
+
+## Objets — Exercice 2
+
+Énoncé :
+Écris un programme qui :
+
+Crée un objet voiture avec les propriétés :
+```
+marque: "Toyota"
+modele: "Corolla"
+année: 2020
+```
+Modifie la propriété année pour qu’elle soit 2021.
+
+Affiche l’objet complet dans la console.
