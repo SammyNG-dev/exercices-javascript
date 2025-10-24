@@ -124,3 +124,16 @@ prix: 799
 ```
 
 ➡️ Affiche le **nombre total de propriétés** de l’objet.
+
+### **Exercice 11 — Parcourir les valeurs d’un objet**
+
+**Énoncé :**
+Crée un objet `film` :
+
+```js
+titre: "Inception"
+realisateur: "Christopher Nolan"
+duree: "2h28"
+```
+
+➡️ Affiche uniquement **les valeurs** (`"Inception"`, `"Christopher Nolan"`, `"2h28"`) dans la console, **une par ligne**.
