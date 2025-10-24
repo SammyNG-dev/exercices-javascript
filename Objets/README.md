@@ -151,3 +151,15 @@ c: 3
 
 ➡️ Crée une **copie indépendante** de cet objet nommée `copie`.
 Modifie `copie.a = 10` et affiche **les deux objets** pour vérifier que `original` n’a pas été modifié.
+
+### **Exercice 13 — Propriété non modifiable**
+
+**Énoncé :**
+Crée un objet `armoire` avec une propriété :
+
+```js
+matiere: "bois"
+```
+
+➡️ Rend cette propriété **non modifiable** (readonly).
+➡️ Essaie ensuite de changer sa valeur en `"plastique"` et **attrape l’erreur** pour l’afficher dans la console.
