@@ -90,3 +90,12 @@ const contact = { email: "alice@mail.com", ville: "Paris" };
 
 ➡️ Fusionne-les dans un seul objet nommé `profil`.
 Affiche ensuite l’objet `profil`.
+
+### **Exercice 8 — Clés dynamiques**
+
+**Énoncé :**
+Crée une variable `cle` avec la valeur `"statut"`.
+Crée un objet `compte` vide.
+
+➡️ Ajoute une propriété à `compte` dont la **clé est la valeur de `cle`** et la valeur est `"actif"`.
+Affiche ensuite l’objet `compte`.
