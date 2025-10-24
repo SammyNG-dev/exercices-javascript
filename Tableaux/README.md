@@ -32,4 +32,14 @@ Crée un tableau `nombres` contenant les éléments :
 * Le deuxième élément
 * Le dernier élément
 
-💡 Utilise l’indexation avec des crochets `[ ]`.
+## **Exercice 3 — Modifier des éléments d’un tableau**
+
+**Énoncé :**
+Crée un tableau `couleurs` contenant :
+
+```js
+"Rouge", "Vert", "Bleu"
+```
+
+➡️ Change le deuxième élément en `"Jaune"`.
+➡️ Affiche ensuite le tableau entier pour vérifier la modification.
