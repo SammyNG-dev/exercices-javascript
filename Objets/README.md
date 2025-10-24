@@ -44,3 +44,17 @@ auteur: "George Orwell"
 ```
 ➡️ Puis ajoute dynamiquement une propriété année avec la valeur 1949,
 et affiche l’objet complet.
+
+## Exercice 4 — Parcourir les propriétés d’un objet
+
+Énoncé :
+Crée un objet ordinateur avec trois propriétés :
+
+marque, processeur, ram
+
+➡️ Utilise une boucle for...in pour afficher chaque propriété et sa valeur sous la forme :
+```
+marque : Dell
+processeur : Intel i7
+ram : 16Go
+```
