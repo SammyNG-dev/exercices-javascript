@@ -45,16 +45,20 @@ auteur: "George Orwell"
 ➡️ Puis ajoute dynamiquement une propriété année avec la valeur 1949,
 et affiche l’objet complet.
 
-## Exercice 4 — Parcourir les propriétés d’un objet
+## Exercice 5 — Gérer un objet étudiant
 
 Énoncé :
-Crée un objet ordinateur avec trois propriétés :
-
-marque, processeur, ram
-
-➡️ Utilise une boucle for...in pour afficher chaque propriété et sa valeur sous la forme :
+Crée un objet etudiant avec trois propriétés :
 ```
-marque : Dell
-processeur : Intel i7
-ram : 16Go
+nom
+moyenne
+admis (true si la moyenne ≥ 10, sinon false)
+```
+➡️ Affiche dans la console :
+```
+Dupont est admis
+```
+ou
+```
+Dupont n’est pas admis
 ```
