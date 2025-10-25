@@ -219,3 +219,86 @@ const commandes = [
 
 ➡️ Affiche **la somme totale des commandes payées uniquement**.
 Tu peux utiliser une **boucle** ou les **méthodes de tableau** (`filter`, `reduce`, etc.).
+
+## 🧩 Exercice 18 — Combiner boucles, conditions et tableaux d’objets
+
+**Énoncé :**
+Crée un tableau `etudiants` contenant plusieurs objets avec les propriétés suivantes :
+
+* `nom` (chaîne de caractères)
+* `moyenne` (nombre)
+* `admis` (booléen)
+
+➡️ 1. Parcours le tableau avec une boucle `for...of`.
+➡️ 2. Si la moyenne d’un étudiant est **supérieure ou égale à 10**, change sa propriété `admis` à `true`.
+➡️ 3. Affiche pour chaque étudiant une phrase du type :
+
+```
+Alice : admis
+Bob : non admis
+```
+
+🟩 **Exercice 19 — Filtrer et transformer un tableau**
+
+**Énoncé :**
+Tu disposes du tableau suivant :
+
+```js
+const nombres = [5, 12, 8, 130, 44];
+```
+
+➡️ 1. Crée un **nouveau tableau** contenant uniquement les nombres supérieurs ou égaux à 10.
+➡️ 2. Multiplie ensuite **chaque nombre filtré par 2**.
+➡️ 3. Affiche le résultat final.
+
+Tu peux utiliser les méthodes **`filter`** et **`map`**.
+
+🟩 **Exercice 20 — Mini-gestion de stock**
+
+**Énoncé :**
+Tu disposes du tableau suivant :
+
+```js
+const stock = [
+  { produit: "Clavier", quantite: 5 },
+  { produit: "Souris", quantite: 0 },
+  { produit: "Écran", quantite: 3 },
+  { produit: "Casque", quantite: 0 },
+];
+```
+
+➡️ 1. Parcours le tableau avec une boucle `for...of`.
+➡️ 2. Si la quantité d’un produit est **supérieure à 0**, affiche :
+
+```
+Clavier : en stock
+```
+
+➡️ 3. Sinon, affiche :
+
+```
+Souris : rupture de stock
+```
+
+Le but est de combiner **boucles** et **conditions** sur un tableau d’objets.
+
+🟩 **Exercice 21 — Tri et filtrage avancé**
+
+**Énoncé :**
+Tu disposes du tableau suivant :
+
+```js
+const etudiants = [
+  { nom: "Alice", moyenne: 12 },
+  { nom: "Bob", moyenne: 8 },
+  { nom: "Charlie", moyenne: 15 },
+  { nom: "David", moyenne: 9 },
+];
+```
+
+➡️ 1. Filtre les étudiants dont la **moyenne est supérieure ou égale à 10**.
+➡️ 2. Trie-les ensuite par **ordre décroissant de moyenne**.
+➡️ 3. Affiche le résultat final.
+
+Tu peux utiliser les méthodes **`filter`** et **`sort`**.
+
