@@ -163,3 +163,59 @@ const nombres = [5, 10, 15, 20];
 
 ➡️ Utilise la méthode `reduce()` pour calculer la **somme totale** des nombres.
 ➡️ Affiche le résultat.
+
+### 🧩 Exercice 13 — Trouver la position d’un élément
+
+**Énoncé :**
+Crée un tableau de chaînes de caractères :
+
+```js
+const villes = ["Paris", "Lyon", "Marseille", "Toulouse"];
+```
+
+➡️ Utilise la méthode `indexOf()` pour afficher **la position** de `"Marseille"` dans le tableau.
+➡️ Affiche ensuite un message comme :
+
+```
+"Marseille se trouve à la position X"
+```
+
+## 🧩 Exercice 14 — Trier un tableau
+
+**Énoncé :**
+Crée un tableau de nombres :
+
+```js
+const nombres = [42, 5, 12, 100, 8];
+```
+
+➡️ Trie le tableau par ordre croissant.
+➡️ Affiche le tableau trié.
+
+## 🧩 Exercice 16 — Filtrer un tableau d’objets
+
+**Énoncé :**
+Crée un tableau `produits` contenant plusieurs objets avec les propriétés suivantes :
+
+* `nom`
+* `prix`
+
+➡️ Affiche uniquement les **produits dont le prix est supérieur ou égal à 50 €**
+(utilise une méthode adaptée pour créer un nouveau tableau).
+
+🟩 **Exercice 17 — Somme des commandes payées**
+
+**Énoncé :**
+Tu disposes du tableau suivant :
+
+```js
+const commandes = [
+  { client: "Alice", montant: 120, payee: true },
+  { client: "Bob", montant: 80, payee: false },
+  { client: "Charlie", montant: 50, payee: true },
+  { client: "David", montant: 200, payee: false },
+];
+```
+
+➡️ Affiche **la somme totale des commandes payées uniquement**.
+Tu peux utiliser une **boucle** ou les **méthodes de tableau** (`filter`, `reduce`, etc.).
