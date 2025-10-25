@@ -56,3 +56,64 @@ Crée un tableau `animaux` contenant :
 ➡️ Ajoute `"Oiseau"` à la fin du tableau.
 ➡️ Supprime `"Chat"` du début du tableau.
 ➡️ Affiche le tableau final.
+
+## **Exercice 5 — Rechercher un élément dans un tableau**
+
+**Énoncé :**
+Crée un tableau `jours` contenant :
+
+```js
+"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"
+```
+
+➡️ Vérifie si `"Mercredi"` est présent dans le tableau.
+➡️ Affiche `"Mercredi est présent"` si oui, sinon `"Mercredi est absent"`.
+
+## **Exercice 6 — Trouver le plus grand nombre d’un tableau**
+
+**Énoncé :**
+Crée un tableau `scores` contenant :
+
+```js
+12, 45, 7, 32, 89, 23
+```
+
+➡️ Trouve le plus grand nombre du tableau.
+➡️ Affiche :
+
+```
+Le plus grand score est : 89
+```
+
+## 🧩 Exercice 7 — Inverser un tableau
+
+**Énoncé :**
+Crée un tableau `prenoms` contenant :
+
+```js
+["Alice", "Bob", "Charlie", "David"]
+```
+
+➡️ Inverse l’ordre des éléments du tableau.
+➡️ Affiche :
+
+```
+["David", "Charlie", "Bob", "Alice"]
+```
+
+## 🧩 Exercice 8 — Fusionner deux tableaux
+
+**Énoncé :**
+Crée deux tableaux :
+
+```js
+const fruits = ["Pomme", "Banane"];
+const legumes = ["Carotte", "Tomate"];
+```
+
+➡️ Fusionne-les dans un seul tableau appelé `courses`.
+➡️ Affiche le tableau fusionné :
+
+```
+["Pomme", "Banane", "Carotte", "Tomate"]
+```
