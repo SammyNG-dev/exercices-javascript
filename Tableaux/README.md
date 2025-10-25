@@ -117,3 +117,49 @@ const legumes = ["Carotte", "Tomate"];
 ```
 ["Pomme", "Banane", "Carotte", "Tomate"]
 ```
+
+## 🧩 Exercice 9 — Trouver un élément dans un tableau
+
+**Énoncé :**
+Crée un tableau :
+
+```js
+const nombres = [3, 8, 12, 5, 7];
+```
+
+➡️ Vérifie si le nombre `12` est présent dans le tableau.
+➡️ Si oui, affiche `"Trouvé !"`, sinon `"Absent"`.
+
+## 🧩 Exercice 10 — Filtrer un tableau
+
+**Énoncé :**
+Crée un tableau :
+
+```js
+const notes = [4, 12, 8, 15, 19, 5];
+```
+
+➡️ Utilise la méthode `filter()` pour créer un **nouveau tableau** ne contenant que les notes **supérieures ou égales à 10**.
+➡️ Affiche ensuite ce nouveau tableau.
+## 🧩 Exercice 11 — Transformation d’un tableau
+
+**Énoncé :**
+Crée un tableau :
+
+```js
+const prixHT = [10, 20, 30];
+```
+
+➡️ Utilise la méthode `map()` pour créer un **nouveau tableau** contenant les prix **TTC** (avec une TVA de 20 %).
+➡️ Affiche le tableau des prix TTC.
+## 🧩 Exercice 12 — Somme des éléments d’un tableau
+
+**Énoncé :**
+Crée un tableau de nombres :
+
+```js
+const nombres = [5, 10, 15, 20];
+```
+
+➡️ Utilise la méthode `reduce()` pour calculer la **somme totale** des nombres.
+➡️ Affiche le résultat.
