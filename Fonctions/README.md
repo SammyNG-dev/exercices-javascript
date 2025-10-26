@@ -63,7 +63,7 @@ Crée une fonction `sommeTableau` qui prend un **tableau de nombres** en paramè
 
 ```js
 const nombres = [5, 10, 15];
-console.log(sommeTableau(nombres)); // 30
+console.log(sommeTableau(nombres));
 ```
 
 ## Exercice 7 — Trouver le plus grand nombre d’un tableau
@@ -75,7 +75,7 @@ Crée une fonction `maxTableau` qui prend en paramètre un **tableau de nombres*
 
 ```js
 const nombres = [5, 12, 8, 130, 44];
-console.log(maxTableau(nombres)); // 130
+console.log(maxTableau(nombres));
 ```
 
 ## Exercice 8 — Vérifier si un nombre est présent dans un tableau
@@ -88,6 +88,51 @@ La fonction doit retourner `true` si le nombre est présent dans le tableau, sin
 
 ```js
 const nombres = [5, 12, 8, 130, 44];
-console.log(contientNombre(nombres, 12)); // true
-console.log(contientNombre(nombres, 7));  // false
+console.log(contientNombre(nombres, 12));
+console.log(contientNombre(nombres, 7));
+```
+
+## Exercice 9 — Calculer la moyenne d’un tableau de nombres
+
+**Énoncé** :
+Crée une fonction `moyenneTableau` qui prend en paramètre un **tableau de nombres** et retourne la **moyenne** de tous les nombres du tableau.
+
+➡️ Exemple :
+
+```js
+const notes = [12, 15, 18, 9, 10];
+console.log(moyenneTableau(notes));
+```
+
+## Exercice 10 — Inverser une chaîne de caractères
+
+**Énoncé** :
+Crée une fonction `inverserTexte` qui prend en paramètre une **chaîne de caractères** et retourne cette chaîne **inversée**.
+
+➡️ Exemple :
+
+```js
+console.log(inverserTexte("JavaScript"));
+```
+
+## Exercice 11 — Compter les voyelles dans une chaîne
+
+**Énoncé** :
+Crée une fonction `compterVoyelles` qui prend une chaîne de caractères en paramètre et retourne **le nombre total de voyelles** qu’elle contient (y compris les voyelles accentuées).
+
+➡️ Exemple :
+
+```js
+console.log(compterVoyelles("Bonjour à tous les amis"));
+```
+
+## Exercice 12 — Trouver le mot le plus long
+
+**Énoncé** :
+Crée une fonction `motLePlusLong` qui prend une phrase (chaîne de caractères) en paramètre et retourne **le mot le plus long** de cette phrase.
+
+➡️ Exemple :
+
+```js
+console.log(motLePlusLong("Les développeurs adorent JavaScript")); 
 ```
