@@ -1,4 +1,4 @@
-# Exercices sur les objets
+# Exercices sur les fonctions
 
 Il y a un fichier par exercice
 
