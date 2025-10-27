@@ -136,3 +136,67 @@ Crée une fonction `motLePlusLong` qui prend une phrase (chaîne de caractères)
 ```js
 console.log(motLePlusLong("Les développeurs adorent JavaScript")); 
 ```
+
+## Exercice 13 — Compter les occurrences d’un mot
+
+**Énoncé** :
+Crée une fonction `compterMot(phrase, mot)` qui retourne **le nombre de fois** où le mot apparaît dans la phrase (sans tenir compte de la casse).
+
+➡️ Exemple :
+
+```js
+console.log(compterMot("Le chat regarde le chien et le chat dort", "chat")); 
+```
+
+## Exercice 14 — Vérifier si une phrase est un palindrome
+
+**Énoncé** :
+Crée une fonction `estPalindrome(chaine)` qui retourne `true` si la chaîne est un **palindrome** (elle se lit de la même façon dans les deux sens), et `false` sinon.
+➡️ Ignore les espaces et la casse.
+
+**Exemple :**
+
+```js
+console.log(estPalindrome("Esope reste ici et se repose")); // true
+console.log(estPalindrome("Bonjour")); // false
+```
+
+## 🧩 Exercice 15 — Trouver les doublons dans un tableau
+
+**Objectif :**
+Écris une fonction `trouverDoublons(tableau)` qui retourne un **nouveau tableau contenant uniquement les éléments qui apparaissent plusieurs fois** dans le tableau d’origine.
+
+👉 Les doublons doivent apparaître **une seule fois** dans le résultat, même s’ils sont répétés plusieurs fois.
+
+---
+
+**Exemples attendus :**
+
+```js
+console.log(trouverDoublons([1, 2, 3, 4, 2, 3, 5])); // [2, 3]
+console.log(trouverDoublons(["pomme", "banane", "orange", "pomme", "pomme"])); // ["pomme"]
+console.log(trouverDoublons([true, false, true, true, false])); // [true, false]
+console.log(trouverDoublons([1, 2, 3, 4, 5])); // []
+```
+
+## 🧩 Exercice 16 — Compter les doublons dans une chaîne de caractères
+
+**Énoncé** :
+Crée une fonction `compterDoublonsChaine` qui prend une **chaîne de caractères** et retourne un **objet** indiquant **le nombre d’occurrences** de chaque caractère **présent plus d’une fois**.
+La comparaison doit **ignorer la casse** et **les espaces**.
+
+➡️ Exemple :
+
+```js
+console.log(compterDoublonsChaine("Bonjour à tous")); 
+// { o: 3 }
+
+console.log(compterDoublonsChaine("Javascript est super")); 
+// { a: 2, s: 3, e: 2 }
+```
+
+⚙️ **Contraintes** :
+
+* Tu ne dois pas utiliser `reduce()`.
+* Utilise une boucle et un objet pour compter les caractères.
+* Ignore les majuscules/minuscules et les espaces.
