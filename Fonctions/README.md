@@ -200,3 +200,15 @@ console.log(compterDoublonsChaine("Javascript est super"));
 * Tu ne dois pas utiliser `reduce()`.
 * Utilise une boucle et un objet pour compter les caractères.
 * Ignore les majuscules/minuscules et les espaces.
+
+Voici une adaptation de la consigne pour inclure le `setInterval` :
+
+---
+
+## Exercice 20 — Compteur avec fermeture et affichage régulier
+
+**Énoncé** :
+Crée une fonction `createCounter` qui retourne une fonction permettant **d’incrémenter un compteur** à chaque appel et de renvoyer sa valeur actuelle.
+
+➡️ Ensuite, utilise `setInterval` pour appeler ce compteur **toutes les secondes** et afficher sa valeur dans la console.
+Arrête l’intervalle lorsque le compteur atteint 10.
