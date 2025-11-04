@@ -68,6 +68,13 @@ button:focus-visible {
 }
 
 .link {
-  background-color: #eff1f3;
+  background-color: #f8f5f5;
   padding: 0.7em;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
