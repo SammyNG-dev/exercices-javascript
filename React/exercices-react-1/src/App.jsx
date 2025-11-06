@@ -13,7 +13,13 @@ function App() {
           Exercice 1 : compteur
         </Link>
         <Link className="link" to="/exo2">
-          Exercice : compteur 2
+          Exercice 2 : compteur 2
+        </Link>
+        <Link className="link" to="/exo3">
+          Exercice 3 : state formulaire
+        </Link>
+        <Link className="link" to="/exo4">
+          Exercice 4 : Liste dynamique
         </Link>
       </nav>
     </>
