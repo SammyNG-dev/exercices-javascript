@@ -65,7 +65,7 @@ Compteur : 0
 
 ---
 
-### 🧩 Exercice 3 – Formulaire d’affichage en temps réel
+## 🧩 Exercice 3 – Formulaire d’affichage en temps réel
 
 **Objectif :**
 Créer un petit formulaire React qui affiche en direct le prénom et le nom saisis par l’utilisateur.
@@ -96,34 +96,54 @@ Voici **l’énoncé de l’exercice 4** :
 
 ---
 
-### 🧩 **Exercice 4 — Liste dynamique : ajouter et supprimer des éléments**
+## 🧩 **Exercice 4 — Liste dynamique : ajout, vérification et suppression d’éléments**
 
-Crée un composant React qui permet à l’utilisateur :
+**Objectif :**
+Créer une petite application React permettant de gérer une liste dynamique.
+L’utilisateur doit pouvoir **ajouter** des éléments à la liste, **empêcher les doublons**, **refuser les entrées vides**, et **supprimer** un élément spécifique.
 
-1. **D’ajouter** des éléments dans une liste à partir d’un champ texte.
-2. **D’afficher** la liste mise à jour en temps réel.
-3. **De supprimer** un élément en cliquant sur un bouton à côté de celui-ci.
+---
 
-#### 🧠 Objectifs pédagogiques :
+### 🔧 **Consignes :**
 
-* Utiliser un `useState` contenant un tableau.
-* Manipuler ce tableau avec les méthodes modernes (`...spread`, `filter`, etc.).
-* Comprendre la mise à jour d’état en React.
+1. Crée un composant `Exercice4`.
+2. Initialise deux états avec `useState` :
 
-#### 🧰 Indications :
+   * `list` (un tableau vide au départ) pour stocker les éléments ajoutés.
+   * `valeur` (une chaîne vide) pour stocker le texte saisi dans le champ.
+3. Affiche :
 
-* Commence avec un `useState([])` pour la liste.
-* Quand l’utilisateur saisit un texte et clique sur "Ajouter", tu ajoutes cet élément au tableau.
-* Chaque élément de la liste s’affiche avec un bouton “❌ Supprimer”.
-* Quand on clique sur “Supprimer”, l’élément est retiré du tableau.
+   * Un **champ texte** pour saisir un nouvel élément.
+   * Un **bouton "Ajouter"** pour valider l’ajout.
+4. Quand l’utilisateur clique sur “Ajouter” :
 
-#### 💡 Exemple attendu :
+   * Si le champ est vide → afficher une **alerte** :
+
+     > "ATTENTION : Le champ ne doit pas être vide !"
+   * Si l’élément (insensible à la casse) existe déjà dans la liste → afficher :
+
+     > "ATTENTION : cet élément se trouve déjà dans la liste !"
+   * Sinon → **ajouter l’élément à la liste**.
+5. Affiche la liste sous forme de `<ul>` contenant des `<li>`.
+   Chaque élément doit être accompagné d’un **bouton “Supprimer”** permettant de le retirer de la liste.
+6. Ajoute un **lien de retour** (`<Link to="/" />`) pour revenir à la page principale.
+
+---
+
+### 💡 **Exemple attendu :**
 
 ```
-📝 Entrez un élément : [_____] [Ajouter]
+[ champ texte ] [ Ajouter ]
 
 Liste :
-- Pain [❌]
-- Lait [❌]
-- Fromage [❌]
+- Pomme   [Supprimer]
+- Poire   [Supprimer]
 ```
+
+Si on saisit “poire” à nouveau →
+➡️ Alerte : “ATTENTION : cet élément se trouve déjà dans la liste !”
+Si on clique sur “Supprimer” → l’élément disparaît.
+
+---
+
+Souhaites-tu que je te propose l’énoncé du prochain exercice (n°5) dans la continuité de celui-ci ?
