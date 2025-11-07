@@ -21,6 +21,9 @@ function App() {
         <Link className="link" to="/exo4">
           Exercice 4 : Liste dynamique
         </Link>
+        <Link className="link" to="/exo5">
+          Exercice 5 : Filtrage liste
+        </Link>
       </nav>
     </>
   );
