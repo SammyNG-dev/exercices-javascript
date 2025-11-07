@@ -8,9 +8,12 @@ function App() {
         Ce mini-projet a pour but de faire de m'entrainer à utilise le hook
         useEffect()
       </h1>
-      <Link className="link" to="/exo1">
-        Exercice 1 : déclenchement basique
-      </Link>
+      <nav>
+        <Link className="link" to="/exo1">
+          Exercice 1 : déclenchement basique
+        </Link>
+        <Link className="link" to="/exo2">Exercice 2 : compteur automatique</Link>
+      </nav>
     </>
   );
 }

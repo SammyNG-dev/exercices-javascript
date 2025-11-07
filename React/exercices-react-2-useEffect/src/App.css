@@ -46,3 +46,9 @@
   padding: 0.7em;
   border-radius: 8px;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

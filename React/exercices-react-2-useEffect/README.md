@@ -1,16 +1,37 @@
-# React + Vite
+# ⚛️ Exercice 1 — Déclenchement de base
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Objectif :
 
-Currently, two official plugins are available:
+Découvrir comment `useEffect` s’exécute à chaque rendu et comment limiter son exécution à certains changements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Consigne :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Crée un composant React nommé **`Exercice1`**.
 
-## Expanding the ESLint configuration
+1. Ajoute un **state `count`** initialisé à `0`.
+2. Affiche ce compteur à l’écran et ajoute **deux boutons** :
+   ➕ pour l’incrémenter,
+   ➖ pour le décrémenter.
+3. Utilise **`useEffect`** pour afficher un message dans la console :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   * `"Le composant a été rendu"` à chaque rendu.
+   * `"Le compteur a changé"` uniquement quand `count` change.
+
+---
+
+### 💡 Indice :
+
+Tu vas devoir utiliser deux `useEffect` :
+
+```js
+useEffect(() => {
+  console.log("Le composant a été rendu");
+});
+
+useEffect(() => {
+  console.log("Le compteur a changé !");
+}, [count]);
+```
+
