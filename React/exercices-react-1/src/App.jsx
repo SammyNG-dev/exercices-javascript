@@ -6,7 +6,7 @@ function App() {
     <>
       <h1>
         Voici quelques exercices sur React.JS. Ce projet a pour but de
-        s'entrainer à utiliser cette librairie
+        s'entrainer à utiliser le hook useState()
       </h1>
       <nav>
         <Link className="link" to="/exo1">
