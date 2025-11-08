@@ -12,7 +12,12 @@ function App() {
         <Link className="link" to="/exo1">
           Exercice 1 : déclenchement basique
         </Link>
-        <Link className="link" to="/exo2">Exercice 2 : compteur automatique</Link>
+        <Link className="link" to="/exo2">
+          Exercice 2 : compteur automatique
+        </Link>
+        <Link className="link" to="/exo3">
+          Exercice 3 — Changement de titre de la page
+        </Link>
       </nav>
     </>
   );

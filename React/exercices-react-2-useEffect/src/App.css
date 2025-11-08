@@ -52,3 +52,8 @@ nav {
   justify-content: center;
   gap: 15px;
 }
+
+.borderless {
+  border: none;
+  cursor: default;
+}
