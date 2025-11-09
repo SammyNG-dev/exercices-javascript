@@ -18,6 +18,9 @@ function App() {
         <Link className="link" to="/exo3">
           Exercice 3 — Changement de titre de la page
         </Link>
+        <Link className="link" to="/exo4">
+          Exercice 4 — Compteur automatique avec arrêt
+        </Link>
       </nav>
     </>
   );
