@@ -21,6 +21,9 @@ function App() {
         <Link className="link" to="/exo4">
           Exercice 4 — Compteur automatique avec arrêt
         </Link>
+        <Link className="link" to="/exo5">
+          Exercice 5 — Simulation d'un appel API
+        </Link>
       </nav>
     </>
   );

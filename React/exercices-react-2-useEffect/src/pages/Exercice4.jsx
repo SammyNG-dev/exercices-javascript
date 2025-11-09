@@ -19,7 +19,9 @@ function Exercice4() {
   return (
     <>
       <h1>Compteur : {count}</h1>
-      <Link to="/" className="link">Revenir en arrière</Link>
+      <Link to="/" className="link">
+        Revenir en arrière
+      </Link>
     </>
   );
 }
