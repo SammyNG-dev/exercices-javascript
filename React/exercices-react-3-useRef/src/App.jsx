@@ -9,6 +9,9 @@ function App() {
         <Link className="link" to="/exo1">
           Exercice 1 : Nombre de rendus
         </Link>
+        <Link className="link" to="/exo2">
+          Exercice 2 : manipuler un élément du DOM avec useRef
+        </Link>
       </nav>
     </>
   );
