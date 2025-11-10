@@ -18,6 +18,9 @@ function App() {
         <Link className="link" to="/exo4">
           Exercice 4 : Mesurer un élément avec useRef
         </Link>
+        <Link className="link" to="/exo5">
+          Exercice 5 : Déclencher une action quand un champ change
+        </Link>
       </nav>
     </>
   );
