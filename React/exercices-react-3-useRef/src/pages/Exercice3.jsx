@@ -11,7 +11,7 @@ function Exercice3() {
   return (
     <>
       <h1>Actuel : {count}</h1>
-      <h1>Précédent {previousCount.current}</h1>
+      <h1>Précédent : {previousCount.current}</h1>
       <nav>
         <button type="button" onClick={() => setCount((prev) => prev + 1)}>
           +1

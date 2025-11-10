@@ -15,6 +15,9 @@ function App() {
         <Link className="link" to="/exo3">
           Exercice 3 : Suivre la valeur précédente d’un state avec useRef
         </Link>
+        <Link className="link" to="/exo4">
+          Exercice 4 : Mesurer un élément avec useRef
+        </Link>
       </nav>
     </>
   );
