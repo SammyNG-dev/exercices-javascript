@@ -21,6 +21,9 @@ function App() {
         <Link className="link" to="/exo5">
           Exercice 5 : Déclencher une action quand un champ change
         </Link>
+        <Link className="link" to="/exo6">
+          Exercice 6 : Compteur automatique avec useRef
+        </Link>
       </nav>
     </>
   );

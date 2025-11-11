@@ -199,3 +199,52 @@ Apprendre à utiliser `useRef` pour **stocker une valeur précédente** et **dé
 Tu verras comment `useRef` sert à **mémoriser la valeur précédente d’un state** sans redéclencher de rendu — très utile pour détecter les changements ou comparer des états.
 
 ---
+
+Parfait 👌 voici **la consigne complète de l’exercice 6**, adaptée exactement à ton code :
+
+---
+
+# 🧩 **Exercice 6 — Contrôler un intervalle avec `useRef`**
+
+#### 🎯 Objectif
+
+Apprendre à utiliser **`useRef`** pour manipuler un `setInterval()` sans provoquer de rerender, et créer un petit compteur que l’on peut **arrêter**, **reprendre** et **réinitialiser**.
+
+---
+
+#### 🧠 Ce que tu dois faire
+
+1. Crée un composant React nommé **`Exercice6`**.
+2. Initialise un état `count` avec `useState(0)` pour afficher le nombre de secondes écoulées.
+3. Crée une **référence** avec `useRef(null)` pour stocker l’identifiant de l’intervalle.
+4. Utilise **`useEffect`** pour lancer un `setInterval()` qui incrémente `count` toutes les 100 ms.
+
+   * Cet intervalle doit être **créé une seule fois au montage** (tableau de dépendances vide `[]`).
+   * N’oublie pas de le **nettoyer** dans le `return` du `useEffect`.
+5. Ajoute trois boutons :
+
+   * 🟥 **STOP** → stoppe l’intervalle (grâce à `clearInterval(intervalRef.current)`).
+   * 🟩 **REPRENDRE** → relance un nouvel intervalle (en recréant le `setInterval`).
+   * 🔁 **RESTART** → remet `count` à 0, sans forcément relancer automatiquement si le compteur est arrêté.
+6. Ajoute une variable d’état `active` pour gérer si le compteur est actif ou non, et **désactive** les boutons selon ce statut (par exemple : STOP désactivé quand le compteur est déjà arrêté).
+
+---
+
+#### 💡 Points importants à retenir sur `useRef`
+
+* `useRef` **ne provoque jamais de rerender** quand sa valeur change.
+* Tu peux t’en servir pour stocker une **valeur mutable** comme un identifiant d’intervalle ou un élément DOM.
+* Contrairement à `useState`, la valeur de `useRef` **reste la même** entre les rendus.
+
+---
+
+#### ✅ Exemple visuel du rendu attendu
+
+```
+Compteur : 124
+[STOP] [REPRENDRE] [RESTART]
+```
+
+*(le chiffre augmente automatiquement tant que le compteur n’est pas stoppé)*
+
+---
