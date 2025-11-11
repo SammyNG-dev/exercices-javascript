@@ -9,6 +9,7 @@ import Exercice3 from "./pages/Exercice3.jsx";
 import Exercice4 from "./pages/Exercice4.jsx";
 import Exercice5 from "./pages/Exercice5.jsx";
 import Exercice6 from "./pages/Exercice6.jsx";
+import Exercice7 from "./pages/Exercice7.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     path: "/exo6",
     element: <Exercice6 />,
   },
+  {
+    path: "exo7",
+    element: <Exercice7 />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

@@ -248,3 +248,37 @@ Compteur : 124
 *(le chiffre augmente automatiquement tant que le compteur n’est pas stoppé)*
 
 ---
+
+# ⚛️ **Exercice 7 — Mémoriser une valeur stable avec `useRef`**
+
+### 🎯 Objectif
+
+Utiliser `useRef` pour **conserver une valeur** (ex. une date ou un identifiant) **sans qu’elle soit réinitialisée ni ne provoque de rerender**.
+
+---
+
+### 🧠 Consigne
+
+1. Crée un composant **`Exercice7`**.
+2. Au montage du composant, enregistre **l’heure de démarrage** dans une référence :
+
+   ```js
+   const startTimeRef = useRef(new Date());
+   ```
+3. Ajoute un **state `count`** initialisé à 0.
+4. Chaque fois que tu cliques sur un bouton **“+1”**, incrémente `count`.
+5. Affiche à l’écran :
+
+   * La valeur actuelle du compteur.
+   * L’heure de démarrage du composant (`startTimeRef.current.toLocaleTimeString()`).
+6. Vérifie que l’heure de démarrage **ne change jamais**, même après plusieurs incréments.
+
+---
+
+### 💡 À retenir
+
+* Une variable déclarée dans le corps du composant (ex. `const start = new Date()`) **serait recréée à chaque rendu**.
+* Une référence `useRef()` garde **la même valeur entre les rendus**.
+* C’est très utile pour **mémoriser des infos non visuelles** (horodatage, identifiant, instance d’objet, etc.).
+
+---
