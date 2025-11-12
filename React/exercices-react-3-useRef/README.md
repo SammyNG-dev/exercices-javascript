@@ -282,3 +282,49 @@ Utiliser `useRef` pour **conserver une valeur** (ex. une date ou un identifiant)
 * C’est très utile pour **mémoriser des infos non visuelles** (horodatage, identifiant, instance d’objet, etc.).
 
 ---
+
+# ⚛️ **Exercice 8 — Chronomètre contrôlé avec `useRef`**
+
+### 🎯 Objectif :
+
+Apprendre à utiliser `useRef` pour **gérer un intervalle** sans provoquer de rendus infinis.
+Tu vas construire un petit **chronomètre** que l’utilisateur peut démarrer, arrêter et réinitialiser.
+
+---
+
+### 🧠 Consignes :
+
+1. Crée un composant **`Exercice8`**.
+
+2. Ajoute un **state `timer`** (en secondes) initialisé à `0`.
+
+3. Crée une **référence `intervalRef`** pour stocker l’identifiant de ton `setInterval`.
+
+4. Ajoute trois boutons :
+
+   * ▶️ **Démarrer** → Lance un intervalle qui incrémente `time` chaque seconde.
+   * ⏸️ **Arrêter** → Stoppe l’intervalle en cours.
+   * 🔁 **Réinitialiser** → Met le temps à 0 et arrête le chrono.
+
+5. Empêche de démarrer plusieurs intervalles à la fois (par exemple en désactivant le bouton Démarrer si le chrono tourne déjà).
+
+6. Nettoie correctement ton intervalle dans le **`useEffect` cleanup**.
+
+---
+
+### 💡 Indices :
+
+* Le `setInterval` doit être **enregistré dans le ref** (et non dans un state).
+* Pense à vérifier avant de démarrer :
+
+  ```js
+  if (intervalRef.current !== null) return; // déjà en cours
+  ```
+* Exemple pour nettoyer :
+
+  ```js
+  clearInterval(intervalRef.current);
+  intervalRef.current = null;
+  ```
+
+---

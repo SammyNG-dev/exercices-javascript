@@ -24,8 +24,13 @@ function App() {
         <Link className="link" to="/exo6">
           Exercice 6 : Compteur automatique avec useRef
         </Link>
+      </nav>
+      <nav>
         <Link className="link" to="/exo7">
           Exercice 7 : Mémoriser une valeur stable avec useRef
+        </Link>
+        <Link className="link" to="/exo8">
+          Exercice 8 : Chronomètre contrôlé avec useRef
         </Link>
       </nav>
     </>
