@@ -9,7 +9,8 @@ function App() {
         Ce mini-projet a pour but l'apprentissage des animations avec React
       </h1>
       <nav>
-        <Link to="/exo1">Exercice 1 : </Link>
+        <Link className="link" to="/exo1">Exercice 1 : Animation simple avec React et CSS</Link>
+        <Link className="link" to="/exo2">Exercice 2 : Apparition et disparition animée</Link>
       </nav>
     </>
   );

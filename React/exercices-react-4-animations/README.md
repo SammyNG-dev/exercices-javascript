@@ -1,16 +1,39 @@
-# React + Vite
+# ⚛️ Exercice 1 — Animation simple avec React et CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🎯 Objectif :
 
-Currently, two official plugins are available:
+Apprendre à animer un élément en React en jouant sur les classes CSS et les states.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### 🧠 Consigne :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Crée une page/exercice React nommée **`Exercice1`**.
+2. Ajoute un **élément `<div>` ou `<p>`** que tu veux animer (par exemple un carré ou un texte).
+3. Crée un **state `active`** initialisé à `false`.
+4. Ajoute un **bouton** qui va **inverser le state `active`** à chaque clic.
+5. En CSS, crée deux styles différents pour ton élément (ex : `position`, `background-color`, `transform`, etc.).
+6. Change la **classe de l’élément en fonction du state `active`** pour déclencher l’animation.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🧩 **Exercice 2 – Apparition et disparition animée**
+
+#### 🎯 Objectif :
+
+Créer une petite animation qui fait **apparaître** puis **disparaître** un carré quand on clique sur un bouton.
+
+#### 🧠 Points à travailler :
+
+* Utiliser un **state** React pour contrôler l’affichage d’un élément.
+* Utiliser les propriétés CSS `opacity`, `transform` et `transition` pour rendre ce changement **fluide et naturel**.
+
+#### 🪄 Indications :
+
+1. Crée un carré (div) de **150px × 150px**, avec une couleur visible (ex : bleu).
+2. Par défaut, le carré doit être **invisible et réduit** (`opacity: 0` et `transform: scale(0.5)`).
+3. Lorsqu’il devient visible, il doit **grandir et apparaître progressivement** (`opacity: 1` et `transform: scale(1)`).
+4. Utilise `transition` pour animer le changement sur une durée d’environ **0,5 seconde**.
+5. Le bouton doit alterner entre “Afficher” et “Cacher”.
+
+---
