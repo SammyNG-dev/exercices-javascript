@@ -1,6 +1,349 @@
-{"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo3.js": {"path":"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo3.js","statementMap":{"0":{"start":{"line":2,"column":2},"end":{"line":2,"column":15}},"1":{"start":{"line":5,"column":0},"end":{"line":5,"column":28}}},"fnMap":{"0":{"name":"addition","decl":{"start":{"line":1,"column":16},"end":{"line":1,"column":24}},"loc":{"start":{"line":1,"column":31},"end":{"line":3,"column":1}},"line":1}},"branchMap":{},"s":{"0":2,"1":1},"f":{"0":2},"b":{},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"cebdda4126d656aac784bccb393b3fce92d6aabe"}
-,"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo4.js": {"path":"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo4.js","statementMap":{"0":{"start":{"line":2,"column":2},"end":{"line":2,"column":26}},"1":{"start":{"line":5,"column":16},"end":{"line":5,"column":39}},"2":{"start":{"line":7,"column":0},"end":{"line":13,"column":1}},"3":{"start":{"line":8,"column":2},"end":{"line":12,"column":3}},"4":{"start":{"line":9,"column":4},"end":{"line":9,"column":37}},"5":{"start":{"line":11,"column":4},"end":{"line":11,"column":39}}},"fnMap":{"0":{"name":"estPair","decl":{"start":{"line":1,"column":16},"end":{"line":1,"column":23}},"loc":{"start":{"line":1,"column":32},"end":{"line":3,"column":1}},"line":1}},"branchMap":{"0":{"loc":{"start":{"line":8,"column":2},"end":{"line":12,"column":3}},"type":"if","locations":[{"start":{"line":8,"column":2},"end":{"line":12,"column":3}},{"start":{"line":10,"column":9},"end":{"line":12,"column":3}}],"line":8}},"s":{"0":10,"1":1,"2":1,"3":6,"4":3,"5":3},"f":{"0":10},"b":{"0":[3,3]},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"8f7e669bb6e2abc3dc1a764c055c66da1b4c93ea"}
-,"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo6.js": {"path":"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo6.js","statementMap":{"0":{"start":{"line":1,"column":16},"end":{"line":1,"column":27}},"1":{"start":{"line":4,"column":14},"end":{"line":4,"column":15}},"2":{"start":{"line":5,"column":2},"end":{"line":7,"column":3}},"3":{"start":{"line":5,"column":15},"end":{"line":5,"column":16}},"4":{"start":{"line":6,"column":4},"end":{"line":6,"column":24}},"5":{"start":{"line":8,"column":2},"end":{"line":8,"column":15}},"6":{"start":{"line":12,"column":2},"end":{"line":12,"column":60}},"7":{"start":{"line":12,"column":41},"end":{"line":12,"column":55}},"8":{"start":{"line":15,"column":0},"end":{"line":15,"column":35}},"9":{"start":{"line":16,"column":0},"end":{"line":16,"column":36}}},"fnMap":{"0":{"name":"sommeTableau","decl":{"start":{"line":3,"column":16},"end":{"line":3,"column":28}},"loc":{"start":{"line":3,"column":38},"end":{"line":9,"column":1}},"line":3},"1":{"name":"sommeTableau2","decl":{"start":{"line":11,"column":9},"end":{"line":11,"column":22}},"loc":{"start":{"line":11,"column":30},"end":{"line":13,"column":1}},"line":11},"2":{"name":"(anonymous_2)","decl":{"start":{"line":12,"column":22},"end":{"line":12,"column":23}},"loc":{"start":{"line":12,"column":41},"end":{"line":12,"column":55}},"line":12}},"branchMap":{},"s":{"0":1,"1":3,"2":3,"3":3,"4":57,"5":3,"6":1,"7":3,"8":1,"9":1},"f":{"0":3,"1":1,"2":3},"b":{},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"377dcde353469c38f43f9716258c52d5f78adc7e"}
-,"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo7.js": {"path":"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo7.js","statementMap":{"0":{"start":{"line":1,"column":16},"end":{"line":1,"column":40}},"1":{"start":{"line":4,"column":14},"end":{"line":4,"column":24}},"2":{"start":{"line":5,"column":2},"end":{"line":9,"column":3}},"3":{"start":{"line":5,"column":15},"end":{"line":5,"column":16}},"4":{"start":{"line":6,"column":4},"end":{"line":8,"column":5}},"5":{"start":{"line":7,"column":6},"end":{"line":7,"column":25}},"6":{"start":{"line":10,"column":2},"end":{"line":10,"column":15}},"7":{"start":{"line":13,"column":0},"end":{"line":13,"column":33}}},"fnMap":{"0":{"name":"maxTableau","decl":{"start":{"line":3,"column":16},"end":{"line":3,"column":26}},"loc":{"start":{"line":3,"column":36},"end":{"line":11,"column":1}},"line":3}},"branchMap":{"0":{"loc":{"start":{"line":6,"column":4},"end":{"line":8,"column":5}},"type":"if","locations":[{"start":{"line":6,"column":4},"end":{"line":8,"column":5}},{"start":{},"end":{}}],"line":6}},"s":{"0":1,"1":2,"2":2,"3":2,"4":16,"5":8,"6":2,"7":1},"f":{"0":2},"b":{"0":[8,8]},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"b5616ba935fda698b9b5162d39ba13de7d735df7"}
-,"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo8.js": {"path":"/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo8.js","statementMap":{"0":{"start":{"line":1,"column":16},"end":{"line":1,"column":35}},"1":{"start":{"line":4,"column":2},"end":{"line":8,"column":3}},"2":{"start":{"line":5,"column":4},"end":{"line":7,"column":5}},"3":{"start":{"line":6,"column":6},"end":{"line":6,"column":18}},"4":{"start":{"line":9,"column":2},"end":{"line":9,"column":15}},"5":{"start":{"line":12,"column":0},"end":{"line":12,"column":41}},"6":{"start":{"line":13,"column":0},"end":{"line":13,"column":40}},"7":{"start":{"line":14,"column":0},"end":{"line":14,"column":40}}},"fnMap":{"0":{"name":"contientNombre","decl":{"start":{"line":3,"column":16},"end":{"line":3,"column":30}},"loc":{"start":{"line":3,"column":58},"end":{"line":10,"column":1}},"line":3}},"branchMap":{"0":{"loc":{"start":{"line":5,"column":4},"end":{"line":7,"column":5}},"type":"if","locations":[{"start":{"line":5,"column":4},"end":{"line":7,"column":5}},{"start":{},"end":{}}],"line":5}},"s":{"0":1,"1":5,"2":15,"3":3,"4":2,"5":1,"6":1,"7":1},"f":{"0":5},"b":{"0":[3,12]},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"81971f571ea0aa5e928c8f4c2448081a3bda509f"}
+{
+  "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo3.js": {
+    "path": "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo3.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 2, "column": 2 },
+        "end": { "line": 2, "column": 15 }
+      },
+      "1": {
+        "start": { "line": 5, "column": 0 },
+        "end": { "line": 5, "column": 28 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "addition",
+        "decl": {
+          "start": { "line": 1, "column": 16 },
+          "end": { "line": 1, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 1, "column": 31 },
+          "end": { "line": 3, "column": 1 }
+        },
+        "line": 1
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 2, "1": 1 },
+    "f": { "0": 2 },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "cebdda4126d656aac784bccb393b3fce92d6aabe"
+  },
+  "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo4.js": {
+    "path": "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo4.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 2, "column": 2 },
+        "end": { "line": 2, "column": 26 }
+      },
+      "1": {
+        "start": { "line": 5, "column": 16 },
+        "end": { "line": 5, "column": 39 }
+      },
+      "2": {
+        "start": { "line": 7, "column": 0 },
+        "end": { "line": 13, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 8, "column": 2 },
+        "end": { "line": 12, "column": 3 }
+      },
+      "4": {
+        "start": { "line": 9, "column": 4 },
+        "end": { "line": 9, "column": 37 }
+      },
+      "5": {
+        "start": { "line": 11, "column": 4 },
+        "end": { "line": 11, "column": 39 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "estPair",
+        "decl": {
+          "start": { "line": 1, "column": 16 },
+          "end": { "line": 1, "column": 23 }
+        },
+        "loc": {
+          "start": { "line": 1, "column": 32 },
+          "end": { "line": 3, "column": 1 }
+        },
+        "line": 1
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 8, "column": 2 },
+          "end": { "line": 12, "column": 3 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 8, "column": 2 },
+            "end": { "line": 12, "column": 3 }
+          },
+          {
+            "start": { "line": 10, "column": 9 },
+            "end": { "line": 12, "column": 3 }
+          }
+        ],
+        "line": 8
+      }
+    },
+    "s": { "0": 10, "1": 1, "2": 1, "3": 6, "4": 3, "5": 3 },
+    "f": { "0": 10 },
+    "b": { "0": [3, 3] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "8f7e669bb6e2abc3dc1a764c055c66da1b4c93ea"
+  },
+  "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo6.js": {
+    "path": "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo6.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 16 },
+        "end": { "line": 1, "column": 27 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 14 },
+        "end": { "line": 4, "column": 15 }
+      },
+      "2": {
+        "start": { "line": 5, "column": 2 },
+        "end": { "line": 7, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 5, "column": 15 },
+        "end": { "line": 5, "column": 16 }
+      },
+      "4": {
+        "start": { "line": 6, "column": 4 },
+        "end": { "line": 6, "column": 24 }
+      },
+      "5": {
+        "start": { "line": 8, "column": 2 },
+        "end": { "line": 8, "column": 15 }
+      },
+      "6": {
+        "start": { "line": 12, "column": 2 },
+        "end": { "line": 12, "column": 60 }
+      },
+      "7": {
+        "start": { "line": 12, "column": 41 },
+        "end": { "line": 12, "column": 55 }
+      },
+      "8": {
+        "start": { "line": 15, "column": 0 },
+        "end": { "line": 15, "column": 35 }
+      },
+      "9": {
+        "start": { "line": 16, "column": 0 },
+        "end": { "line": 16, "column": 36 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "sommeTableau",
+        "decl": {
+          "start": { "line": 3, "column": 16 },
+          "end": { "line": 3, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 38 },
+          "end": { "line": 9, "column": 1 }
+        },
+        "line": 3
+      },
+      "1": {
+        "name": "sommeTableau2",
+        "decl": {
+          "start": { "line": 11, "column": 9 },
+          "end": { "line": 11, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 11, "column": 30 },
+          "end": { "line": 13, "column": 1 }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 12, "column": 22 },
+          "end": { "line": 12, "column": 23 }
+        },
+        "loc": {
+          "start": { "line": 12, "column": 41 },
+          "end": { "line": 12, "column": 55 }
+        },
+        "line": 12
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 1,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 57,
+      "5": 3,
+      "6": 1,
+      "7": 3,
+      "8": 1,
+      "9": 1
+    },
+    "f": { "0": 3, "1": 1, "2": 3 },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "377dcde353469c38f43f9716258c52d5f78adc7e"
+  },
+  "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo7.js": {
+    "path": "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo7.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 16 },
+        "end": { "line": 1, "column": 40 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 14 },
+        "end": { "line": 4, "column": 24 }
+      },
+      "2": {
+        "start": { "line": 5, "column": 2 },
+        "end": { "line": 9, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 5, "column": 15 },
+        "end": { "line": 5, "column": 16 }
+      },
+      "4": {
+        "start": { "line": 6, "column": 4 },
+        "end": { "line": 8, "column": 5 }
+      },
+      "5": {
+        "start": { "line": 7, "column": 6 },
+        "end": { "line": 7, "column": 25 }
+      },
+      "6": {
+        "start": { "line": 10, "column": 2 },
+        "end": { "line": 10, "column": 15 }
+      },
+      "7": {
+        "start": { "line": 13, "column": 0 },
+        "end": { "line": 13, "column": 33 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "maxTableau",
+        "decl": {
+          "start": { "line": 3, "column": 16 },
+          "end": { "line": 3, "column": 26 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 36 },
+          "end": { "line": 11, "column": 1 }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 6, "column": 4 },
+          "end": { "line": 8, "column": 5 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 6, "column": 4 },
+            "end": { "line": 8, "column": 5 }
+          },
+          { "start": {}, "end": {} }
+        ],
+        "line": 6
+      }
+    },
+    "s": { "0": 1, "1": 2, "2": 2, "3": 2, "4": 16, "5": 8, "6": 2, "7": 1 },
+    "f": { "0": 2 },
+    "b": { "0": [8, 8] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b5616ba935fda698b9b5162d39ba13de7d735df7"
+  },
+  "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo8.js": {
+    "path": "/home/sammy/Bureau/Dev/Exercices/exercices-javascript/Fonctions/exo8.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 16 },
+        "end": { "line": 1, "column": 35 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 2 },
+        "end": { "line": 8, "column": 3 }
+      },
+      "2": {
+        "start": { "line": 5, "column": 4 },
+        "end": { "line": 7, "column": 5 }
+      },
+      "3": {
+        "start": { "line": 6, "column": 6 },
+        "end": { "line": 6, "column": 18 }
+      },
+      "4": {
+        "start": { "line": 9, "column": 2 },
+        "end": { "line": 9, "column": 15 }
+      },
+      "5": {
+        "start": { "line": 12, "column": 0 },
+        "end": { "line": 12, "column": 41 }
+      },
+      "6": {
+        "start": { "line": 13, "column": 0 },
+        "end": { "line": 13, "column": 40 }
+      },
+      "7": {
+        "start": { "line": 14, "column": 0 },
+        "end": { "line": 14, "column": 40 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "contientNombre",
+        "decl": {
+          "start": { "line": 3, "column": 16 },
+          "end": { "line": 3, "column": 30 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 58 },
+          "end": { "line": 10, "column": 1 }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 5, "column": 4 },
+          "end": { "line": 7, "column": 5 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 5, "column": 4 },
+            "end": { "line": 7, "column": 5 }
+          },
+          { "start": {}, "end": {} }
+        ],
+        "line": 5
+      }
+    },
+    "s": { "0": 1, "1": 5, "2": 15, "3": 3, "4": 2, "5": 1, "6": 1, "7": 1 },
+    "f": { "0": 5 },
+    "b": { "0": [3, 12] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "81971f571ea0aa5e928c8f4c2448081a3bda509f"
+  }
 }
