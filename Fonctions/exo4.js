@@ -1,4 +1,4 @@
-function estPair(nombre) {
+export function estPair(nombre) {
   return nombre % 2 === 0;
 }
 

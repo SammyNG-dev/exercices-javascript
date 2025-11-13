@@ -1,4 +1,4 @@
-const saluerAvecAge = (nom, age) => {
+export const saluerAvecAge = (nom, age) => {
   if (!age) {
     age = 18;
   }
