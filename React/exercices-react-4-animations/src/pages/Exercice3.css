@@ -1,0 +1,36 @@
+.exo3-box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  transform: translateX(50px) scale(0);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.exo3-box:nth-child(1) {
+  transition-delay: 0s;
+}
+.exo3-box:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.exo3-box:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.exo3-box:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.exo3-box:nth-child(5) {
+  transition-delay: 0.8s;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.delay {
+  transform: translate(0) scale(1);
+  opacity: 1;
+}

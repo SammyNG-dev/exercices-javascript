@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Exercice1 from "./pages/Exercice1.jsx";
 import Exercice2 from "./pages/Exercice2.jsx";
+import Exercice3 from "./pages/Exercice3.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/exo2",
     element: <Exercice2 />
+  },
+  {
+    path: "/exo3",
+    element: <Exercice3 />
   }
 ]);
 

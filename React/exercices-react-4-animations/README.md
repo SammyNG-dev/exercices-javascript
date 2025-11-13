@@ -37,3 +37,31 @@ Créer une petite animation qui fait **apparaître** puis **disparaître** un ca
 5. Le bouton doit alterner entre “Afficher” et “Cacher”.
 
 ---
+
+# ⚛️ Exercice 3 — Apparition en chaîne
+
+### 🎯 Objectif :
+
+Apprendre à utiliser **`transition-delay`** pour faire apparaître plusieurs éléments successivement.
+
+---
+
+### 🧠 Consigne :
+
+1. Crée un composant React nommé **`Exercice3`**.
+2. Génère **5 divs carrées** à l’écran, toutes de la même taille et couleur.
+3. Chaque div doit avoir **initialement `opacity: 0` et `transform: translateY(20px)`**.
+4. Ajoute un **bouton** pour activer l’apparition des divs.
+5. Lors du clic, chaque div doit **apparaître l’une après l’autre** avec un petit décalage.
+   → Utilise **`transition`** + **`transition-delay`** ou des classes CSS différentes pour gérer le timing.
+6. Une fois visibles, les divs doivent être **entièrement opaques et positionnées normalement** (`opacity: 1`, `transform: translateY(0)`).
+
+---
+
+### 💡 Indices CSS :
+
+* `transition: all 0.5s ease;`
+* `transition-delay: 0s, 0.2s, 0.4s ...` pour chaque div.
+* Tu peux utiliser `nth-child` en CSS pour appliquer un délai différent à chaque div.
+
+---
