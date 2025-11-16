@@ -65,3 +65,38 @@ Apprendre à utiliser **`transition-delay`** pour faire apparaître plusieurs é
 * Tu peux utiliser `nth-child` en CSS pour appliquer un délai différent à chaque div.
 
 ---
+
+## ⚛️ Exercice 4 — Hover et transform avancé
+
+### 🎯 Objectif :
+
+Apprendre à combiner plusieurs transformations CSS (`rotate`, `translateY`, `scale`) avec des transitions pour rendre un élément interactif quand on le survole.
+
+---
+
+### 🧠 Consigne :
+
+1. Crée un composant React `Exercice4`.
+2. Ajoute une **div** de taille carrée, par exemple 100x100px, avec une couleur de fond.
+3. Applique un **hover** CSS sur cette div qui fait :
+
+   * `rotate(15deg)`
+   * `translateY(-20px)`
+   * `scale(1.2)`
+4. Ajoute une **transition** pour que la transformation se fasse de manière fluide.
+5. Ajoute un bouton **RESET** dans le JSX pour retirer la classe de hover si tu veux tester l’animation via React (optionnel, sinon le hover suffit).
+
+---
+
+### 💡 Indices :
+
+* Tu vas utiliser **`:hover`** pour déclencher les transformations.
+* La propriété `transition` doit inclure **toutes les transformations** que tu veux animer :
+
+```css
+transition: transform 0.5s ease;
+```
+
+* Tu peux tester différentes durées et fonctions d’animation (`ease-in`, `ease-out`, `linear`, etc.).
+
+---

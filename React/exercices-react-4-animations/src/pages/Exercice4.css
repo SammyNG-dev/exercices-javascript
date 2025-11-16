@@ -1,0 +1,11 @@
+.exo4-div {
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+  transition: transform 0.5s ease;
+  margin-bottom: 30px;
+}
+
+.exo4-div:hover {
+  transform: rotate(15deg) translateY(-20px) scale(1.2);
+}
