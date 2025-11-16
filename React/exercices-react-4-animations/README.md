@@ -99,4 +99,29 @@ transition: transform 0.5s ease;
 
 * Tu peux tester différentes durées et fonctions d’animation (`ease-in`, `ease-out`, `linear`, etc.).
 
+Parfait ! On va passer à l’**Exercice 5** : faire apparaître plusieurs éléments **avec un petit délai entre chaque animation**, ce qui introduit le concept de `transition-delay`.
+
+---
+
+## ⚛️ Exercice 5 — Animations en chaîne
+
+### 🎯 Objectif :
+
+Apprendre à enchaîner des animations sur plusieurs éléments grâce à `transition-delay`.
+
+---
+
+### 🧠 Consigne :
+
+1. Crée un composant avec **5 carrés** (ou plus) empilés verticalement ou horizontalement.
+2. Chaque carré doit avoir une **classe CSS** qui définit sa taille, couleur et état initial :
+
+   * **opacity** : 0
+   * **transform** : translation ou scale réduite
+   * **transition** : durée et fonction d’accélération
+3. Quand tu cliques sur un bouton :
+
+   * Ajoute une **classe `visible`** qui met **opacity à 1** et remet le **scale/translation à sa position finale**.
+4. Utilise **`nth-child()`** pour définir un **`transition-delay` différent pour chaque carré**, afin qu’ils apparaissent **les uns après les autres**.
+
 ---

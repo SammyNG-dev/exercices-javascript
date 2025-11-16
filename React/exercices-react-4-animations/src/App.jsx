@@ -17,7 +17,12 @@ function App() {
         <Link className="link" to="/exo3">
           Exercice 3 : Apparition en chaîne
         </Link>
-        <Link to="/exo4" className="link">Exercice 4 : Hover et transform avancé</Link>
+        <Link to="/exo4" className="link">
+          Exercice 4 : Hover et transform avancé
+        </Link>
+        <Link to="/exo5" className="link">
+          Exercice 5 : Animations en chaîne
+        </Link>
       </nav>
     </>
   );
