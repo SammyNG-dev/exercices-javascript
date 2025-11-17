@@ -23,6 +23,7 @@ function App() {
         <Link to="/exo5" className="link">
           Exercice 5 : Animations en chaîne
         </Link>
+        <Link to="/exo6" className="link">Exercice 6 : Animation hover avancée + transition chaining</Link>
       </nav>
     </>
   );

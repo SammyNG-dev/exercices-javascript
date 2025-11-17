@@ -45,6 +45,7 @@
   background-color: #f8f5f5;
   padding: 0.7em;
   border-radius: 8px;
+  border: 1px solid black;
 }
 
 nav {

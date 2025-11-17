@@ -8,6 +8,7 @@ import Exercice2 from "./pages/Exercice2.jsx";
 import Exercice3 from "./pages/Exercice3.jsx";
 import Exercice4 from "./pages/Exercice4.jsx";
 import Exercice5 from "./pages/Exercice5.jsx";
+import Exercice6 from "./pages/Exercice6.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/exo5",
     element: <Exercice5 />,
+  },
+  {
+    path: "/exo6",
+    element: <Exercice6 />,
   },
 ]);
 
