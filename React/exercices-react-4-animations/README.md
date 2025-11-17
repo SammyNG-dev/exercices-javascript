@@ -99,8 +99,6 @@ transition: transform 0.5s ease;
 
 * Tu peux tester différentes durées et fonctions d’animation (`ease-in`, `ease-out`, `linear`, etc.).
 
-Parfait ! On va passer à l’**Exercice 5** : faire apparaître plusieurs éléments **avec un petit délai entre chaque animation**, ce qui introduit le concept de `transition-delay`.
-
 ---
 
 ## ⚛️ Exercice 5 — Animations en chaîne
@@ -123,5 +121,69 @@ Apprendre à enchaîner des animations sur plusieurs éléments grâce à `trans
 
    * Ajoute une **classe `visible`** qui met **opacity à 1** et remet le **scale/translation à sa position finale**.
 4. Utilise **`nth-child()`** pour définir un **`transition-delay` différent pour chaque carré**, afin qu’ils apparaissent **les uns après les autres**.
+
+---
+
+### 🔥 Exercice 6 — Animation *hover* avancée + *transition chaining*
+
+**Objectif :**
+Créer une carte (un rectangle) qui réagit au *hover* avec **plusieurs transformations simultanées** :
+
+* légère rotation
+* zoom
+* ombre dynamique
+* effet de profondeur avec `transform-origin`
+* et une transition très fluide
+
+Tu vas apprendre :
+
+* `transform-origin`
+* comment enchaîner plusieurs transitions sans casser l’animation
+* comment faire une animation « 3D light » ultra simple
+
+---
+
+## 🎯 Consigne
+
+Tu vas créer un composant avec **une seule div** :
+
+### 👉 Au repos (pas de hover) :
+
+* la carte est plate (`transform: rotate(0) scale(1)`)
+* a une petite ombre
+* transition douce
+
+### 👉 Au survol (`:hover`) :
+
+* elle fait une légère rotation 3D
+* elle grossit légèrement
+* son ombre devient plus grande
+* et le point pivot (`transform-origin`) change → ça donne un effet *tilt*
+
+---
+
+## 🎨 Le CSS : À TOI de le coder
+
+Je ne te donne pas le code cette fois.
+
+👉 Je te donne seulement **les directives précises** :
+
+### 🟪 Classe `.exo6-card`
+
+* taille : environ 200px × 120px
+* couleur : ce que tu veux
+* une petite ombre douce (`box-shadow`)
+* transition sur : **transform** + **box-shadow**
+* `transform-origin`: **center**
+
+### 🟪 Classe `.exo6-card:hover`
+
+* `transform-origin`: **top left**
+* `transform`: inclure
+
+  * `scale(1.05)`
+  * `rotate3d` léger (1 ou 2 degrés max)
+* ombre plus grande, plus diffuse
+* la transition doit rendre le tout *fluide*
 
 ---
