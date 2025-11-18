@@ -9,7 +9,7 @@ function Exercice1() {
     <>
       <div className={active ? "box active" : "box"}></div>
       <nav>
-        <button type="button" onClick={() => setActive(!active)}>
+        <button className="action-button" type="button" onClick={() => setActive(!active)}>
           {active ? "Aller à gauche" : "Aller à droite"}
         </button>
         <Link className="link" to="/">

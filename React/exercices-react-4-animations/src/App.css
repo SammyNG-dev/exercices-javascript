@@ -53,3 +53,8 @@ nav {
   justify-content: center;
   gap: 15px;
 }
+
+.action-button {
+  box-shadow: 5px 5px 10px #646cff;
+  color: #646cff;
+}

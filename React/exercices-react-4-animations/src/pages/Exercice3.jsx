@@ -14,7 +14,7 @@ function Exercice3() {
         <div className={transition ? "exo3-box delay" : "exo3-box"}></div>
       </div>
       <nav>
-        <button type="button" onClick={() => setTransition(!transition)}>
+        <button className="action-button" type="button" onClick={() => setTransition(!transition)}>
           Delay
         </button>
         <Link className="link" to="/">Revenir en arrière</Link>

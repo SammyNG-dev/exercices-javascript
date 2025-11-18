@@ -187,3 +187,47 @@ Je ne te donne pas le code cette fois.
 * la transition doit rendre le tout *fluide*
 
 ---
+
+Parfait, on passe au **gros morceau : les vraies animations avec `@keyframes`** 🎉
+C’est l’exercice où tu vas comprendre **la différence entre `transition` et `animation`** en pratique.
+
+---
+
+Voici **l’énoncé clair et propre de l’exercice 7** 👇
+
+---
+
+# 🟦 **Exercice 7 — Démarrer et arrêter une animation CSS avec React**
+
+Tu vas créer un composant contenant un carré statique au départ.
+Le but est d’appliquer **une animation CSS (via @keyframes)** uniquement lorsque l’utilisateur clique sur un bouton.
+
+### 🎯 Objectifs
+
+1. Créer un carré (`div`) stylé en CSS.
+2. Écrire une animation CSS simple (scale + rotation).
+3. Faire en sorte que **l’animation ne tourne que lorsque l’utilisateur clique sur “Animer”**.
+4. Pouvoir **arrêter l’animation** en cliquant sur “Arrêter”.
+5. Utiliser un état React (`useState`) pour ajouter ou retirer une classe.
+
+### 📝 Contraintes
+
+* L’animation doit être déclarée avec `@keyframes` dans le fichier CSS.
+* Le carré **ne doit pas avoir l’animation par défaut**.
+* L’animation doit être appliquée **uniquement** quand une classe supplémentaire (ex. `.anime`) est présente.
+* Le bouton doit alterner entre :
+
+  * **Animer** (si l'animation est arrêtée)
+  * **Arrêter** (si l'animation est active)
+
+### 👉 Résultat attendu
+
+* Un carré bleu statique au début.
+* Quand tu cliques sur “Animer”, il se met à bouger (scale + rotation).
+* Quand tu cliques sur “Arrêter”, il redevient totalement immobile.
+
+---
+
+Si tu veux, je peux maintenant te générer **l’énoncé de l’exercice 8**, ou tu préfères un autre type d’exercice ?
+
+

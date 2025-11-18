@@ -1,0 +1,28 @@
+.exo7-box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin-bottom: 50px;
+}
+
+@keyframes box-change {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  25% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  50% {
+    transform: scale(1) rotate(0);
+  }
+  75% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.exo7-box.anime {
+  animation: box-change 2s infinite ease-in-out;
+}

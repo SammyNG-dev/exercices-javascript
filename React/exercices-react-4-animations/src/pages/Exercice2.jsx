@@ -8,7 +8,7 @@ function Exercice2() {
     <>
       <div className={visible ? "div-exo2 visible" : "div-exo2"}></div>
       <nav>
-        <button type="button" onClick={() => setVisible(!visible)}>
+        <button className="action-button" type="button" onClick={() => setVisible(!visible)}>
           {visible ? "Disparaîs !!" : "Apparaîs !!"}
         </button>
         <Link to="/" className="link">

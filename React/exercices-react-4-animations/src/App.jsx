@@ -26,6 +26,9 @@ function App() {
         <Link to="/exo6" className="link">
           Exercice 6 : Animation hover avancée + transition chaining
         </Link>
+        <Link to="/exo7" className="link">
+          Une animation continue (boucle infinie)
+        </Link>
       </nav>
     </>
   );

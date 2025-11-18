@@ -12,7 +12,7 @@ function Exercice5() {
       <div className={visible ? "div-exo5 visible" : "div-exo5"}></div>
       <div className={visible ? "div-exo5 visible" : "div-exo5"}></div>
       <nav>
-        <button type="button" onClick={() => setVisible(!visible)}>
+        <button className="action-button" type="button" onClick={() => setVisible(!visible)}>
           {visible ? "Disparaître" : "Apparaître"}
         </button>
         <Link to="/" className="link">
