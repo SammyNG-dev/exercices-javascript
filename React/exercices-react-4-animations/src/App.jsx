@@ -27,7 +27,10 @@ function App() {
           Exercice 6 : Animation hover avancée + transition chaining
         </Link>
         <Link to="/exo7" className="link">
-          Une animation continue (boucle infinie)
+          Exercice 7 : Une animation continue (boucle infinie)
+        </Link>
+        <Link to="/exo8" className="link">
+          Exercice 8 : Animation en cascade (hover sur parent)
         </Link>
       </nav>
     </>

@@ -1,0 +1,23 @@
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-bottom: 50px;
+  transition: transform 0.4s ease;
+}
+
+.exo8-container:hover .square {
+  transform: translateY(-20px) scale(1.1);
+}
+
+.square:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.square:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.square:nth-child(3) {
+  transition-delay: 0.4s;
+}

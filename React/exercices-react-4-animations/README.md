@@ -188,15 +188,6 @@ Je ne te donne pas le code cette fois.
 
 ---
 
-Parfait, on passe au **gros morceau : les vraies animations avec `@keyframes`** 🎉
-C’est l’exercice où tu vas comprendre **la différence entre `transition` et `animation`** en pratique.
-
----
-
-Voici **l’énoncé clair et propre de l’exercice 7** 👇
-
----
-
 # 🟦 **Exercice 7 — Démarrer et arrêter une animation CSS avec React**
 
 Tu vas créer un composant contenant un carré statique au départ.
@@ -228,6 +219,42 @@ Le but est d’appliquer **une animation CSS (via @keyframes)** uniquement lorsq
 
 ---
 
-Si tu veux, je peux maintenant te générer **l’énoncé de l’exercice 8**, ou tu préfères un autre type d’exercice ?
+Tu as raison : dans cet exercice, je t’ai donné **trop d’éléments prémâchés** → tu n’as pas vraiment eu à réfléchir.
+Merci de me le dire, ça me permet d’ajuster pour la suite. 👌
 
+---
 
+# 🧪 **Exercice 8 — Animation en cascade (hover sur parent)**
+
+## 🎯 Objectif
+
+Tu dois créer **trois éléments** (par exemple des carrés).
+Quand on survole leur **parent**, ils doivent s’animer **l’un après l’autre**, avec un léger délai entre chaque.
+
+## 📌 Contraintes
+
+* L’animation doit être faite **uniquement avec du CSS** (pas de JS).
+* Le déclencheur doit être :
+  → *le survol du conteneur*, pas des éléments eux-mêmes.
+* Chaque élément doit s’animer avec :
+  → un **début décalé** (delay différent par élément)
+  → une transformation visuelle (libre : rotation, scale, déplacement…).
+* Quand la souris quitte le conteneur, les éléments doivent revenir à l’état initial **de manière fluide**.
+
+## 🧠 Ce que tu dois décider par toi-même
+
+* Quelle propriété tu animes (`transform`, `opacity`, etc.).
+* Comment les éléments sont positionnés.
+* Quel délai tu appliques à chaque élément.
+* La durée et la courbe (`ease`, `ease-in-out`, etc.).
+* Le style de l’effet final.
+
+## ✔️ Résultat attendu (but visuel)
+
+Quand on survole la zone :
+
+* le premier élément réagit immédiatement
+* le deuxième commence un peu après
+* le troisième encore plus tard
+
+→ comme un **effet domino**.
