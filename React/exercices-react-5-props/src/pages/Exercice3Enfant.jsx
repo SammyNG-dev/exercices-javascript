@@ -1,5 +1,9 @@
-function Exercice3Enfant() {
-  return <h1>Coucou</h1>;
+function Exercice3Enfant({ callback }) {
+  return (
+    <button className="action-button" type="button" onClick={callback}>
+      Changer le message
+    </button>
+  );
 }
 
 export default Exercice3Enfant;
