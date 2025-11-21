@@ -3,11 +3,12 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-import Exercice2 from "./pages/Exercice2.jsx";
-import Exercice3 from "./pages/Exercice3.jsx";
-import Exercice4 from "./pages/Exercice4.jsx";
-import Exercice5 from "./pages/Exercice5.jsx";
 import Exercice1Parent from "./pages/Exercice1Parent.jsx";
+import Exercice2Parent from "./pages/Exercice2Parent.jsx";
+import Exercice3Parent from "./pages/Exercice3Parent.jsx";
+import Exercice4Parent from "./pages/Exercice4Parent.jsx";
+import Exercice5Parent from "./pages/Exercice5Parent.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -20,19 +21,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/exo2",
-    element: <Exercice2 />,
+    element: <Exercice2Parent />,
   },
   {
     path: "/exo3",
-    element: <Exercice3 />,
+    element: <Exercice3Parent />,
   },
   {
     path: "/exo4",
-    element: <Exercice4 />,
+    element: <Exercice4Parent />,
   },
   {
     path: "/exo5",
-    element: <Exercice5 />,
+    element: <Exercice5Parent />,
   },
 ]);
 

@@ -36,3 +36,25 @@ function Exercice1Enfant({ nom, age, ville }) { ... }
 ```
 
 ---
+
+## ⚛️ Exercice 2 — Props dynamiques avec une liste
+
+### 🎯 Objectif :
+
+Apprendre à passer des **données dynamiques** d’un composant parent à un composant enfant et les afficher.
+
+---
+
+### 🧩 Consignes :
+
+1. Crée deux composants : un **parent** et un **enfant**.
+2. Dans le **parent**, définis un **tableau d’objets** représentant plusieurs utilisateurs (nom, âge…).
+3. Passe ce tableau à l’enfant via les **props**.
+4. Dans l’enfant, parcours ce tableau et affiche chaque utilisateur dans un élément `<p>` ou `<li>`.
+5. Assure-toi que chaque élément a une **clé unique**.
+
+---
+
+💡 Petit défi : ne pas afficher le tableau directement, mais **générer les éléments dynamiquement** en utilisant `map()`.
+
+---

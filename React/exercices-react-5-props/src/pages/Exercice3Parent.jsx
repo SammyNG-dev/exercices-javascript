@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import Exercice3Enfant from "./Exercice3Enfant";
 
 function Exercice3Parent() {
   return (
     <>
-      <h1>Coucou</h1>
+      <Exercice3Enfant />
       <Link to="/" className="link">
         Revenir en arrière
       </Link>
