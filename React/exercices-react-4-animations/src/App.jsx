@@ -32,6 +32,7 @@ function App() {
         <Link to="/exo8" className="link">
           Exercice 8 : Animation en cascade (hover sur parent)
         </Link>
+        <Link to="/exo9" className="link">Exercice 9 : </Link>
       </nav>
     </>
   );

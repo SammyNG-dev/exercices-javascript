@@ -258,3 +258,35 @@ Quand on survole la zone :
 * le troisième encore plus tard
 
 → comme un **effet domino**.
+
+---
+
+## ⚛️ Exercice 9 — Apparition en chaîne avec transition-delay
+
+### 🎯 Objectif :
+
+Apprendre à faire apparaître et disparaître des éléments **les uns après les autres** avec un effet d’animation fluide en utilisant `transition` et `transition-delay` en CSS, tout en contrôlant l’état avec React.
+
+---
+
+### 🧠 Consignes :
+
+1. Crée un composant React nommé **`Exercice9`**.
+2. Ajoute **3 cercles** `<div>` que tu pourras faire apparaître ou disparaître.
+3. Utilise un **state `visible`** pour savoir si les cercles sont visibles ou cachés.
+4. Ajoute un **bouton** pour basculer entre les deux états :
+
+   * `"Apparaître"` → rend les cercles visibles.
+   * `"Disparaître"` → cache les cercles.
+5. En CSS :
+
+   * Définis l’état **caché** (`opacity: 0`, `scale(0.5)` et translation sur X).
+   * Définis l’état **visible** (`opacity: 1`, `scale(1)` et translation X = 0).
+   * Ajoute des **delays différents** pour chaque cercle afin qu’ils apparaissent **l’un après l’autre** et disparaissent dans **l’ordre inverse**.
+
+---
+
+### 💡 Indice :
+
+* Tu peux utiliser `nth-child()` pour gérer les `transition-delay` pour chaque cercle.
+* Les classes CSS pourraient être : `.circle` pour l’état de base, `.visible` pour l’état affiché, et éventuellement `.reverse` pour l’état caché.
