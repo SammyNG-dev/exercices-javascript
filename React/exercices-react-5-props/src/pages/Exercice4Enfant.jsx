@@ -1,11 +1,8 @@
-function Exercice4Enfant() {
+function Exercice4Enfant({ product, cbk }) {
   return (
-    <>
-      <h1>Coucou</h1>
-      <Link to="/" className="link">
-        Revenir en arrière
-      </Link>
-    </>
+    <button className="action-button" type="button" onClick={cbk}>
+      {product}
+    </button>
   );
 }
 

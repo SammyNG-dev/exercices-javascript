@@ -97,3 +97,40 @@ Comprendre comment l’enfant peut **déclencher un changement** dans le parent 
   **"Message reçu depuis l’enfant"**
 
 ---
+
+## 🧪 **Exercice 4 — Interaction Parent/Enfant + Mise à jour d’un état complexe**
+
+Tu disposes d’un composant **Parent** qui contient une liste de produits :
+
+```js
+[
+  { id: 1, nom: "Chaise", prix: 49 },
+  { id: 2, nom: "Table", prix: 129 },
+  { id: 3, nom: "Lampe", prix: 35 },
+  { id: 4, nom: "Canapé", prix: 499 },
+  { id: 5, nom: "Tapis", prix: 89 },
+]
+```
+
+### 🎯 **Objectif**
+
+1. Le Parent doit afficher chaque produit avec son prix.
+2. Pour chaque produit, le Parent rend un composant **Enfant**.
+3. Le composant Enfant contient un bouton **"Augmenter le prix"**.
+4. Quand on clique sur ce bouton, le Parent doit augmenter de **10 €** le prix du produit correspondant.
+5. L'état (`useState`) doit rester **immuable** :
+   👉 tu dois créer une **nouvelle liste** (pas modifier celle existante).
+
+### ✏️ **Contraintes**
+
+* L'enfant ne connaît pas la liste complète, seulement le nom du produit et une callback.
+* Le Parent doit mettre à jour `productsList` en remplaçant uniquement l’élément correspondant.
+* L'enfant doit rester totalement "bête" : il se contente d'appeler la callback quand on clique.
+
+### 🧩 **Compétences travaillées**
+
+* Mise à jour immuable d’un array d’objets dans React.
+* Passage de fonction Parent → Enfant.
+* Manipulation de `map()` pour produire un nouvel état.
+
+---
