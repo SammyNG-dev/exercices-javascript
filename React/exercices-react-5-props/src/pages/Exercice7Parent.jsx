@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Exercice7Enfant from "./Exercice7Enfant";
 
 function Exercice7Parent() {
@@ -28,6 +29,7 @@ function Exercice7Parent() {
         );
       })}
       <h1>{`Tu as choisi : ${nomFruit}`}</h1>
+      <Link to="/" className="link">Revenir en arrière</Link>
     </>
   );
 }

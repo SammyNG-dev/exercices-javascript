@@ -183,7 +183,7 @@ Quand l’utilisateur tape dans l’input du parent, le texte apparaît en direc
 
 ---
 
-## 📝 **Exercice 7 – Choisir un élément via un composant enfant**
+# 📝 **Exercice 7 – Choisir un élément via un composant enfant**
 
 Tu vas créer un composant parent qui affiche une liste de fruits, et un composant enfant qui permet de sélectionner l’un de ces fruits.
 
@@ -207,3 +207,57 @@ Tu vas créer un composant parent qui affiche une liste de fruits, et un composa
    **"Tu as choisi : {nomFruit}"**
 
 ---
+
+Voici **l’énoncé propre et clair de l’exercice 8**, au même format que les précédents 👇
+
+---
+
+# ✅ **Exercice 8 — Mettre à jour un objet passé dans le state**
+
+### **Objectif :**
+
+Apprendre à mettre à jour correctement une propriété d’un objet stocké dans un state React, tout en respectant l’immuabilité.
+
+---
+
+## **Consigne**
+
+Tu disposes, dans le composant **Parent**, d’un objet `profil` contenant :
+
+* un `nom`,
+* un `age`,
+* une `ville`.
+
+Cet objet est stocké dans un state React.
+
+Tu dois maintenant :
+
+### **1. Afficher dans le parent :**
+
+* le nom
+* l’âge
+* la ville actuelle du profil
+
+### **2. Afficher dans le parent une liste de boutons**, chacun contenant le nom d’une ville (ex : "Paris", "Marseille", "Bordeaux", etc.).
+
+### **3. Quand on clique sur un de ces boutons (enfant) :**
+
+* l’enfant doit appeler une fonction du parent via une prop callback
+* cette fonction doit **mettre à jour seulement la propriété `ville`** dans l’objet du state
+* sans modifier les autres propriétés (nom, âge)
+* en respectant l’immuabilité (`{ ...prev, ville: nouvelleVille }`)
+
+### **4. Le composant enfant doit être un simple bouton**, qui reçoit :
+
+* `children` = nom de la ville
+* `cbk` = fonction à exécuter lors du clic
+
+---
+
+## **Résultat attendu**
+
+Lorsque tu cliques sur une ville, l’affichage du profil doit se mettre à jour en temps réel, en changeant uniquement la ville.
+
+---
+
+Si tu veux, je peux te proposer l’exercice 9 maintenant.

@@ -32,7 +32,7 @@ function App() {
           Exercice 7 : Choisir un élément via un composant enfant
         </Link>
         <Link to="/exo8" className="link">
-          Exercice 8 :
+          Exercice 8 : Mettre à jour un objet passé dans le state
         </Link>
       </nav>
     </>
