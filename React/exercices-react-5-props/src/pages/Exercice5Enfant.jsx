@@ -1,5 +1,9 @@
-function Exercice5Enfant() {
-  return <h1>Coucou</h1>;
+function Exercice5Enfant({ cbk, children }) {
+  return (
+    <button type="button" className="action-button" onClick={cbk}>
+      {children}
+    </button>
+  );
 }
 
 export default Exercice5Enfant;

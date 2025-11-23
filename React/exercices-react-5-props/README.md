@@ -37,7 +37,7 @@ function Exercice1Enfant({ nom, age, ville }) { ... }
 
 ---
 
-## ⚛️ Exercice 2 — Props dynamiques avec une liste
+# ⚛️ Exercice 2 — Props dynamiques avec une liste
 
 ### 🎯 Objectif :
 
@@ -70,7 +70,7 @@ Comprendre comment l’enfant peut **déclencher un changement** dans le parent 
 
 ---
 
-## ✅ **Consigne :**
+### ✅ **Consigne :**
 
 1. Dans le **parent**, crée un state `message` avec une valeur par défaut (par ex. `"Aucun message"`).
 
@@ -87,7 +87,7 @@ Comprendre comment l’enfant peut **déclencher un changement** dans le parent 
 
 ---
 
-## 🎉 Résultat attendu :
+### 🎉 Résultat attendu :
 
 * Au départ, le parent affiche :
   **"Aucun message"**
@@ -98,7 +98,7 @@ Comprendre comment l’enfant peut **déclencher un changement** dans le parent 
 
 ---
 
-## 🧪 **Exercice 4 — Interaction Parent/Enfant + Mise à jour d’un état complexe**
+# 🧪 **Exercice 4 — Interaction Parent/Enfant + Mise à jour d’un état complexe**
 
 Tu disposes d’un composant **Parent** qui contient une liste de produits :
 
@@ -134,3 +134,27 @@ Tu disposes d’un composant **Parent** qui contient une liste de produits :
 * Manipulation de `map()` pour produire un nouvel état.
 
 ---
+
+# **Exercice 5 — Boutons enfants contrôlant un state parent**
+
+Crée un composant parent qui contient un compteur (`count`) et trois fonctions :
+
+* une fonction pour **incrémenter** le compteur,
+* une fonction pour **décrémenter** le compteur,
+* une fonction pour **réinitialiser** le compteur à 0.
+
+Le composant parent doit afficher la valeur actuelle du compteur, puis trois **composants enfants**.
+Chaque enfant doit être un **bouton réutilisable** qui reçoit :
+
+* un **callback** à exécuter (`cbk`)
+* du **texte** à afficher (via `children`)
+
+L’enfant doit simplement rendre un bouton et appeler la fonction reçue lorsqu’on clique dessus.
+
+Le résultat attendu :
+
+* un bouton `+1` qui augmente le compteur
+* un bouton `-1` qui le diminue
+* un bouton `Reset` qui le remet à zéro
+
+Tu dois donc utiliser les props pour permettre aux enfants d’agir sur le state du parent.
