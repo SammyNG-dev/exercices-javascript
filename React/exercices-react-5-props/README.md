@@ -158,3 +158,27 @@ Le résultat attendu :
 * un bouton `Reset` qui le remet à zéro
 
 Tu dois donc utiliser les props pour permettre aux enfants d’agir sur le state du parent.
+
+Parfait, ton **exercice 6** est nickel 👌
+Je te réécris l’énoncé proprement pour que ce soit bien carré, comme pour les précédents.
+
+---
+
+# 📝 **Exercice 6 – Faire remonter une valeur dans un prop (one-way binding React)**
+
+## 🎯 **Objectif**
+
+Créer un composant parent avec un champ texte, et afficher dynamiquement son contenu dans un composant enfant *via un prop*.
+
+## 📌 **Consigne**
+
+1. Dans le composant **parent**, crée un `input`.
+2. À chaque frappe, stocke la valeur de l’input dans un state (`useState`).
+3. Passe cette valeur au composant enfant via un prop.
+4. Le composant **enfant** doit simplement afficher cette valeur dans un `<h1>`.
+
+## 🧪 **Résultat attendu**
+
+Quand l’utilisateur tape dans l’input du parent, le texte apparaît en direct dans l’enfant.
+
+---

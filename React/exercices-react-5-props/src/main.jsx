@@ -8,7 +8,9 @@ import Exercice2Parent from "./pages/Exercice2Parent.jsx";
 import Exercice3Parent from "./pages/Exercice3Parent.jsx";
 import Exercice4Parent from "./pages/Exercice4Parent.jsx";
 import Exercice5Parent from "./pages/Exercice5Parent.jsx";
-
+import Exercice6Parent from "./pages/Exercice6Parent.jsx";
+import Exercice7Parent from "./pages/Exercice7Parent.jsx";
+import Exercice8Parent from "./pages/Exercice8Parent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,18 @@ const router = createBrowserRouter([
   {
     path: "/exo5",
     element: <Exercice5Parent />,
+  },
+  {
+    path: "/exo6",
+    element: <Exercice6Parent />,
+  },
+  {
+    path: "/exo7",
+    element: <Exercice7Parent />,
+  },
+  {
+    path: "/exo8",
+    element: <Exercice8Parent />,
   },
 ]);
 

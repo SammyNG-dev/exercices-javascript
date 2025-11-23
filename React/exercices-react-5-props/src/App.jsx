@@ -19,10 +19,20 @@ function App() {
           Exercice 3 : Faire remonter une action (callback props)
         </Link>
         <Link to="/exo4" className="link">
-          Exercice 4 :{" "}
+          Exercice 4 : Interaction Parent/Enfant + Mise à jour d’un état
+          complexe
         </Link>
         <Link to="/exo5" className="link">
-          Exercice 5 :{" "}
+          Exercice 5 : Boutons enfants contrôlant un state parent
+        </Link>
+        <Link to="/exo6" className="link">
+          Exercice 6 : Faire remonter une valeur dans un prop (one-way binding React)
+        </Link>
+        <Link to="/exo7" className="link">
+          Exercice 7 :
+        </Link>
+        <Link to="/exo8" className="link">
+          Exercice 8 :
         </Link>
       </nav>
     </>
