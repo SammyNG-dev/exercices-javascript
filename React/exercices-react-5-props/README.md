@@ -182,3 +182,28 @@ Créer un composant parent avec un champ texte, et afficher dynamiquement son co
 Quand l’utilisateur tape dans l’input du parent, le texte apparaît en direct dans l’enfant.
 
 ---
+
+## 📝 **Exercice 7 – Choisir un élément via un composant enfant**
+
+Tu vas créer un composant parent qui affiche une liste de fruits, et un composant enfant qui permet de sélectionner l’un de ces fruits.
+
+### 🎯 **Objectif**
+
+* Le **parent** possède une liste de fruits et un état qui contient le fruit sélectionné.
+* Chaque fruit est affiché avec un bouton.
+* Quand on clique sur un bouton (dans l’enfant), le parent met à jour le fruit sélectionné.
+* Le fruit choisi doit s’afficher en bas de la page.
+
+### 🛠️ **Contraintes**
+
+1. Le **parent** transmet à l’enfant :
+
+   * Le texte du bouton (le nom du fruit)
+   * Une **fonction callback** qui met à jour l’état `nomFruit`
+2. L’**enfant** ne fait qu’une seule chose :
+
+   * Appeler la fonction envoyée par le parent lorsqu’on clique sur le bouton
+3. Le parent affiche :
+   **"Tu as choisi : {nomFruit}"**
+
+---

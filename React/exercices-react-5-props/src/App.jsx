@@ -29,7 +29,7 @@ function App() {
           Exercice 6 : Faire remonter une valeur dans un prop (one-way binding React)
         </Link>
         <Link to="/exo7" className="link">
-          Exercice 7 :
+          Exercice 7 : Choisir un élément via un composant enfant
         </Link>
         <Link to="/exo8" className="link">
           Exercice 8 :
