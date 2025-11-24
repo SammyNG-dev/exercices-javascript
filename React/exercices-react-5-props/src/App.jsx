@@ -41,6 +41,9 @@ function App() {
         <Link to="/exo10" className="link">
           Exercice 10 : Modifier un champ via un composant enfant
         </Link>
+        <Link to="/exo11" className="link">
+          Exercice 11 : Mettre à jour un objet dans le parent depuis l’enfant
+        </Link>
       </nav>
     </>
   );

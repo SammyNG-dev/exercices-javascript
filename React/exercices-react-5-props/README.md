@@ -302,3 +302,50 @@ Le composant enfant doit afficher un champ `<input>` permettant de modifier le n
 * Quand l’utilisateur tape dans l’input, le parent doit mettre à jour le nom, et l’enfant doit afficher la nouvelle valeur.
 
 ---
+
+Voici **l’énoncé propre et clair** de l’exercice 11 :
+
+---
+
+# 🧪 **Exercice 11 – Mettre à jour un objet dans le parent depuis l’enfant**
+
+Tu vas créer un formulaire dans le composant **enfant** qui permet de modifier plusieurs champs d’un objet stocké dans le composant **parent**.
+
+### 🎯 **Objectif**
+
+Mettre à jour un objet (`profil`) situé dans le parent **en utilisant une seule fonction générique** qui met à jour n’importe quel champ.
+
+### 📝 **Consignes**
+
+1. Dans le parent :
+
+   * Crée un state `profil` contenant un objet :
+
+     ```js
+     { nom: "", age: "", ville: "" }
+     ```
+   * Crée une fonction `mettreAjourProfil(champ, valeur)` qui met à jour seulement le champ concerné, par exemple :
+
+     ```js
+     mettreAjourProfil("nom", "Arthur");
+     ```
+
+     (Utilise les **clés dynamiques** : `[champ]`.)
+
+2. Passe cette fonction ainsi que le `profil` au composant enfant via les props.
+
+3. Dans l’enfant :
+
+   * Crée trois inputs : Nom, Age, Ville.
+   * Quand l’utilisateur tape dans un input, appelle la callback du parent en lui envoyant :
+
+     * le nom du champ (ex : `"nom"`)
+     * la valeur saisie
+
+4. Affiche dans l’enfant les valeurs de `profil` mises à jour.
+
+### ✔️ Résultat attendu
+
+Quand tu tapes dans un input (dans l’enfant), l’objet `profil` se met à jour dans le parent, et l’enfant affiche les valeurs modifiées en temps réel.
+
+---

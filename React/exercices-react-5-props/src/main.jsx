@@ -13,6 +13,7 @@ import Exercice7Parent from "./pages/Exercice7Parent.jsx";
 import Exercice8Parent from "./pages/Exercice8Parent.jsx";
 import Exercice9Parent from "./pages/Exercice9Parent.jsx";
 import Exercice10Parent from "./pages/Exercice10Parent.jsx";
+import Exercice11Parent from "./pages/Exercice11Parent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
     path: "/exo10",
     element: <Exercice10Parent />,
   },
+  {
+    path: "/exo11",
+    element: <Exercice11Parent />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
