@@ -26,7 +26,8 @@ function App() {
           Exercice 5 : Boutons enfants contrôlant un state parent
         </Link>
         <Link to="/exo6" className="link">
-          Exercice 6 : Faire remonter une valeur dans un prop (one-way binding React)
+          Exercice 6 : Faire remonter une valeur dans un prop (one-way binding
+          React)
         </Link>
         <Link to="/exo7" className="link">
           Exercice 7 : Choisir un élément via un composant enfant
@@ -36,6 +37,9 @@ function App() {
         </Link>
         <Link to="/exo9" className="link">
           Exercice 9 : Formulaire contrôlé et affichage des données via props
+        </Link>
+        <Link to="/exo10" className="link">
+          Exercice 10 : Modifier un champ via un composant enfant
         </Link>
       </nav>
     </>

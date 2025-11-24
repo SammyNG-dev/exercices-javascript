@@ -286,3 +286,19 @@ Ville : Paris
 Assure-toi que les modifications dans les inputs mettent à jour uniquement la propriété correspondante dans le state du parent, sans écraser les autres.
 
 ---
+
+# **Exercice 10 — Modifier un champ via un composant enfant**
+
+Crée un composant parent contenant un objet `profil` dans son state (avec au minimum un `nom`).
+Le composant enfant doit afficher un champ `<input>` permettant de modifier le nom.
+
+### **Contraintes :**
+
+* Le state `profil` doit être **géré uniquement dans le parent**.
+* L’enfant doit recevoir :
+
+  * l’objet `profil`,
+  * une fonction callback lui permettant d’envoyer la nouvelle valeur au parent.
+* Quand l’utilisateur tape dans l’input, le parent doit mettre à jour le nom, et l’enfant doit afficher la nouvelle valeur.
+
+---
