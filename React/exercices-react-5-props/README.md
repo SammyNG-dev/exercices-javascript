@@ -159,9 +159,6 @@ Le résultat attendu :
 
 Tu dois donc utiliser les props pour permettre aux enfants d’agir sur le state du parent.
 
-Parfait, ton **exercice 6** est nickel 👌
-Je te réécris l’énoncé proprement pour que ce soit bien carré, comme pour les précédents.
-
 ---
 
 # 📝 **Exercice 6 – Faire remonter une valeur dans un prop (one-way binding React)**
@@ -205,10 +202,6 @@ Tu vas créer un composant parent qui affiche une liste de fruits, et un composa
    * Appeler la fonction envoyée par le parent lorsqu’on clique sur le bouton
 3. Le parent affiche :
    **"Tu as choisi : {nomFruit}"**
-
----
-
-Voici **l’énoncé propre et clair de l’exercice 8**, au même format que les précédents 👇
 
 ---
 
@@ -260,4 +253,36 @@ Lorsque tu cliques sur une ville, l’affichage du profil doit se mettre à jour
 
 ---
 
-Si tu veux, je peux te proposer l’exercice 9 maintenant.
+# Exercice 9 – Formulaire contrôlé et affichage des données via props
+
+**Objectif :**
+Créer un formulaire dans un composant parent qui permet de saisir le nom, l’âge et la ville d’un profil, et transmettre ces informations à un composant enfant pour les afficher.
+
+**Instructions :**
+
+1. Dans le **composant parent** :
+
+   * Définis un state `profil` avec les propriétés `nom`, `age` et `ville`, initialisées à des chaînes vides.
+   * Crée trois inputs contrôlés pour permettre de modifier chacune des propriétés du profil.
+   * Utilise `useId` pour associer correctement chaque `label` à son input (`htmlFor` / `id`).
+   * Passe l’objet `profil` au composant enfant via les props.
+
+2. Dans le **composant enfant** :
+
+   * Reçois l’objet `profil` via les props.
+   * Affiche les informations dans trois `<h1>` distincts : Nom, Âge et Ville.
+
+**Exemple attendu :**
+
+* Si l’utilisateur saisit `"Alice"`, `"25"`, `"Paris"` dans le parent, l’enfant affiche :
+
+```
+Nom : Alice
+Age : 25
+Ville : Paris
+```
+
+**Conseil :**
+Assure-toi que les modifications dans les inputs mettent à jour uniquement la propriété correspondante dans le state du parent, sans écraser les autres.
+
+---

@@ -34,6 +34,9 @@ function App() {
         <Link to="/exo8" className="link">
           Exercice 8 : Mettre à jour un objet passé dans le state
         </Link>
+        <Link to="/exo9" className="link">
+          Exercice 9 : Formulaire contrôlé et affichage des données via props
+        </Link>
       </nav>
     </>
   );
