@@ -29,6 +29,8 @@ function App() {
           Exercice 6 : Faire remonter une valeur dans un prop (one-way binding
           React)
         </Link>
+      </nav>
+      <nav>
         <Link to="/exo7" className="link">
           Exercice 7 : Choisir un élément via un composant enfant
         </Link>
@@ -43,6 +45,9 @@ function App() {
         </Link>
         <Link to="/exo11" className="link">
           Exercice 11 : Mettre à jour un objet dans le parent depuis l’enfant
+        </Link>
+        <Link to="/exo12" className="link">
+          Exercice 12 : Filtrer une liste depuis un composant enfant
         </Link>
       </nav>
     </>

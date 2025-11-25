@@ -349,3 +349,19 @@ Mettre à jour un objet (`profil`) situé dans le parent **en utilisant une seul
 Quand tu tapes dans un input (dans l’enfant), l’objet `profil` se met à jour dans le parent, et l’enfant affiche les valeurs modifiées en temps réel.
 
 ---
+
+# **Exercice 12 — Filtrer une liste depuis un composant enfant**
+
+Tu disposes d’un tableau de pays dans le composant parent.
+Ton objectif est d’afficher uniquement les pays dont le nom correspond au texte tapé par l’utilisateur.
+
+### **Objectifs :**
+
+1. Dans le **parent**, stocker dans un `useState` une chaîne de caractères représentant le filtre.
+2. Toujours dans le parent, filtrer la liste des pays en fonction de ce texte.
+3. Dans l’**enfant**, créer un `<input>`.
+4. À chaque modification de l’input, envoyer la valeur tapée au parent via une fonction passée en props.
+5. Le parent met alors à jour son state, ce qui met automatiquement à jour la liste affichée.
+
+---
+
