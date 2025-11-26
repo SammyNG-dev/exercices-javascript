@@ -1,4 +1,4 @@
-# 📝 **Exercice – Afficher un message global avec la Context API et React Router**
+# 📝 **Exercice 1 – Afficher un message global avec la Context API et React Router**
 
 ## 🎯 Objectif
 
@@ -40,3 +40,32 @@ Créer un **Context React** contenant un message global, l’injecter via un **P
 
 ---
 
+# 🧩 Exercice 2 — Modifier un état global
+
+## 🎯 Objectif
+
+Créer une page qui affiche un message provenant d’un Context global préexistant, et une seconde page permettant de modifier ce message, avec une redirection automatique après la mise à jour.
+
+## 📂 Contexte du projet
+
+Tu travailles dans l’arborescence suivante :
+
+```
+src/
+ ├── context/MessageContext.jsx
+ ├── pages/
+ │    ├── Exercice2.jsx
+ │    ├── ChangerMessage.jsx
+ │    └── (...)
+```
+
+Le Context contient déjà une valeur `message` et une fonction `setMessage`.
+
+---
+
+## 📝 Consigne
+
+1. Dans la page **Exercice2.jsx**, affiche le message provenant du Context et ajoute une navigation permettant d’aller vers la page **ChangerMessage.jsx**.
+2. Dans la page **ChangerMessage.jsx**, mets en place un formulaire minimal permettant de modifier la valeur du message dans le Context, puis redirige l’utilisateur vers **Exercice2.jsx** une fois la modification effectuée.
+
+---

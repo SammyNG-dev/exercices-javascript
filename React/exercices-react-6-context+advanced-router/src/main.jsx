@@ -5,7 +5,8 @@ import "./index.css";
 import App from "./App.jsx";
 import Exercice1 from "./pages/Exercice1.jsx";
 import About from "./pages/About.jsx";
-import Exercice2 from "./pages/Exercice1.jsx";
+import Exercice2 from "./pages/Exercice2.jsx";
+import ChangerMessage from "./pages/ChangerMessage.jsx";
 import Exercice3 from "./pages/Exercice3.jsx";
 import Exercice4 from "./pages/Exercice4.jsx";
 import Exercice5 from "./pages/Exercice5.jsx";
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-	path: "/exo2",
-	element: <Exercice2 />
+    path: "/exo2",
+    element: <Exercice2 />,
+  },
+  {
+    path: "/change-message",
+    element: <ChangerMessage />,
   },
   {
     path: "/exo3",

@@ -1,10 +1,11 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const MessageContext = createContext(null);
 
 export const MessageContextProvider = ({ children }) => {
+  const [message, setMessage] = useState("Bonjour depuis le context");
   return (
-    <MessageContext.Provider value={{ message: "Bonjour depuis le context" }}>
+    <MessageContext.Provider value={{ message, setMessage }}>
       {children}
     </MessageContext.Provider>
   );

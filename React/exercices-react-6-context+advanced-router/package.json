@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "newexo": "node ./bin/new-exercise.js"
   },
   "dependencies": {
     "react": "^19.2.0",
