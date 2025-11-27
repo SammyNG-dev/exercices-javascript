@@ -69,3 +69,84 @@ Le Context contient déjà une valeur `message` et une fonction `setMessage`.
 2. Dans la page **ChangerMessage.jsx**, mets en place un formulaire minimal permettant de modifier la valeur du message dans le Context, puis redirige l’utilisateur vers **Exercice2.jsx** une fois la modification effectuée.
 
 ---
+
+# ✅ Exercice 3 (Context + Router Avancé)**
+
+### 🎯 Objectif
+
+Créer une page permettant de **modifier dynamiquement un champ du context** (le `username`) en utilisant :
+
+* un **context React** déjà existant
+* un **formulaire contrôlé**
+* la navigation avec **React Router**
+
+---
+
+# 📌 **Consignes**
+
+### 1) Ajoute une nouvelle page
+
+Créer un composant accessible via une route dédiée, par exemple :
+
+```
+/change-username
+```
+
+Ce composant doit permettre à l’utilisateur de modifier le `username` stocké dans le context.
+
+---
+
+### 2) Formulaire contrôlé
+
+Dans cette nouvelle page, tu dois :
+
+* afficher un champ `<input>` contrôlé par un `useState`
+* permettre à l’utilisateur de saisir une nouvelle valeur de username
+
+---
+
+### 3) Mise à jour du Context
+
+À la validation (bouton), tu dois :
+
+* appeler `setUsername()` provenant du context
+* transmettre la nouvelle valeur saisie
+
+---
+
+### 4) Navigation automatique
+
+Après avoir mis à jour le username :
+
+* rediriger automatiquement l’utilisateur vers la page affichant le message et le username (exercice 3)
+* utiliser `useNavigate()` pour effectuer cette redirection
+
+---
+
+### 5) Liens de navigation
+
+La page doit aussi contenir un lien `Revenir en arrière` qui renvoie vers la page d’exercice 3.
+
+---
+
+### 6) Page affichant le résultat
+
+Dans ta page `Exercice3`, afficher :
+
+* le `message`
+* le `username` mis à jour
+
+Et un lien permettant d’aller modifier ce username.
+
+---
+
+# 🎯 Résultat attendu
+
+Tu obtiens :
+
+* une page `Exercice3` qui affiche le username du context
+* une page `/change-username` qui permet de le modifier
+* une redirection automatique vers l’exercice 3 après modification
+* le tout en utilisant **context + router + formulaire contrôlé**
+
+---

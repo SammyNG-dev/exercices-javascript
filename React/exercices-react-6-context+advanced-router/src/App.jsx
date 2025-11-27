@@ -11,7 +11,7 @@ function App() {
           Router
         </Link>
         <Link to="/exo2" className="link">
-          Exercice 2 :{" "}
+          Exercice 2 : Modifier un état global
         </Link>
         <Link to="/exo3" className="link">
           Exercice 3 :{" "}

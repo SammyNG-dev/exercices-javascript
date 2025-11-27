@@ -11,6 +11,7 @@ import Exercice3 from "./pages/Exercice3.jsx";
 import Exercice4 from "./pages/Exercice4.jsx";
 import Exercice5 from "./pages/Exercice5.jsx";
 import { MessageContextProvider } from "./context/MessageContext.jsx";
+import ChangeUsername from "./pages/ChangeUsername.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/exo3",
     element: <Exercice3 />,
+  },
+  {
+    path: "/change-username",
+    element: <ChangeUsername />,
   },
   {
     path: "/exo4",
