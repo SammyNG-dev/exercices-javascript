@@ -10,10 +10,13 @@ import ChangerMessage from "./pages/ChangerMessage.jsx";
 import Exercice3 from "./pages/Exercice3.jsx";
 import Exercice4 from "./pages/Exercice4.jsx";
 import Exercice5 from "./pages/Exercice5.jsx";
+import Exercice6 from "./pages/Exercice6.jsx";
 import { MessageContextProvider } from "./context/MessageContext.jsx";
 import ChangeUsername from "./pages/ChangeUsername.jsx";
 import AddNotification from "./pages/AddNotification.jsx";
 import { CounterContextProvider } from "./context/CounterContext.jsx";
+import { HistoryContextProvider } from "./context/HistoryContext.jsx";
+import AddHistory from "./pages/AddHistory.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,14 +59,24 @@ const router = createBrowserRouter([
     path: "/exo5",
     element: <Exercice5 />,
   },
+  {
+    path: "/exo6",
+    element: <Exercice6 />,
+  },
+  {
+    path: "add-history",
+    element: <AddHistory />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <CounterContextProvider>
-    <MessageContextProvider>
-      <StrictMode>
-        <RouterProvider router={router} />
-      </StrictMode>
-    </MessageContextProvider>
-  </CounterContextProvider>,
+  <HistoryContextProvider>
+    <CounterContextProvider>
+      <MessageContextProvider>
+        <StrictMode>
+          <RouterProvider router={router} />
+        </StrictMode>
+      </MessageContextProvider>
+    </CounterContextProvider>
+  </HistoryContextProvider>,
 );

@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Coucou</h1>
+      <h1>Ce mini-projet a pour but de travailler l'API Context de React + routing avancé</h1>
       <nav>
         <Link to="/exo1" className="link">
           Exercice 1 : Afficher un message global avec la Context API et React
@@ -21,6 +21,9 @@ function App() {
         </Link>
         <Link to="/exo5" className="link">
           Exercice 5 : Compteur avec Context
+        </Link>
+        <Link to="/exo6" className="link">
+          Exercice 6 : Créer un système d’historique avec un Context dédié
         </Link>
       </nav>
     </>

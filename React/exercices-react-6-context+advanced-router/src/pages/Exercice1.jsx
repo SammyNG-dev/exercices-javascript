@@ -4,8 +4,6 @@ import { useMessageContext } from "../context/MessageContext";
 function Exercice1() {
   const { message } = useMessageContext();
 
-  console.log(message);
-
   return (
     <>
       <h1>{message}</h1>

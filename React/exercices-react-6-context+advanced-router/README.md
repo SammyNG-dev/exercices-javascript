@@ -230,5 +230,39 @@ Créer un mini système de notifications globales utilisant le **Context** et la
 
 ---
 
-Si tu veux, je peux enchaîner avec **l’énoncé de l’exo 6** pour le champ texte lié au contexte. Veux‑tu que je le fasse ?
+## 📝 **Exercice 6 — Créer un système d’historique avec un Context dédié**
 
+Tu vas créer un **HistoryContext** permettant d’enregistrer, d’afficher et de gérer un historique d’actions.
+L’objectif est de pratiquer :
+
+* la création d’un Context indépendant,
+* la gestion d’un tableau dans un provider,
+* l’ajout, la suppression et la réinitialisation de données,
+* la navigation entre plusieurs pages via React Router.
+
+### 🎯 **Ce que tu dois faire**
+
+1. **Créer un HistoryContext** avec :
+
+   * `history` : un tableau d’objets `{ id, text }`,
+   * `addEntry(text)` : ajoute une entrée,
+   * `removeEntry(id)` : supprime une entrée précise,
+   * `clearHistory()` : vide entièrement l’historique.
+
+2. **Créer une page Exercice6** qui :
+
+   * affiche la liste des entrées de l’historique,
+   * affiche un message *“Aucun historique à afficher”* si le tableau est vide,
+   * propose :
+
+     * un bouton pour vider tout l’historique,
+     * un lien vers une page permettant d’ajouter une entrée,
+     * un lien pour revenir au menu.
+
+3. **Créer une page AddHistory** avec :
+
+   * un input contrôlé,
+   * un bouton qui ajoute une entrée dans `history` via `addEntry`,
+   * puis redirige vers `/exo6`.
+
+---
