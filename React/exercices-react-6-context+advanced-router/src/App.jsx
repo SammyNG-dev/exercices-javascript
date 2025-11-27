@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./App.css";
+import ToggleThemeButton from "./pages/ToogleThemeButton";
 
 function App() {
   return (
     <>
+      <ToggleThemeButton />
       <h1>Ce mini-projet a pour but de travailler l'API Context de React + routing avancé</h1>
       <nav>
         <Link to="/exo1" className="link">

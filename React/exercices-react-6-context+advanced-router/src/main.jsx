@@ -17,6 +17,7 @@ import AddNotification from "./pages/AddNotification.jsx";
 import { CounterContextProvider } from "./context/CounterContext.jsx";
 import { HistoryContextProvider } from "./context/HistoryContext.jsx";
 import AddHistory from "./pages/AddHistory.jsx";
+import { ThemeContextProvider } from "./context/ThemeContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -65,18 +66,20 @@ const router = createBrowserRouter([
   },
   {
     path: "add-history",
-    element: <AddHistory />
-  }
+    element: <AddHistory />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <HistoryContextProvider>
-    <CounterContextProvider>
-      <MessageContextProvider>
-        <StrictMode>
-          <RouterProvider router={router} />
-        </StrictMode>
-      </MessageContextProvider>
-    </CounterContextProvider>
-  </HistoryContextProvider>,
+  <ThemeContextProvider>
+    <HistoryContextProvider>
+      <CounterContextProvider>
+        <MessageContextProvider>
+          <StrictMode>
+            <RouterProvider router={router} />
+          </StrictMode>
+        </MessageContextProvider>
+      </CounterContextProvider>
+    </HistoryContextProvider>
+  </ThemeContextProvider>,
 );

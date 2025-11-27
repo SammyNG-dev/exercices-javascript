@@ -64,3 +64,13 @@ h2 {
   display: inline-block;
   margin-right: 50px;
 }
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}

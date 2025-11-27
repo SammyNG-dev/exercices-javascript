@@ -230,7 +230,7 @@ Créer un mini système de notifications globales utilisant le **Context** et la
 
 ---
 
-## 📝 **Exercice 6 — Créer un système d’historique avec un Context dédié**
+# 📝 **Exercice 6 — Créer un système d’historique avec un Context dédié**
 
 Tu vas créer un **HistoryContext** permettant d’enregistrer, d’afficher et de gérer un historique d’actions.
 L’objectif est de pratiquer :
@@ -264,5 +264,35 @@ L’objectif est de pratiquer :
    * un input contrôlé,
    * un bouton qui ajoute une entrée dans `history` via `addEntry`,
    * puis redirige vers `/exo6`.
+
+---
+
+# Exercice 7 – Gestion du thème avec Context
+
+**Objectif :**
+Créer un système de thèmes clair/sombre pour ton application en utilisant **Context**.
+
+**Consignes :**
+
+1. Crée un `ThemeContext` avec :
+
+   * un état `theme` initialisé à `"light"`
+   * une fonction `toggleTheme` pour passer de `"light"` à `"dark"` et inversement
+
+2. Utilise un `useEffect` pour ajouter la classe correspondant au thème (`"light"` ou `"dark"`) sur l’élément `<body>` à chaque changement de thème.
+
+3. Crée un composant `ToggleThemeButton` qui :
+
+   * récupère `theme` et `toggleTheme` depuis le context
+   * affiche un bouton qui change le thème au clic
+   * le texte du bouton doit refléter le thème actuel (par ex. `"Toggle Dark"` si le thème est clair)
+
+4. Intègre `ThemeContextProvider` dans ton application pour que le contexte soit disponible dans toute l’application.
+
+5. Place ton `ToggleThemeButton` dans `App.jsx` pour pouvoir tester le changement de thème.
+
+**But final :**
+
+* Quand tu cliques sur le bouton, le thème de l’application change entre clair et sombre, et la classe correspondante est appliquée au `<body>`.
 
 ---
