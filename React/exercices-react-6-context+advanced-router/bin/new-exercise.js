@@ -61,8 +61,7 @@ if (!routesMatch) {
 }
 
 // La nouvelle route
-const newRoute = `,
-  {
+const newRoute = `{
     path: "/exo${numero}",
     element: <Exercice${numero} />,
   }`;

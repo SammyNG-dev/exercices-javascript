@@ -198,3 +198,37 @@ Créer un mini système de notifications globales utilisant le **Context** et la
 * Elle apparaît immédiatement sur `/exo4`.
 * Navigation fluide entre les pages.
 * Gestion correcte d’un tableau dans le context (immutabilité respectée).
+
+---
+
+# Exercice 5 – Compteur avec Context
+
+**Objectif** : Créer un compteur global accessible depuis n’importe quel composant grâce au Context et manipuler ses actions avec React Router.
+
+**Consignes** :
+
+1. Crée un contexte `CounterContext` qui contient :
+
+   * un état `count` initialisé à `0`,
+   * une fonction `increment` qui ajoute 1 à `count`,
+   * une fonction `decrement` qui retire 1 à `count`,
+   * une fonction `reset` qui remet `count` à 0.
+2. Dans le composant `Exercice5`, récupère ces valeurs et fonctions depuis le contexte.
+3. Affiche la valeur du compteur et trois boutons :
+
+   * **+1** → appelle `increment`
+   * **-1** → appelle `decrement`
+   * **Reset** → appelle `reset`
+4. Ajoute un lien pour revenir à l’accueil.
+
+**Points travaillés** :
+
+* Création et utilisation d’un Context dédié.
+* Gestion d’état global avec `useState`.
+* Partage de fonctions et d’état entre composants.
+* Navigation simple avec React Router.
+
+---
+
+Si tu veux, je peux enchaîner avec **l’énoncé de l’exo 6** pour le champ texte lié au contexte. Veux‑tu que je le fasse ?
+

@@ -13,6 +13,7 @@ import Exercice5 from "./pages/Exercice5.jsx";
 import { MessageContextProvider } from "./context/MessageContext.jsx";
 import ChangeUsername from "./pages/ChangeUsername.jsx";
 import AddNotification from "./pages/AddNotification.jsx";
+import { CounterContextProvider } from "./context/CounterContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,9 +59,11 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <MessageContextProvider>
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>
-  </MessageContextProvider>,
+  <CounterContextProvider>
+    <MessageContextProvider>
+      <StrictMode>
+        <RouterProvider router={router} />
+      </StrictMode>
+    </MessageContextProvider>
+  </CounterContextProvider>,
 );

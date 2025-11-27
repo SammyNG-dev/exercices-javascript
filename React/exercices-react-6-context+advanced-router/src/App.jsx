@@ -17,10 +17,10 @@ function App() {
           Exercice 3 : Mettre à jour un pseudonyme
         </Link>
         <Link to="/exo4" className="link">
-          Exercice 4 :{" "}
+          Exercice 4 : Notifications avec Context + Router
         </Link>
         <Link to="/exo5" className="link">
-          Exercice 5 :{" "}
+          Exercice 5 : Compteur avec Context
         </Link>
       </nav>
     </>
