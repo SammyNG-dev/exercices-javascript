@@ -4,9 +4,24 @@ const MessageContext = createContext(null);
 
 export const MessageContextProvider = ({ children }) => {
   const [message, setMessage] = useState("Bonjour depuis le context");
-  const [username, setUsername] = useState("Saminho")
+  const [username, setUsername] = useState("Saminho");
+  const [notifications, setNotifications] = useState([]);
+  const addNotification = (newNotif) => {
+    setNotifications([...notifications, { id: Date.now(), notif: newNotif }]);
+  };
+
   return (
-    <MessageContext.Provider value={{ message, setMessage, username, setUsername }}>
+    <MessageContext.Provider
+      value={{
+        message,
+        setMessage,
+        username,
+        setUsername,
+        notifications,
+        setNotifications,
+        addNotification,
+      }}
+    >
       {children}
     </MessageContext.Provider>
   );

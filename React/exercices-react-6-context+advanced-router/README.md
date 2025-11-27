@@ -70,7 +70,7 @@ Le Context contient déjà une valeur `message` et une fonction `setMessage`.
 
 ---
 
-# ✅ Exercice 3 (Context + Router Avancé)**
+# ✅ Exercice 3 : Mettre à jour un pseudonyme**
 
 ### 🎯 Objectif
 
@@ -150,3 +150,51 @@ Tu obtiens :
 * le tout en utilisant **context + router + formulaire contrôlé**
 
 ---
+
+# ✅ **Exercice 4 : Notifications avec Context + Router**
+
+### 🎯 **Objectif**
+
+Créer un mini système de notifications globales utilisant le **Context** et la **navigation React Router**. L’utilisateur doit pouvoir :
+
+1. Voir la liste des notifications.
+2. Ajouter une nouvelle notification depuis une autre page.
+
+---
+
+### 📌 **Consignes**
+
+1. **Dans ton context `MessageContext.jsx` :**
+
+   * Ajouter un state `notifications` initialisé à `[]`.
+   * Ajouter une fonction `addNotification(text)` qui ajoute une nouvelle notification au tableau sous forme `{ id: Date.now(), notif: text }`.
+
+2. **Créer la page `Exercice4.jsx` (`/exo4`) :**
+
+   * Récupérer `notifications` depuis le context.
+   * Si la liste est vide, afficher `Aucune notification`.
+   * Sinon, afficher toutes les notifications dans une `<ul>` avec `<li>` par notification.
+   * Ajouter un lien vers `/add-notification` pour ajouter une nouvelle notification.
+   * Ajouter un lien pour revenir à l’accueil.
+
+3. **Créer la page `AddNotification.jsx` (`/add-notification`) :**
+
+   * Un `<input>` contrôlé pour saisir le texte de la notification.
+   * Un bouton "Ajouter" qui :
+
+     * appelle `addNotification(value)`
+     * redirige vers `/exo4`
+   * Un lien pour revenir à `/exo4` sans ajouter de notification.
+
+4. **Mettre à jour ton Router (`main.jsx`) :**
+
+   * Ajouter les routes `/exo4` → `Exercice4` et `/add-notification` → `AddNotification`.
+
+---
+
+### 🎯 **Résultat attendu**
+
+* Tu peux ajouter une notification depuis `/add-notification`.
+* Elle apparaît immédiatement sur `/exo4`.
+* Navigation fluide entre les pages.
+* Gestion correcte d’un tableau dans le context (immutabilité respectée).
