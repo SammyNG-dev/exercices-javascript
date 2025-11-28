@@ -9,6 +9,17 @@ export const ThemeContextProvider = ({ children }) => {
     document.body.classList.add(theme);
   }, [theme]);
 
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved) {
+      setTheme(saved);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };

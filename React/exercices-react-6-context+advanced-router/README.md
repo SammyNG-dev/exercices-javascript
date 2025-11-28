@@ -297,7 +297,7 @@ Créer un système de thèmes clair/sombre pour ton application en utilisant **C
 
 ---
 
-**Exercice 8 – Thème et Card dynamique**
+# **Exercice 8 – Thème et Card dynamique**
 
 1. Crée un contexte `ThemeContext` qui contient :
 
@@ -326,3 +326,21 @@ Créer un système de thèmes clair/sombre pour ton application en utilisant **C
    * Ajoute un lien pour revenir à l’accueil
 
 > Objectif : comprendre comment utiliser un contexte pour gérer un thème global et adapter dynamiquement l’affichage des composants.
+
+---
+
+# **Exercice 9 – Persister le thème dans le localStorage**
+
+Dans cet exercice, tu vas améliorer ton système de thème pour qu’il reste actif même après un rafraîchissement de la page.
+
+**1. Dans ton `ThemeContextProvider` :**
+
+* Au montage du composant, lis `localStorage` pour récupérer le dernier thème choisi (sinon utilise `"light"` par défaut).
+* À chaque changement de thème, enregistre la valeur dans `localStorage`.
+
+**2. Le reste du code (`Card`, `ToggleThemeButton`, etc.) ne change pas.**
+Tu dois juste t’assurer que le thème sauvegardé est bien appliqué au `body` au premier rendu.
+
+**Objectif :**
+Comprendre comment synchroniser un contexte React avec le `localStorage`.
+
