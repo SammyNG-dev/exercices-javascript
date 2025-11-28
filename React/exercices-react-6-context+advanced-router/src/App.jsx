@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <ToggleThemeButton />
-      <h1>Ce mini-projet a pour but de travailler l'API Context de React + routing avancé</h1>
+      <h1>
+        Ce mini-projet a pour but de travailler l'API Context de React + routing
+        avancé
+      </h1>
       <nav>
         <Link to="/exo1" className="link">
           Exercice 1 : Afficher un message global avec la Context API et React
@@ -26,6 +29,9 @@ function App() {
         </Link>
         <Link to="/exo6" className="link">
           Exercice 6 : Créer un système d’historique avec un Context dédié
+        </Link>
+        <Link to="/exo8" className="link">
+          Exercice 8 : Thème et Card dynamique
         </Link>
       </nav>
     </>

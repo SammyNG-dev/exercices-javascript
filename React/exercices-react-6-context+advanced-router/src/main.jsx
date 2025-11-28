@@ -1,3 +1,4 @@
+import Exercice8 from "./pages/Exercice8.jsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: "add-history",
     element: <AddHistory />,
+  },
+  {
+    path: "/exo8",
+    element: <Exercice8 />,
   },
 ]);
 

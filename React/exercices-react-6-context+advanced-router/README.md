@@ -296,3 +296,33 @@ Créer un système de thèmes clair/sombre pour ton application en utilisant **C
 * Quand tu cliques sur le bouton, le thème de l’application change entre clair et sombre, et la classe correspondante est appliquée au `<body>`.
 
 ---
+
+**Exercice 8 – Thème et Card dynamique**
+
+1. Crée un contexte `ThemeContext` qui contient :
+
+   * `theme` : une chaîne `"light"` ou `"dark"`
+   * `toggleTheme` : une fonction pour basculer entre `"light"` et `"dark"`
+
+2. Dans le `ThemeContextProvider`, applique le thème actuel au `<body>` en ajoutant la classe correspondante (`light` ou `dark`).
+
+3. Crée un composant `ToggleThemeButton` :
+
+   * Il affiche `"Toggle Dark"` si le thème est `"light"` et `"Toggle Light"` si le thème est `"dark"`.
+   * Au clic, il bascule le thème via `toggleTheme`.
+
+4. Crée un composant `Card` :
+
+   * Il doit adapter sa couleur de fond à l’inverse du thème actuel :
+
+     * `"dark"` → fond clair
+     * `"light"` → fond sombre
+
+5. Dans la page `Exercice8` :
+
+   * Affiche le thème actuel
+   * Affiche la `Card`
+   * Affiche le `ToggleThemeButton`
+   * Ajoute un lien pour revenir à l’accueil
+
+> Objectif : comprendre comment utiliser un contexte pour gérer un thème global et adapter dynamiquement l’affichage des composants.
