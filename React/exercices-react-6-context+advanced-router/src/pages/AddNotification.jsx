@@ -5,20 +5,18 @@ import { useMessageContext } from "../context/MessageContext";
 function AddNotification() {
   const { addNotification } = useMessageContext();
   const navigate = useNavigate();
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("");
 
   return (
     <>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
+      <input type="text" onChange={(e) => setValue(e.target.value)} />
       <nav>
         <button
           type="button"
+          value={value}
           className="action-button"
           onClick={() => {
+            if (!value.trim()) return;
             addNotification(value);
             navigate("/exo4");
           }}

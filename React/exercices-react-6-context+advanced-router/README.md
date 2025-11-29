@@ -344,3 +344,58 @@ Tu dois juste t’assurer que le thème sauvegardé est bien appliqué au `body`
 **Objectif :**
 Comprendre comment synchroniser un contexte React avec le `localStorage`.
 
+---
+
+# 🧪 **Exercice 10 — Synchroniser automatiquement les notifications avec le localStorage**
+
+## 🎯 Objectif
+
+Tu vas rendre ton **MessageContext** persistant :
+
+* Lors du chargement de l'application, tu dois restaurer les notifications depuis le `localStorage`.
+* Chaque fois que les notifications changent, tu dois les sauvegarder automatiquement.
+
+Tu dois également t’assurer que les données récupérées sont valides pour éviter les plantages.
+
+---
+
+## 📝 **Consigne**
+
+Dans ton fichier **MessageContext.jsx**, mets en place deux effets :
+
+---
+
+### **1️⃣ Récupération des notifications au chargement**
+
+Crée un `useEffect` qui s’exécute uniquement au montage du composant.
+Il doit :
+
+* Lire la valeur `"notifications"` dans `localStorage`.
+* Tenter de la parser avec `JSON.parse`.
+* Vérifier que la valeur obtenue est **un tableau**.
+* Si oui → remplir ton state `notifications` avec cette valeur.
+* Si non → ignorer silencieusement ou afficher une erreur dans la console.
+
+---
+
+### **2️⃣ Sauvegarde automatique des notifications**
+
+Crée un deuxième `useEffect` qui :
+
+* Observe `notifications`.
+* À chaque modification, sauvegarde la valeur dans `localStorage` via
+  `localStorage.setItem("notifications", JSON.stringify(notifications))`.
+
+---
+
+## 🔚 Résultat attendu
+
+Ton contexte doit maintenant :
+
+* Se souvenir des notifications entre deux rechargements de page.
+* Toujours valider le format des données.
+* Ne jamais planter même si le localStorage contient des données corrompues.
+
+---
+
+Si tu veux, je peux te proposer l’Exercice 11 maintenant.
