@@ -42,7 +42,7 @@ Créer un **compteur Redux** qui peut s’incrémenter et se décrémenter, en u
 
 ---
 
-🧩 Exercice 2 — Créer deux slices et un store combiné
+# 🧩 Exercice 2 — Créer deux slices et un store combiné
 
 Tu vas créer une petite configuration Redux Toolkit composée de **deux slices distincts**, puis envoyer plusieurs actions pour mettre à jour l’état.
 
@@ -62,7 +62,7 @@ Ensuite, tu devras :
 
 ---
 
-# 📌 **Détails de ce que tu dois faire**
+## 📌 **Détails de ce que tu dois faire**
 
 ### 1. Créer un slice `counter`
 
@@ -111,5 +111,82 @@ L’état final doit être quelque chose comme :
   user: { logged: true }
 }
 ```
+
+---
+
+# 📝 **Exercice 3 — Todo Slice**
+
+### 🎯 Objectif
+
+Créer un slice Redux Toolkit pour gérer une liste de tâches.
+
+### Étapes
+
+1. Crée un slice `todoSlice` avec :
+
+   * `name`: `"todo"`
+   * `initialState`: `{ todo: [] }`
+   * un reducer `addTodo` qui ajoute une nouvelle tâche reçue en **payload**.
+
+2. Crée un store avec `configureStore` en utilisant le reducer du slice.
+
+3. Dispatch quelques actions `addTodo` pour ajouter des tâches :
+
+   * `"faire les courses"`
+   * `"manger un kebab"`
+
+4. Affiche l’état du store avant et après chaque dispatch avec `console.log`.
+
+---
+
+# 📝 **Exercice 4 — User Slice**
+
+### 🎯 Objectif
+
+Créer un slice pour gérer les informations d’un utilisateur.
+
+### Étapes
+
+1. Crée un slice `userSlice` avec :
+
+   * `name`: `"user"`
+   * `initialState`: `{ name: "Sammy", email: "" }`
+   * un reducer `setEmail` qui met à jour l’email de l’utilisateur depuis un **payload**.
+
+2. Crée un store avec `configureStore` en utilisant ce reducer.
+
+3. Dispatch l’action `setEmail` avec un email de test, par exemple `"user@gmail.com"`.
+
+4. Affiche l’état du store avec `console.log`.
+
+---
+
+# 📝 **Exercice 5 — Cart Slice**
+
+### 🎯 Objectif
+
+Créer un slice pour gérer un panier d’achats.
+
+### Étapes
+
+1. Crée un slice `cartSlice` avec :
+
+   * `name`: `"cart"`
+   * `initialState`: `{ cart: [] }`
+   * un reducer `addToCart` qui ajoute un **objet article** reçu en **payload** au tableau `cart`.
+
+2. Crée un store avec `configureStore` en utilisant ce reducer.
+
+3. Dispatch l’action `addToCart` avec un objet exemple :
+
+```js
+{
+  id: 1,
+  name: "Meta Quest 3s",
+  price: 299
+}
+```
+
+4. Affiche le contenu du store ou du slice avec `console.log` pour vérifier que l’article a été ajouté.
 
 ---

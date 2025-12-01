@@ -1,27 +1,21 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const todoSlice = createSlice({
-  name: "todo",
-  initialState: { todo: [] },
+const userSlice = createSlice({
+  name: "user",
+  initialState: { name: "Sammy", email: "" },
   reducers: {
-    addTodo: (state, action) => {
-      state.todo.push(action.payload);
+    setEmail: (state, action) => {
+      state.email = action.payload;
     },
   },
 });
 
 const store = configureStore({
   reducer: {
-    todo: todoSlice.reducer,
+    user: userSlice.reducer,
   },
 });
 
-console.log(store.getState());
-
-store.dispatch(todoSlice.actions.addTodo("faire les courses"));
-
-console.log(store.getState());
-
-store.dispatch(todoSlice.actions.addTodo("manger un kebab"));
+store.dispatch(userSlice.actions.setEmail("user@gmail.com"));
 
 console.log(store.getState());

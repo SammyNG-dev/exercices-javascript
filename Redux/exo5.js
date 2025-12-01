@@ -1,21 +1,29 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const userSlice = createSlice({
-  name: "user",
-  initialState: { name: "Sammy", email: "" },
+const cartSlice = createSlice({
+  name: "cart",
+  initialState: { cart: [] },
   reducers: {
-    setEmail: (state, action) => {
-      state.email = action.payload;
+    addToCart: (state, action) => {
+      state.cart.push(action.payload);
     },
   },
 });
 
 const store = configureStore({
   reducer: {
-    user: userSlice.reducer,
+    cart: cartSlice.reducer,
   },
 });
 
-store.dispatch(userSlice.actions.setEmail("user@gmail.com"));
+store.dispatch(
+  cartSlice.actions.addToCart({
+    id: 1,
+    name: "Meta Quest 3s",
+    price: 299,
+  }),
+);
 
-console.log(store.getState());
+const cartStore = store.getState()
+
+console.log(cartStore.cart)
