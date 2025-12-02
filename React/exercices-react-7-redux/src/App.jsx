@@ -10,7 +10,7 @@ function App() {
           Exercice 1 : Afficher la valeur du compteur Redux
         </Link>
         <Link to="/exo2" className="link">
-          Exercice 2 :{" "}
+          Exercice 2 : Créer un compteur interactif avec Redux
         </Link>
         <Link to="/exo3" className="link">
           Exercice 3 :{" "}

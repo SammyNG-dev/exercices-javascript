@@ -31,3 +31,36 @@ const { counter } = useSelector((state) => state.counter);
 * Aucun bouton d’action pour modifier la valeur (cela viendra dans l’exercice suivant).
 
 ---
+
+# 🧪 **Exercice 2 — Créer un compteur interactif avec Redux**
+
+## 🎯 Objectif
+
+Apprendre à utiliser **useSelector**, **useDispatch**, et des actions Redux pour modifier l’état global depuis une interface React.
+
+---
+
+## 📝 **Ce que tu dois faire**
+
+1. **Lire la valeur du compteur** depuis le store Redux grâce à `useSelector`.
+2. **Créer deux boutons** :
+
+   * un bouton **+1** qui déclenche l’action `increment()`
+   * un bouton **–1** qui déclenche l’action `decrement()`
+3. **Mettre à jour l'affichage du compteur en direct**, sans state local, uniquement via Redux.
+4. Ajouter un lien permettant de **revenir à la page d’accueil**.
+
+---
+
+## ✔️ **Résultat attendu**
+
+Tu dois obtenir une page **React** avec :
+
+* Le compteur affiché (`Compteur : X`)
+* Deux boutons qui modifient le store Redux :
+
+  * **+1** → dispatch `increment()`
+  * **–1** → dispatch `decrement()`
+* Le compteur doit se mettre à jour immédiatement grâce au state global.
+
+---
