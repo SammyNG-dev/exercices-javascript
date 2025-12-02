@@ -1,46 +1,33 @@
-# my-personal-template
+# Exercice 1 — Afficher la valeur du compteur Redux
 
-This my personal template to make exercices in React.
+**Objectif :**
+Lire et afficher l’état global d’un slice Redux dans un composant React.
 
-## Create the project
+**Instructions :**
 
-With the CLI command, type :
+1. Crée un composant `Exercice1.jsx`.
+2. Importe `useSelector` depuis `react-redux`.
+3. Utilise `useSelector` pour lire la valeur du compteur depuis le store Redux :
 
+```js
+const { counter } = useSelector((state) => state.counter);
 ```
-npx my-personal-template [project-name]
-```
-```
-npm i
+
+4. Affiche la valeur dans le JSX, par exemple :
+
+```jsx
+<h1>Compteur : {counter}</h1>
 ```
 
-And then, make your exercices !
+5. Ajoute un lien pour revenir à l’accueil si tu veux :
 
-# Template's tree
+```jsx
+<Link to="/">Revenir en arrière</Link>
+```
 
-```
-.
-├── bin
-│   └── create-template.js
-├── biome.json
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── public
-│   └── vite.svg
-├── README.md
-├── src
-│   ├── App.css
-│   ├── App.jsx
-│   ├── assets
-│   │   └── react.svg
-│   ├── index.css
-│   ├── main.jsx
-│   └── pages
-│       ├── Exercice1.jsx
-│       ├── Exercice2.jsx
-│       ├── Exercice3.jsx
-│       ├── Exercice4.jsx
-│       └── Exercice5.jsx
-└── vite.config.js
-```
+**Résultat attendu :**
+
+* La valeur du compteur doit s’afficher correctement depuis le store Redux.
+* Aucun bouton d’action pour modifier la valeur (cela viendra dans l’exercice suivant).
+
+---

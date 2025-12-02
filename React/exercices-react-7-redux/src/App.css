@@ -40,3 +40,37 @@
 .read-the-docs {
   color: #888;
 }
+
+.link {
+  background-color: #f8f5f5;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  box-shadow: 5px 5px 10px #646cff;
+  color: #646cff;
+}
+
+h2 {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
