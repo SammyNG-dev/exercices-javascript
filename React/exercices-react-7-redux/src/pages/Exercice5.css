@@ -1,0 +1,25 @@
+.canva {
+    min-width: 1200px;
+    min-height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.todo-column{
+    width: 400px;
+    border: 1px solid black;
+}
+
+.header-todo-column {
+    border: 2px solid black;
+}
+
+.list-button {
+    font-size: 15px;
+}
+
+.add-task-div {
+    margin: 20px;
+}

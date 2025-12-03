@@ -19,7 +19,7 @@ function App() {
           Exercice 4 : Gestion d’une Todo List avec Redux (CRUD + Toggle)
         </Link>
         <Link to="/exo5" className="link">
-          Exercice 5 :{" "}
+          Exercice 5 : TodoList avec colonnes “À faire”, “En cours” et “Fait”
         </Link>
       </nav>
     </>

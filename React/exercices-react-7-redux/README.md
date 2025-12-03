@@ -172,3 +172,51 @@ Une Todo List fonctionnelle où :
 * L’interface réagit instantanément aux actions dispatchées
 
 ---
+
+# Exercice 5 : TodoList avec colonnes “À faire”, “En cours” et “Fait”
+
+### Objectif
+
+Créer une **TodoList avancée** en React + Redux où les tâches sont organisées en **trois colonnes** selon leur statut : `À faire`, `En cours` et `Fait`.
+
+---
+
+### Instructions
+
+1. **Structure de l’état**
+
+   * Utiliser un `slice` Redux nommé `todo2` avec l’état initial :
+
+     ```js
+     {
+       aFaire: [],
+       enCours: [],
+       fait: []
+     }
+     ```
+
+2. **Reducers à créer**
+
+   * `addAFaire` : ajoute une nouvelle tâche à la colonne `À faire` avec un identifiant unique.
+   * `moveToEnCours` : déplace une tâche de `À faire` vers `En cours`.
+   * `moveToFait` : déplace une tâche de `En cours` vers `Fait`.
+   * `removeTask` : supprime une tâche de la colonne `À faire`.
+   * `emptyLists` : vide toutes les colonnes.
+
+3. **Composant React**
+
+   * Créer une page `Exercice5.jsx` qui :
+
+     * Affiche chaque colonne avec ses tâches.
+     * Permet d’ajouter une nouvelle tâche dans `À faire`.
+     * Permet de déplacer les tâches d’une colonne à l’autre via des boutons.
+     * Permet de supprimer une tâche dans `À faire`.
+     * Permet de vider toutes les colonnes via un bouton global.
+   * Utiliser `useSelector` pour lire l’état et `useDispatch` pour déclencher les actions.
+
+4. **Bonus**
+
+   * Afficher les tâches de chaque colonne de manière visuelle (ex. : trois colonnes côte à côte).
+   * Ajouter un champ `done` pour marquer visuellement qu’une tâche est terminée dans la colonne `Fait`.
+
+---
