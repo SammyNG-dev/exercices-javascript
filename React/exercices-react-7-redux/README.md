@@ -64,3 +64,49 @@ Tu dois obtenir une page **React** avec :
 * Le compteur doit se mettre à jour immédiatement grâce au state global.
 
 ---
+
+# 🧪 **Exercice 3 — Formulaire contrôlé + Mise à jour du store Redux**
+
+### 🎯 Objectif
+
+Apprendre à modifier une partie du state Redux via un formulaire React, en gardant l’input dans un state local et en dispatchant une action pour mettre à jour le store.
+
+---
+
+### 📝 Ce que tu dois réaliser
+
+1. **Créer un slice `userSlice`** contenant l’état initial :
+
+```js
+{
+  name: "Sammy",
+  email: ""
+}
+```
+
+2. Ajouter un reducer `setEmail` permettant de mettre à jour `state.email`.
+
+3. Intégrer ce slice dans le store Redux existant.
+
+4. Dans une page React dédiée :
+
+   * afficher le **nom** et l’**email** provenant du store via `useSelector`
+   * créer un `input` contrôlé avec `useState`
+   * ajouter un bouton “Mettre à jour l’email”
+   * au clic : `dispatch(setEmail(valeurSaisie))`
+
+5. Afficher immédiatement la nouvelle valeur de l’email grâce à Redux.
+
+---
+
+### ✔️ Résultat attendu
+
+Une page affichant :
+
+* Nom : Sammy
+* Email : (valeur Redux)
+* Un input pour saisir un nouvel email
+* Un bouton pour déclencher la mise à jour
+* L’email se met à jour instantanément dans le store et à l’écran
+
+---
