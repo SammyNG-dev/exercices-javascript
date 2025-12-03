@@ -74,3 +74,9 @@ h2 {
   background-color: black;
   color: white;
 }
+
+li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

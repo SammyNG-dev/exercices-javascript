@@ -13,10 +13,10 @@ function App() {
           Exercice 2 : Créer un compteur interactif avec Redux
         </Link>
         <Link to="/exo3" className="link">
-          Exercice 3 :{" "}
+          Exercice 3 : Formulaire contrôlé + Mise à jour du store Redux
         </Link>
         <Link to="/exo4" className="link">
-          Exercice 4 :{" "}
+          Exercice 4 : Gestion d’une Todo List avec Redux (CRUD + Toggle)
         </Link>
         <Link to="/exo5" className="link">
           Exercice 5 :{" "}

@@ -110,3 +110,65 @@ Une page affichant :
 * L’email se met à jour instantanément dans le store et à l’écran
 
 ---
+
+# 📝 **Exercice 4 – Gestion d’une Todo List avec Redux (CRUD + Toggle)**
+
+## 🎯 Objectif
+
+Créer un système complet de **Todo List** géré avec **Redux Toolkit**, comprenant :
+
+* ajout d’une tâche
+* suppression d’une tâche
+* changement d’état (fait / pas fait)
+* affichage dynamique en fonction du store Redux
+
+L’objectif est de manipuler un state plus complexe et de composer plusieurs actions pour modifier ce state.
+
+---
+
+## 🧩 Ce que tu dois faire
+
+### 1. **Créer un slice `todoSlice`**
+
+* Le state doit contenir un tableau `todo` d’objets.
+* Chaque todo doit avoir :
+
+  ```js
+  { id: number, todo: string, done: boolean }
+  ```
+* Créer les reducers suivants :
+
+  * **addTodo(payload)** → ajoute une nouvelle tâche (avec un id unique)
+  * **removeTodo(id)** → supprime une tâche par son id
+  * **toggleTodo(todo)** → inverse la valeur `done` d'une tâche
+
+---
+
+### 2. **Ajouter le reducer dans le store**
+
+Dans `store.js`, ajouter ton reducer sous la clé `todo`.
+
+---
+
+### 3. **Créer la page `Exercice4.jsx`**
+
+Elle doit :
+
+✔ afficher toutes les tâches provenant du store
+✔ afficher un `(Fait)` si `done === true`
+✔ cocher/décocher une tâche via `toggleTodo`
+✔ ajouter une nouvelle tâche via un input
+✔ supprimer une tâche via `removeTodo`
+✔ réinitialiser le champ après ajout
+
+---
+
+## ✅ Résultat attendu
+
+Une Todo List fonctionnelle où :
+
+* Chaque modification passe par Redux
+* Le state est **immutably** mis à jour
+* L’interface réagit instantanément aux actions dispatchées
+
+---
