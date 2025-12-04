@@ -220,3 +220,91 @@ Créer une **TodoList avancée** en React + Redux où les tâches sont organisé
    * Ajouter un champ `done` pour marquer visuellement qu’une tâche est terminée dans la colonne `Fait`.
 
 ---
+
+# 🧪 **Exercice 6 – Ajouter la persistance localStorage à l’application de l’Exercice 5**
+
+## 🎯 Objectif
+
+À partir de **tout ce que tu as déjà réalisé dans l’Exercice 5**
+(colonnes "À faire", "En cours", "Fait", les reducers, les déplacements, l’affichage stylé, etc.),
+tu dois maintenant **ajouter une nouvelle fonctionnalité : la persistance via localStorage.**
+
+L’objectif final est que :
+
+* toutes les tâches soient **sauvegardées automatiquement** après chaque action,
+* et **restaurées automatiquement au rechargement de la page**, avec **les mêmes IDs** et dans **la bonne colonne**.
+
+---
+
+# 🧩 Ce que tu dois ajouter par rapport à l’Exercice 5
+
+### 1️⃣ **Lire le localStorage au démarrage**
+
+Dans `Exercice6.jsx` :
+
+* utiliser `useEffect()` au premier rendu
+* lire les clés :
+
+  * `"aFaire"`
+  * `"enCours"`
+  * `"fait"`
+* parser le JSON
+* redispatcher chaque item dans Redux (en passant l’objet complet pour garder l’id)
+
+💡 Tu peux **factoriser** avec une fonction `dispatchLocalStorage(key, reducer)` pour éviter la duplication.
+
+---
+
+### 2️⃣ **Mettre à jour le localStorage après chaque action**
+
+Après chaque `dispatch()` :
+
+* quand on ajoute une tâche
+* quand on déplace une tâche vers une autre colonne
+* quand on supprime
+* quand on vide les listes
+
+→ tu dois appeler `localStorage.setItem()` pour mettre à jour les données.
+
+---
+
+### 3️⃣ **Modifier légèrement ton slice**
+
+Le slice `todoSlice3.js` doit pouvoir :
+
+* accepter une **string** → créer un nouvel objet `{id, name}`
+* accepter un **objet complet** → simplement le push (pour restaurer le localStorage)
+
+Tu peux faire ça avec :
+
+```js
+if (typeof action.payload === "object") {
+  // push direct
+}
+```
+
+---
+
+### 4️⃣ **Ajouter le bouton “Vider la to-do list”**
+
+Il doit :
+
+* vider les 3 listes Redux via `emptyLists()`
+* vider les 3 clés dans le localStorage
+
+---
+
+# ✔ Résultat attendu
+
+À la fin :
+
+* Tu gardes **tout** l’affichage et les fonctionnalités de l’Exercice 5
+* Tu ajoutes **la persistance complète** avec localStorage
+* Si tu reload la page :
+
+  * les tâches reviennent
+  * dans la bonne colonne
+  * avec les mêmes IDs
+* L’UX est cohérente : ajouter, supprimer, déplacer, recharger → tout fonctionne comme dans une vraie app.
+
+---

@@ -397,5 +397,3 @@ Ton contexte doit maintenant :
 * Ne jamais planter même si le localStorage contient des données corrompues.
 
 ---
-
-Si tu veux, je peux te proposer l’Exercice 11 maintenant.

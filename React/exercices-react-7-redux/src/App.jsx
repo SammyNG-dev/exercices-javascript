@@ -21,6 +21,9 @@ function App() {
         <Link to="/exo5" className="link">
           Exercice 5 : TodoList avec colonnes “À faire”, “En cours” et “Fait”
         </Link>
+        <Link to="/exo6" className="link">
+          Exercice 6 : Ajouter la persistance localStorage à l’application de l’Exercice 5”
+        </Link>
       </nav>
     </>
   );
