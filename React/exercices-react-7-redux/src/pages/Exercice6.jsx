@@ -11,7 +11,7 @@ import "./Exercice5.css";
 import { useEffect, useState } from "react";
 import { store } from "../app/store";
 
-function Exercice5() {
+function Exercice6() {
   const { aFaire, enCours, fait } = useSelector((state) => state.todo3);
   const dispatch = useDispatch();
   const [taskData, setTaskData] = useState("");
@@ -33,7 +33,7 @@ function Exercice5() {
     }
   };
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  // biome-ignore lint/correctness/useExhaustiveDependencies: we only want this to run once on mount
   useEffect(() => {
     dispatchLocalStorage("aFaire", addAFaire);
     dispatchLocalStorage("enCours", moveToEnCours);
@@ -172,4 +172,4 @@ function Exercice5() {
   );
 }
 
-export default Exercice5;
+export default Exercice6;

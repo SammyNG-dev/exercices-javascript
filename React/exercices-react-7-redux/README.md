@@ -308,3 +308,135 @@ Il doit :
 * L’UX est cohérente : ajouter, supprimer, déplacer, recharger → tout fonctionne comme dans une vraie app.
 
 ---
+
+# 📝 **Exercice 7 – Refactorisation + Persistance dans le LocalStorage + Structure en Composants**
+
+Dans cet exercice, tu vas **reprendre l’intégralité du travail effectué dans l’Exercice 5 et l’Exercice 6**, mais en allant plus loin sur deux points essentiels :
+
+1. **La factorisation du code**, en séparant clairement :
+
+   * l’ajout de tâches,
+   * les trois colonnes (À faire, En cours, Fait),
+   * la page Exercice7.jsx.
+
+2. **La persistance globale via le LocalStorage**, à chaque modification de liste *et* au chargement initial de la page.
+
+L’objectif est d’obtenir une **mini application ToDo-List organisée en 3 colonnes**, entièrement gérée par **Redux Toolkit**, **React**, et **LocalStorage**, de manière propre et scalable.
+
+---
+
+## 🎯 **Objectifs pédagogiques**
+
+### ✔ Réutiliser tout ce qui a été construit dans les Exercices 5 et 6
+
+* Le slice Redux (`todoSlice3`) avec ses reducers : `addAFaire`, `moveToEnCours`, `moveToFait`, `removeTask`, `emptyLists`, etc.
+* Le store Redux.
+* La gestion des mouvements de tâches entre colonnes.
+
+### ✔ Comprendre et mettre en place une **refactorisation concrète**
+
+Tu vas apprendre à découper une page longue en **composants spécialisés**, pour obtenir un code plus propre et maintenable.
+
+### ✔ Charger automatiquement les données depuis le LocalStorage au montage du composant
+
+Tu utiliseras :
+
+```js
+useEffect(() => {
+  ...
+}, []);
+```
+
+et tu construiras une fonction utilitaire :
+
+```js
+const dispatchLocalStorage = (key, callback) => { ... }
+```
+
+pour éviter la duplication de code.
+
+### ✔ Sauvegarder le state Redux dans le LocalStorage à chaque interaction
+
+* Lors de l’ajout d’une tâche
+* Lors du passage À faire → En cours
+* Lors du passage En cours → Fait
+* Lors de la suppression d’une tâche
+* Lors du reset total de la to-do list
+
+---
+
+## 📦 **Ce que tu dois produire**
+
+### 🔹 1. Un composant `AddTask.jsx`
+
+* Un input contrôlé avec `useState`.
+* Un bouton "Ajouter une tâche".
+* Appel à `dispatch(addAFaire(...))`.
+* Mise à jour du LocalStorage après le dispatch.
+
+### 🔹 2. Trois colonnes séparées en composants :
+
+#### `AFaireColumn.jsx`
+
+* Affiche la liste `aFaire`.
+* Bouton **"Let’s go !"** pour envoyer la tâche dans `enCours`.
+* Bouton **"Supprimer tâche"**.
+* Mise à jour du LocalStorage à chaque action.
+
+#### `EnCoursColumn.jsx`
+
+* Affiche la liste `enCours`.
+* Bouton **"C’est fait !"** pour envoyer la tâche dans `fait`.
+* Mise à jour du LocalStorage.
+
+#### `FaitColumn.jsx`
+
+* Affiche la liste `fait`.
+* Pas de boutons ici.
+
+### 🔹 3. Un composant principal `Exercice7.jsx`
+
+Qui doit contenir :
+
+#### ✔ La fonction factorisée :
+
+```js
+const dispatchLocalStorage = (key, callback) => { ... }
+```
+
+#### ✔ Le chargement initial :
+
+```js
+useEffect(() => {
+  dispatchLocalStorage("aFaire", addAFaire)
+  dispatchLocalStorage("enCours", moveToEnCours)
+  dispatchLocalStorage("fait", moveToFait)
+}, [])
+```
+
+#### ✔ L’affichage des trois colonnes :
+
+```jsx
+<AFaireColumn aFaire={aFaire} />
+<EnCoursColumn enCours={enCours} />
+<FaitColumn fait={fait} />
+```
+
+#### ✔ Le bouton pour vider toutes les listes :
+
+* Appel de `dispatch(emptyLists())`
+* Set des trois clés du LocalStorage à `[]`
+
+#### ✔ Un lien pour revenir au menu principal.
+
+---
+
+## 🔥 **Ce que tu valideras avec cet exercice**
+
+* Tu sais découper proprement une application React.
+* Tu maîtrises Redux Toolkit dans un cas réel.
+* Tu es capable de persister et recharger des données via LocalStorage.
+* Tu mets en place une logique complète de ToDo-List en utilisant les meilleures pratiques.
+* Tu as écrit un code propre, factorisé, maintenable.
+
+---

@@ -22,7 +22,12 @@ function App() {
           Exercice 5 : TodoList avec colonnes “À faire”, “En cours” et “Fait”
         </Link>
         <Link to="/exo6" className="link">
-          Exercice 6 : Ajouter la persistance localStorage à l’application de l’Exercice 5”
+          Exercice 6 : Ajouter la persistance localStorage à l’application de
+          l’Exercice 5”
+        </Link>
+        <Link to="/exo7" className="link">
+          Exercice 7 : Refactorisation + Persistance dans le LocalStorage +
+          Structure en Composants”
         </Link>
       </nav>
     </>
