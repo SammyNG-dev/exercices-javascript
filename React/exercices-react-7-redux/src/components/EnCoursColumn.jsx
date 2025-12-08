@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { moveToFait } from "../features/todo/todoSlice3";
+import { store } from "../app/store";
 
 function EnCoursColumn({ enCours }) {
   const dispatch = useDispatch();

@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { moveToEnCours, removeTask } from "../features/todo/todoSlice3";
+import { store } from "../app/store";
 
 function AFaireColumn({aFaire}) {
   const dispatch = useDispatch();
