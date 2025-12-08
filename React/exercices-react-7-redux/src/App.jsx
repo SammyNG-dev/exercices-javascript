@@ -29,6 +29,10 @@ function App() {
           Exercice 7 : Refactorisation + Persistance dans le LocalStorage +
           Structure en Composants”
         </Link>
+        <Link to="/exo8" className="link">
+          Exercice 8 : Refactorisation + Persistance dans le LocalStorage +
+          Structure en Composants”
+        </Link>
       </nav>
     </>
   );

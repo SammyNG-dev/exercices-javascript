@@ -440,3 +440,71 @@ useEffect(() => {
 * Tu as écrit un code propre, factorisé, maintenable.
 
 ---
+
+# 🧪 **Exercice 8 — Créer un ScoreBoard avec Redux Toolkit**
+
+Dans cet exercice, tu vas créer un petit composant autonome permettant de gérer un score global grâce à **Redux Toolkit**.
+L’objectif est de pratiquer la création d’un *slice*, la connexion au *store*, et le dispatch d’actions simples depuis un composant React.
+
+---
+
+## 🎯 **Objectif**
+
+Mettre en place un **système de score global** accessible depuis toute l’application grâce à Redux.
+Le score doit pouvoir :
+
+* augmenter de 1
+* augmenter de 10 (bonus)
+* être remis à zéro
+
+---
+
+## 🛠️ **Ce que tu dois faire**
+
+### 1️⃣ **Créer un slice Redux nommé `scoreSlice`**
+
+Il doit contenir :
+
+* un `initialState` : `{ score: 0 }`
+* trois reducers :
+
+  * `incrementScore` → +1
+  * `addBonus` → +10
+  * `reset` → remet le score à 0
+
+Export :
+
+* les actions
+* le reducer
+
+---
+
+### 2️⃣ **Ajouter `scoreSlice` au store**
+
+Dans `store.js`, importe le reducer et ajoute-le dans l’objet `reducer` du `configureStore`.
+
+---
+
+### 3️⃣ **Créer un composant `ScoreBoard.jsx`**
+
+Ce composant doit :
+
+* lire la valeur du score avec `useSelector`
+* utiliser `useDispatch` pour envoyer les actions
+* afficher :
+
+  * le score actuel
+  * trois boutons :
+
+    * `+1` → dispatch `incrementScore`
+    * `+10` → dispatch `addBonus`
+    * `Reset` → dispatch `reset`
+* contenir un `<Link>` pour revenir au menu principal
+
+---
+
+## ✅ **Résultat attendu**
+
+Un composant minimaliste, fonctionnel, propre, permettant de manipuler le score global en quelques clics.
+
+---

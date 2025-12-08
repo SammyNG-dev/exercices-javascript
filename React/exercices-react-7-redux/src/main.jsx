@@ -1,3 +1,4 @@
+import Exercice8 from "./pages/Exercice8.jsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
@@ -14,44 +15,48 @@ import Exercice6 from "./pages/Exercice6.jsx";
 import Exercice7 from "./pages/Exercice7.jsx";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <App />,
-	},
-	{
-		path: "/exo1",
-		element: <Exercice1 />,
-	},
-	{
-		path: "/exo2",
-		element: <Exercice2 />,
-	},
-	{
-		path: "/exo3",
-		element: <Exercice3 />,
-	},
-	{
-		path: "/exo4",
-		element: <Exercice4 />,
-	},
-	{
-		path: "/exo5",
-		element: <Exercice5 />,
-	},
-	{
-		path: "/exo6",
-		element: <Exercice6 />,
-	},
-	{
-		path: "/exo7",
-		element: <Exercice7 />
-	}
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/exo1",
+    element: <Exercice1 />,
+  },
+  {
+    path: "/exo2",
+    element: <Exercice2 />,
+  },
+  {
+    path: "/exo3",
+    element: <Exercice3 />,
+  },
+  {
+    path: "/exo4",
+    element: <Exercice4 />,
+  },
+  {
+    path: "/exo5",
+    element: <Exercice5 />,
+  },
+  {
+    path: "/exo6",
+    element: <Exercice6 />,
+  },
+  {
+    path: "/exo7",
+    element: <Exercice7 />,
+  },
+  {
+    path: "/exo8",
+    element: <Exercice8 />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<Provider store={store}>
-			<RouterProvider router={router} />
-		</Provider>
-	</StrictMode>,
+  <StrictMode>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  </StrictMode>,
 );
