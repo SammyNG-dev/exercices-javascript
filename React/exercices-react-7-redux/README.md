@@ -601,5 +601,72 @@ Une page fonctionnelle où :
 
 L’ensemble doit reposer **entièrement** sur Redux Toolkit.
 
----Exercice 9 : Refactorisation + Persistance dans le LocalStorage +
-          Structure en Composants”
+---
+
+# 🧪 **Exercice 10 — Amélioration du panier : gestion des quantités**
+
+Dans cet exercice, tu vas reprendre **tout le travail réalisé dans l’exercice 9** (panier Redux avec ajout d’articles, suppression, total, etc.) et **l’améliorer** pour gérer des quantités par produit.
+
+L’objectif est d’ajouter une vraie gestion de quantité pour chaque article, comme dans un vrai site e-commerce.
+
+---
+
+## 🎯 Objectifs
+
+### 1. **Modifier le slice du panier**
+
+Dans ton `cartSlice`, apporte les améliorations suivantes :
+
+* Chaque produit ajouté au panier doit posséder une propriété **quantity** (initialisée à 1 lors du premier ajout).
+* Si un produit **déjà présent** est ajouté à nouveau, **n’en crée pas un nouveau** :
+  → Incrémente simplement sa `quantity`.
+* Le total doit être mis à jour correctement :
+
+  * * `price` à chaque ajout
+  * − `price` lors d’un décrément
+  * Suppression complète de l’article si la quantité tombe à 0
+
+Tu dois donc créer **de nouveaux reducers** :
+
+* `incrementItem(id)`
+* `decrementItem(id)`
+* ajuster `addItem()`
+* ajuster `removeItem()`
+
+---
+
+### 2. **Mettre à jour l’interface du panier**
+
+Dans ton composant `<Cart />` :
+
+* Affiche la quantité :
+  `Nom du produit x quantité : prix`
+* Ajoute deux boutons :
+  ➕ **+1** → `dispatch(incrementItem(id))`
+  ➖ **-1** → `dispatch(decrementItem(id))`
+* Si la quantité tombe à 0, le produit doit disparaître
+* Le total doit se mettre à jour automatiquement
+
+---
+
+### 3. **Aucun changement requis dans la liste de produits**
+
+Ton composant `<ProductsList />` peut rester tel qu’il est :
+le fait de cliquer sur *Ajouter au panier* appellera simplement `addItem(product)`.
+
+---
+
+## ✅ Résultat attendu
+
+À la fin de l’exercice :
+
+* Ajouter plusieurs fois le même produit augmente la quantité dans le panier
+* Le total du panier reflète exactement toutes les quantités
+* On peut augmenter ou diminuer les quantités directement depuis l’affichage du panier
+* On peut supprimer complètement un article
+* Le total se remet à zéro quand on vide tout (si tu gardes le bouton)
+
+🎉 **Tu as maintenant une gestion de panier digne d’un vrai shop !**
+
+---
+

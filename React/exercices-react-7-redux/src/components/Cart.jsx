@@ -1,5 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeItem } from "../features/cart/cartSlice";
+import {
+  removeItem,
+  incrementItem,
+  decrementItem,
+} from "../features/cart/cartSlice";
 
 function Cart() {
   const { items, total } = useSelector((state) => state.cart);
@@ -15,8 +19,22 @@ function Cart() {
             return (
               <li key={item.id}>
                 <h3>
-                  {item.name} : {item.price} €
+                  {item.name} x {item.quantity} : {item.price * item.quantity} €
                 </h3>
+                <button
+                  type="button"
+                  className="action-button"
+                  onClick={() => dispatch(decrementItem(item.id))}
+                >
+                  -1
+                </button>
+                <button
+                  type="button"
+                  className="action-button"
+                  onClick={() => dispatch(incrementItem(item.id))}
+                >
+                  +1
+                </button>
                 <button
                   type="button"
                   className="action-button"
@@ -35,4 +53,4 @@ function Cart() {
   );
 }
 
-export default Cart
+export default Cart;
