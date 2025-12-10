@@ -34,7 +34,7 @@ function Exercice${numero}() {
     <>
       <h1>Exercice ${numero}</h1>
       <p>Bienvenue dans l'exercice ${numero} !</p>
-      <Link to="/" className="link">Reveniren arrière</Link>
+      <Link to="/" className="link">Revenir en arrière</Link>
     </>
   );
 }

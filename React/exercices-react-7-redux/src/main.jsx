@@ -1,3 +1,4 @@
+import Exercice9 from "./pages/Exercice9.jsx";
 import Exercice8 from "./pages/Exercice8.jsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/exo8",
     element: <Exercice8 />,
+  },
+  {
+    path: "/exo9",
+    element: <Exercice9 />,
   },
 ]);
 

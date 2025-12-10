@@ -508,3 +508,98 @@ Ce composant doit :
 Un composant minimaliste, fonctionnel, propre, permettant de manipuler le score global en quelques clics.
 
 ---
+
+# 🧪 **Exercice 9 – Mini-Panier Redux (Redux Toolkit + Sélecteurs + Actions multiples)**
+
+## 🎯 **Objectif**
+
+Créer un **mini-panier e-commerce** complet en utilisant Redux Toolkit.
+Cet exercice te fait manipuler :
+
+* plusieurs **actions Redux** (ajout, suppression, reset)
+* un **slice dédié**
+* la **lecture** de state via `useSelector`
+* la **modification** de state via `useDispatch`
+* l’interaction **entre plusieurs composants** partageant le même state global
+
+C’est un exercice plus long que le précédent, mais toujours très accessible.
+
+---
+
+## 🧩 **Ce que tu dois faire**
+
+### ### 1️⃣ **Créer un slice `cartSlice.js`**
+
+Il doit contenir :
+
+* `items : []`
+* `total : 0`
+* `addItem` → ajoute un produit (si pas déjà présent), met à jour le total
+* `removeItem` → supprime un produit et met à jour le total
+* `clearCart` → vide complètement le panier
+
+⚠️ Un produit est identifié par un **id unique**, généré par `Date.now()` au moment de son ajout.
+
+---
+
+### 2️⃣ **Brancher ton slice dans `store.js`**
+
+Ajoute le reducer `cart` dans l’objet `reducer`.
+
+---
+
+### 3️⃣ **Créer un composant `ProductsList.jsx`**
+
+Il doit :
+
+* afficher une petite liste de produits *en dur* dans un tableau
+* afficher leur prix
+* permettre d’ajouter un produit au panier via :
+
+```js
+dispatch(addItem(product))
+```
+
+---
+
+### 4️⃣ **Créer un composant `Cart.jsx`**
+
+Il doit :
+
+* lire `items` et `total` via `useSelector`
+* afficher la liste des articles du panier
+* proposer un bouton “Supprimer” par article permettant :
+
+```js
+dispatch(removeItem(id))
+```
+
+* afficher « Aucun article dans votre panier » si le panier est vide
+
+---
+
+### 5️⃣ **Créer une page `Exercice9.jsx`**
+
+Elle doit regrouper :
+
+* `<ProductsList />`
+* `<Cart />`
+* un bouton **Vider le panier** (appelant `clearCart()`)
+* un `<Link>` pour revenir en arrière
+
+---
+
+## 📦 **Résultat attendu**
+
+Une page fonctionnelle où :
+
+* tu peux ajouter des produits au panier
+* les afficher dans le panier
+* les supprimer individuellement
+* vider tout le panier
+* voir le total se mettre à jour automatiquement
+
+L’ensemble doit reposer **entièrement** sur Redux Toolkit.
+
+---Exercice 9 : Refactorisation + Persistance dans le LocalStorage +
+          Structure en Composants”

@@ -27,11 +27,13 @@ function App() {
         </Link>
         <Link to="/exo7" className="link">
           Exercice 7 : Refactorisation + Persistance dans le LocalStorage +
-          Structure en Composants”
+          Structure en Composants
         </Link>
         <Link to="/exo8" className="link">
-          Exercice 8 : Refactorisation + Persistance dans le LocalStorage +
-          Structure en Composants”
+          Exercice 8 — Créer un ScoreBoard avec Redux Toolkit
+        </Link>
+        <Link to="/exo9" className="link">
+          Exercice 9 – Mini-Panier Redux (Redux Toolkit + Sélecteurs + Actions multiples)
         </Link>
       </nav>
     </>
