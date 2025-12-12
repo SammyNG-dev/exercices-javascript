@@ -670,3 +670,49 @@ le fait de cliquer sur *Ajouter au panier* appellera simplement `addItem(product
 
 ---
 
+# 📝 Exercice 11 – Panier avec selectors et calculs optimisés
+
+### 🎯 Objectif
+
+Refactoriser le composant `Cart.jsx` pour utiliser des **selectors** et afficher correctement le **total du panier**, le **nombre total d’articles**, ainsi que le **total par article**, tout en continuant à gérer l’ajout, la suppression et l’incrément/décrément des quantités.
+
+---
+
+### 🧩 Consignes
+
+1. **Séparer la logique de calcul dans des selectors Redux**
+
+   * Crée un fichier `cartSelectors.js`.
+   * Crée les selectors suivants avec `createSelector` :
+
+     * `selectCartItems` → retourne la liste des articles dans le panier.
+     * `selectCartTotal` → retourne le total du panier.
+     * `selectCartTotalQuantity` → retourne le nombre total d’articles dans le panier.
+
+2. **Mettre à jour `Cart.jsx` pour utiliser les selectors**
+
+   * Remplace les accès directs au state par `useSelector(selectCartItems)`, `useSelector(selectCartTotal)`, et `useSelector(selectCartTotalQuantity)`.
+   * Affiche pour chaque article :
+
+     * Le nom de l’article
+     * La quantité
+     * Le total pour cet article (`prix × quantité`)
+
+3. **Gestion des actions**
+
+   * Les boutons `+1` et `-1` doivent incrémenter/décrémenter la quantité.
+   * Le bouton `Supprimer` supprime l’article du panier.
+
+4. **Affichage du total général**
+
+   * Affiche le **total du panier** et le **nombre total d’articles** au-dessus de la liste.
+
+5. **Bonus (optionnel)**
+
+   * Assurez-vous que les recalculs ne se font que si le state du panier change grâce à `createSelector`.
+
+---
+
+💡 **Astuce** : le composant ne doit plus contenir de logique de calcul du total ou du nombre d’articles, tout doit être géré via les selectors pour garder le composant léger et réutilisable.
+
+---

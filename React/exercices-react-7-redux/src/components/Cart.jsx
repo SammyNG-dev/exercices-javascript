@@ -4,15 +4,21 @@ import {
   incrementItem,
   decrementItem,
 } from "../features/cart/cartSlice";
+import {
+  selectCartItems,
+  selectCartTotal, selectCartTotalQuantity
+} from "../features/cart/cartSelectors";
 
 function Cart() {
-  const { items, total } = useSelector((state) => state.cart);
+  const totalCart = useSelector(selectCartTotal);
+  const items = useSelector(selectCartItems);
+  const totalArticles = useSelector(selectCartTotalQuantity)
   const dispatch = useDispatch();
 
   return (
     <>
       <h2>Votre panier</h2>
-      <h2>Total : {total} €</h2>
+      <h2>Total : {totalCart} € | Nombre total d'articles : {totalArticles}</h2>
       {items.length > 0 ? (
         <ul>
           {items.map((item) => {
