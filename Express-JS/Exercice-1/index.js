@@ -4,11 +4,11 @@ const app = express();
 
 const PORT = 5000;
 
-app.get("/", (res) => {
+app.get("/", (req, res) => {
   res.send("Bonjour Sammy !");
 });
 
-app.get("/hello", (res) => {
+app.get("/hello", (req, res) => {
   res.send("Hello, World!");
 });
 

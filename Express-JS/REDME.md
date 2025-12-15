@@ -177,3 +177,55 @@ Apprendre à récupérer des informations envoyées par le client via :
 * Comprendre la différence entre paramètres obligatoires et optionnels.
 
 ---
+
+# **Exercice 4 : Middleware personnalisé**
+
+### **Objectif**
+
+Apprendre à créer un middleware Express pour :
+
+* intercepter toutes les requêtes avant qu’elles atteignent les routes
+* exécuter du code commun (par exemple, logging)
+* utiliser `next()` pour laisser passer la requête à la route suivante
+
+---
+
+### **Consignes**
+
+1. **Middleware global**
+
+   * Crée un middleware qui s’exécute pour **toutes les requêtes**.
+   * Il doit afficher dans la console :
+
+     * la méthode HTTP (`GET`, `POST`, etc.)
+     * l’URL appelée
+   * Exemple de log attendu :
+
+     ```
+     [MIDDLEWARE] GET /middleware/test
+     ```
+
+2. **Route de test**
+
+   * Crée une route **GET** `/middleware` qui renvoie un objet JSON :
+
+     ```json
+     { "message": "middleware ok" }
+     ```
+
+3. **Règles**
+
+   * Le middleware **ne doit jamais envoyer de réponse**
+   * Il doit appeler `next()` pour que la route puisse répondre
+   * Les autres routes de ton application doivent continuer à fonctionner normalement
+
+---
+
+### **Ce que tu apprends**
+
+* À quoi sert un middleware global
+* Comment intercepter et inspecter les requêtes
+* La différence entre middleware et route
+* L’importance de `next()`
+
+---

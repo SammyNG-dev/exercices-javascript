@@ -10,12 +10,25 @@ const PORT = 3000;
 
 app.get("/user/:id", (req, res) => {
   const { id } = req.params;
-  res.json({id: id})
+  res.json({ id: id });
 });
 
 app.get("/users", (req, res) => {
   const { page, limit } = req.query;
   res.json({ page: page, limit: limit });
+});
+
+// Exercice 4 : Exercice 4 : Middleware personnalisé
+
+const middleware = (req, res, next) => {
+  console.log("[MIDDLEWARE]", req.method, req.url);
+  next();
+};
+
+app.use(middleware);
+
+app.get("/middleware", (req, res) => {
+  res.json({ message: "middleware ok" });
 });
 
 app.listen(PORT, () => {
