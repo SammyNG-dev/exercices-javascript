@@ -6,7 +6,7 @@ const PORT = 3000
 
 app.use(express.json());
 
-app.get("/user", (req, res) => {
+app.get("/user", (res) => {
   res.json({ name: "Sammy", age: 36, hobby: "coder" });
 });
 
