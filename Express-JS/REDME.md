@@ -277,3 +277,83 @@ Apprendre à gérer les erreurs dans Express en créant un middleware dédié qu
 * Comment capturer et renvoyer des erreurs en JSON
 
 ---
+
+# **Exercice 6 : Organisation du code avec Router et actions**
+
+### **Objectif**
+
+Structurer une application Express de manière propre en :
+
+* séparant les routes du point d’entrée (`index.js`)
+* regroupant la logique métier dans des *actions*
+* utilisant `express.Router()` pour organiser les routes
+
+---
+
+### **Consignes**
+
+1. **Créer un router Express**
+
+   * Créer un fichier `router.js`
+   * Utiliser `express.Router()` (et non `express()`)
+   * Toutes les routes de l’application doivent être définies dans ce fichier
+
+2. **Utiliser des actions**
+
+   * Créer un fichier `userActions.js`
+   * Définir des fonctions (actions) responsables de la logique métier
+   * Les routes du router doivent appeler ces actions
+
+3. **Définir les routes**
+
+   * Créer des routes GET et POST pour les utilisateurs
+   * Inclure :
+
+     * des routes avec paramètres d’URL
+     * des routes avec query parameters
+     * une route de test pour le middleware
+     * une route qui déclenche une erreur
+
+4. **Middleware local**
+
+   * Créer un middleware personnalisé
+   * L’appliquer uniquement au router avec `router.use()`
+   * Vérifier qu’il s’exécute à chaque requête du router
+
+5. **Point d’entrée (`i
+Quand tu veux, on enchaîne logiquement avec
+👉 **Exercice 7 : Repository et stockage en mémoire (tableau / JSON)**
+ndex.js`)**
+
+   * Initialiser Express
+   * Activer `express.json()`
+   * Brancher le router avec `app.use(router)`
+   * Ajouter un middleware d’erreur **après toutes les routes**
+   * Démarrer le serveur avec `app.listen()`
+
+---
+
+### **Structure attendue**
+
+```
+Exercices/
+├── index.js
+├── modules/
+│   ├── router/
+│   │   └── router.js
+│   └── user/
+│       └── userActions.js
+└── package.json
+```
+
+---
+
+### **Ce que tu apprends**
+
+* À utiliser `express.Router()` correctement
+* À séparer routes, actions et configuration serveur
+* À appliquer des middlewares localement à un module
+* À comprendre le lien entre méthode HTTP et route
+* À structurer un projet Express maintenable
+
+---
