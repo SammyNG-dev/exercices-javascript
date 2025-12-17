@@ -31,6 +31,18 @@ app.get("/middleware", (req, res) => {
   res.json({ message: "middleware ok" });
 });
 
+// Exercice 5 : Gestion des erreurs avec Express. app.use(errorMiddleware) à la fin du fichier
+
+app.get("/error", (req, res, next) => {
+  throw new Error("Oups !");
+});
+
+const errorMiddleware = (err, req, res, next) => {
+  res.status(500).json({ status: "error", message: err.message });
+};
+
+app.use(errorMiddleware)
+
 app.listen(PORT, () => {
   console.log(`Le serveur écoute sur le port ${PORT}`);
 });

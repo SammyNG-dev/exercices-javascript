@@ -228,4 +228,52 @@ Apprendre à créer un middleware Express pour :
 * La différence entre middleware et route
 * L’importance de `next()`
 
+# **Exercice 5 : Gestion des erreurs avec Express**
+
+### **Objectif**
+
+Apprendre à gérer les erreurs dans Express en créant un middleware dédié qui :
+
+* capte les erreurs levées par les routes
+* renvoie une réponse JSON cohérente
+* permet aux autres routes de continuer à fonctionner
+
+---
+
+### **Consignes**
+
+1. **Créer une route `/error`**
+
+   * Route **GET**
+   * Lève une erreur avec un message explicite, par exemple : `"Oups !"`
+   * L’erreur doit être transmise au middleware d’erreur automatiquement (via `throw` ou `next(err)`)
+
+2. **Créer un middleware d’erreur**
+
+   * Fonction avec 4 paramètres `(err, req, res, next)`
+   * Doit renvoyer une réponse JSON avec :
+
+     ```json
+     {
+       "status": "error",
+       "message": "message de l'erreur"
+     }
+     ```
+   * Code HTTP recommandé : **500**
+   * Ce middleware doit être **le dernier middleware défini**, **avant `app.listen()`**
+
+3. **Règles**
+
+   * Ne pas mettre de `throw` dans le middleware d’erreur
+   * Toutes les autres routes doivent continuer à fonctionner normalement
+   * Pas de validation supplémentaire, juste gérer l’erreur et renvoyer le JSON
+
+---
+
+### **Ce que tu apprends**
+
+* Différence entre un middleware classique et un middleware d’erreur
+* Position correcte d’un middleware d’erreur dans Express
+* Comment capturer et renvoyer des erreurs en JSON
+
 ---
