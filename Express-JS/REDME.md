@@ -357,3 +357,117 @@ Exercices/
 * À structurer un projet Express maintenable
 
 ---
+
+# **Exercice 7 : Router dédié pour la ressource `user`**
+
+### Objectif
+
+Organiser les routes liées aux utilisateurs dans un **router dédié**, séparé du fichier `index.js`, et utiliser les **actions que tu as déjà créées** (`getUserById`, `createUser`, `browseUsers`).
+Tu devras brancher ce router dans ton application principale.
+
+### Consignes
+
+1. **Créer un fichier `userRouter.js`** (ou `router.js` dans un dossier `user`) pour gérer les routes utilisateurs.
+2. Importer les actions depuis `userActions.js`.
+3. Créer les routes suivantes dans ce router :
+
+   * `GET /users` → affiche tous les utilisateurs (`browseUsers`)
+   * `GET /users/:id` → affiche un utilisateur par ID (`getUserById`)
+   * `POST /users` → crée un nouvel utilisateur (`createUser`)
+4. Exporter le router et l’importer dans `index.js`.
+5. Monter le router dans ton application principale avec `app.use(...)`.
+6. Tester toutes les routes avec Postman pour vérifier que :
+
+   * Les statuts HTTP sont corrects (200, 201, 400 ou 404 selon le cas)
+   * Les réponses JSON sont cohérentes.
+
+### Bonus (facultatif)
+
+* Ajouter un **préfixe `/api`** pour toutes les routes du router, par exemple `/api/users`.
+* Ajouter un **middleware global de logging** qui affiche méthode + URL à chaque requête.
+
+---
+
+Voici une **consigne propre, claire et réaliste** pour l’exercice 8, alignée avec tout ce que tu viens de faire 👇
+
+---
+
+# Exercice 8 : **Persistance des données avec un fichier JSON**
+
+### Objectif
+
+Mettre en place une persistance simple des utilisateurs en stockant les données dans un fichier JSON, afin que les utilisateurs ne soient plus perdus au redémarrage du serveur.
+
+### Contexte
+
+Jusqu’à présent, les utilisateurs étaient stockés en mémoire (dans un tableau JavaScript). Cette solution fonctionne tant que le serveur est lancé, mais toutes les données sont perdues dès qu’il redémarre.
+
+Dans cet exercice, les utilisateurs doivent être lus depuis un fichier `users.json` et chaque modification (création d’un utilisateur) doit être enregistrée dans ce fichier.
+
+### Consignes
+
+1. Créer un fichier `users.json` dans le module `user`, contenant une liste d’utilisateurs (tableau JSON).
+2. Modifier le `UserRepository` pour :
+
+   * Lire les utilisateurs depuis le fichier `users.json`.
+   * Ajouter un nouvel utilisateur avec un identifiant unique.
+   * Sauvegarder les utilisateurs mis à jour dans le fichier JSON après chaque création.
+3. L’identifiant (`id`) d’un utilisateur doit :
+
+   * Être un nombre
+   * Être unique
+   * Continuer à s’incrémenter même si des utilisateurs existent déjà dans le fichier
+4. Les méthodes du repository doivent rester responsables uniquement de l’accès aux données :
+
+   * `createUser(name)`
+   * `getAllUsers()`
+   * `readUserById(id)`
+5. Les contrôleurs (`userActions`) ne doivent pas accéder directement au fichier JSON.
+6. L’API doit continuer à fonctionner correctement après un redémarrage du serveur.
+
+### Bonus (facultatif)
+
+* Gérer le cas où le fichier `users.json` est vide ou n’existe pas encore.
+* Ajouter une gestion d’erreurs en cas de problème de lecture ou d’écriture du fichier.
+
+---
+
+# Exercice 9 : Middleware de validation pour les utilisateurs
+
+**Objectif :**
+Ajouter des middlewares pour valider les données des requêtes avant de passer aux actions des contrôleurs.
+
+**Instructions :**
+
+1. Crée deux middlewares dans un fichier `middlewares.js` :
+
+   * `validateCreateUser` :
+
+     * Vérifie que la requête `POST /api/users` contient bien un `name` dans le corps (`req.body`).
+     * Si `name` est présent, appelle `next()` pour continuer.
+     * Sinon, renvoie une réponse 400 avec `{ message: "Entrez un nom." }`.
+
+   * `validateUserId` :
+
+     * Vérifie que l’`id` passé dans `req.params` pour la route `GET /api/user/:id` est un nombre supérieur à 0.
+     * Si valide, appelle `next()`.
+     * Sinon, renvoie une réponse 400 avec `{ message: "ID non valide" }`.
+
+2. Applique ces middlewares sur les routes correspondantes dans ton `router.js` :
+
+   ```text
+   GET /api/user/:id → validateUserId → getUserById
+   POST /api/users → validateCreateUser → createUser
+   ```
+
+3. Vérifie avec Postman que :
+
+   * Si les données sont valides, la requête passe et retourne la réponse du controller.
+   * Sinon, la requête est arrêtée par le middleware avec le message d’erreur approprié.
+
+**Remarque :**
+
+* Les middlewares doivent appeler `next()` uniquement si les données sont valides.
+* Toute erreur inattendue peut être transmise au middleware d’erreur existant avec `next(err)`.
+
+---

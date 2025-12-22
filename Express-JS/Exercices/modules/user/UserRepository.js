@@ -21,7 +21,8 @@ class UserRepository {
   }
 
   readUserById(id) {
-    return this.users.find((user) => user.id === id);
+    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"))
+    return users.find((user) => user.id === id);
   }
 }
 

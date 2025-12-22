@@ -1,6 +1,10 @@
 import express from "express";
 import { browseUsers, createUser, getUserById } from "../user/userActions.js";
-import { middleware } from "../middlewares/middlewares.js";
+import {
+  middleware,
+  validateCreateUser,
+  validateUserId,
+} from "../middlewares/middlewares.js";
 
 const router = express.Router();
 
@@ -30,13 +34,13 @@ router.get("/api/error", (req, res, next) => {
   throw new Error("Oups !");
 });
 
-// Exercice 6 : 
+// Exercice 6 :
 
-router.get("/api/infos-user/:id", getUserById);
-router.post("/api/create-user", createUser);
+router.get("/api/user/:id", validateUserId, getUserById);
+router.post("/api/users", validateCreateUser, createUser);
 
 // Exercice 7 :
 
-router.get("/api/all-users", browseUsers)
+router.get("/api/all-users", browseUsers);
 
 export default router;
