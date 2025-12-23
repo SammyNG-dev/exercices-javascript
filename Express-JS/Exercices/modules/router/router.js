@@ -4,6 +4,7 @@ import {
   createUser,
   getUserById,
   editUser,
+  deleteUser
 } from "../user/userActions.js";
 import {
   middleware,
@@ -51,5 +52,9 @@ router.get("/api/all-users", browseUsers);
 // Exercice 10 :
 
 router.put("/api/update-user/:id", validateUserId, validateUserData, editUser);
+
+// Exercice 11 :
+
+router.delete("/api/delete-user/:id", validateUserId, deleteUser)
 
 export default router;

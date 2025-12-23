@@ -35,6 +35,16 @@ class UserRepository {
       return user;
     }
   }
+
+  destroyUser(id) {
+    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"));
+    const user = users.find((u) => u.id === id);
+    if (user) {
+      const newArrayUsers = users.filter((u) => u.id !== id);
+      fs.writeFileSync(FILE_PATH, JSON.stringify(newArrayUsers, null, 2))
+      return user
+    }
+  }
 }
 
 export default new UserRepository();

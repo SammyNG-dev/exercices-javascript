@@ -7,7 +7,7 @@ const getUserById = (req, res, next) => {
     console.log(userById);
     if (userById) {
       console.log("coucou userById");
-      
+
       res.status(200).json(userById);
     } else {
       res.status(404).json({ message: "Utilisateur non trouvé" });
@@ -56,4 +56,21 @@ const editUser = (req, res, next) => {
   }
 };
 
-export { getUserById, createUser, browseUsers, editUser };
+const deleteUser = (req, res, next) => {
+  try {
+    const id = Number.parseInt(req.params.id, 10);
+    const userDeleted = UserRepository.destroyUser(id);
+    if (userDeleted) {
+      res.status(200).json({
+        message: "Utilisateur supprimé avec succès",
+        userDeleted: userDeleted,
+      });
+    } else {
+      res.status(404).json({ message: "Utilisateur introuvable" });
+    }
+  } catch (err) {
+    next(err);
+  }
+};
+
+export { getUserById, createUser, browseUsers, editUser, deleteUser };

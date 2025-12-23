@@ -534,3 +534,84 @@ L’objectif est de comprendre comment **mettre à jour une donnée persistée**
 * modifier des données persistées en JSON
 * structurer un backend sans framework lourd
 * raisonner comme avec un `UPDATE` SQL, mais en Node.js
+
+---
+
+# 🧪 Exercice 11 – Suppression d’un utilisateur
+
+### 🎯 Objectif
+
+Mettre en place la **suppression d’un utilisateur** via une route HTTP en respectant l’architecture :
+**router → actions → repository**.
+
+La suppression doit être **persistée dans le fichier `users.json`**.
+
+---
+
+### 📌 Contraintes techniques
+
+* Le fichier `users.json` contient un tableau d’utilisateurs
+* Chaque utilisateur possède au minimum :
+
+  ```json
+  {
+    "id": number,
+    "name": string
+  }
+  ```
+* L’ID de l’utilisateur est fourni **via les paramètres d’URL**
+* La route doit utiliser la méthode HTTP **DELETE**
+
+---
+
+### 🧱 Travail demandé
+
+#### 1️⃣ Route
+
+Créer une route permettant de supprimer un utilisateur à partir de son ID.
+
+* L’ID doit être validé via un middleware existant
+* La route appelle une action dédiée
+
+---
+
+#### 2️⃣ Action (`userActions.js`)
+
+Créer une fonction `deleteUser` qui :
+
+* récupère l’ID depuis `req.params`
+* appelle une méthode du repository
+* retourne :
+
+  * **200** avec un message de succès et l’utilisateur supprimé si l’utilisateur existe
+  * **404** si aucun utilisateur correspondant n’est trouvé
+
+---
+
+#### 3️⃣ Repository (`UserRepository.js`)
+
+Créer une méthode `destroyUser(id)` qui :
+
+* lit le fichier `users.json`
+* supprime l’utilisateur correspondant à l’ID fourni
+* réécrit le fichier avec le tableau mis à jour
+* retourne l’utilisateur supprimé ou `undefined` s’il n’existe pas
+
+---
+
+### 🧪 Tests attendus (Postman)
+
+* Suppression d’un utilisateur existant → succès
+* Suppression d’un utilisateur inexistant → erreur 404
+* Vérification que le fichier `users.json` est bien mis à jour
+
+---
+
+### ✅ Critères de validation
+
+* Aucune logique métier dans les routes
+* Aucune réponse HTTP dans le repository
+* Le fichier JSON est correctement modifié
+* Le code est lisible et cohérent avec les exercices précédents
+
+---
