@@ -17,12 +17,23 @@ class UserRepository {
   }
 
   getAllUsers() {
-    return this.users;
+    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"));
+    return users;
   }
 
   readUserById(id) {
-    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"))
+    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"));
     return users.find((user) => user.id === id);
+  }
+
+  editUser(id, newName) {
+    const users = JSON.parse(fs.readFileSync(FILE_PATH, "utf-8"));
+    const user = users.find((u) => u.id === id);
+    if (user) {
+      user.name = newName;
+      fs.writeFileSync(FILE_PATH, JSON.stringify(users, null, 2));
+      return user;
+    }
   }
 }
 

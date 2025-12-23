@@ -471,3 +471,66 @@ Ajouter des middlewares pour valider les données des requêtes avant de passer 
 * Toute erreur inattendue peut être transmise au middleware d’erreur existant avec `next(err)`.
 
 ---
+
+# 🟦 Exercice 10 — Mettre à jour un utilisateur (PUT)
+
+### 🎯 Objectif
+
+Mettre en place une route permettant de **modifier le nom d’un utilisateur existant**, en utilisant :
+
+* une route `PUT`
+* un middleware de validation
+* un repository qui persiste les données dans un fichier JSON
+
+L’objectif est de comprendre comment **mettre à jour une donnée persistée** sans base de données, en respectant une architecture propre (router / actions / repository).
+
+---
+
+### 📌 Contraintes
+
+* Les utilisateurs sont stockés dans un fichier `users.json`
+* L’utilisateur à modifier est identifié par son `id` (paramètre d’URL)
+* Le nouveau nom est envoyé dans le body de la requête
+* Le fichier JSON doit être **réécrit après modification**
+* La route doit renvoyer l’utilisateur mis à jour
+
+---
+
+### 🧱 Travail à réaliser
+
+1. Créer une route `PUT /api/updateUser/:id`
+2. Ajouter un middleware qui :
+
+   * valide que l’`id` est correct
+   * valide que le nom envoyé est une chaîne non vide
+     (compatible avec `createUser` **et** `editUser`)
+3. Implémenter une action `editUser` qui :
+
+   * récupère l’id depuis les paramètres
+   * récupère le nouveau nom depuis le body
+   * appelle le repository
+4. Implémenter une méthode `editUser` dans le repository qui :
+
+   * lit le fichier JSON
+   * trouve l’utilisateur correspondant
+   * modifie son nom
+   * réécrit le fichier JSON
+   * retourne l’utilisateur modifié
+
+---
+
+### ✅ Résultat attendu
+
+* Si l’utilisateur existe → réponse `200` avec l’utilisateur mis à jour
+* Si l’id est invalide → erreur `400`
+* Si l’utilisateur n’existe pas → erreur adaptée
+* Les modifications doivent **persister après redémarrage du serveur**
+
+---
+
+🎉 **À la fin de cet exercice**, tu sais :
+
+* faire un `PUT` propre en Express
+* modifier des données persistées en JSON
+* structurer un backend sans framework lourd
+* raisonner comme avec un `UPDATE` SQL, mais en Node.js

@@ -1,8 +1,13 @@
 import express from "express";
-import { browseUsers, createUser, getUserById } from "../user/userActions.js";
+import {
+  browseUsers,
+  createUser,
+  getUserById,
+  editUser,
+} from "../user/userActions.js";
 import {
   middleware,
-  validateCreateUser,
+  validateUserData,
   validateUserId,
 } from "../middlewares/middlewares.js";
 
@@ -36,11 +41,15 @@ router.get("/api/error", (req, res, next) => {
 
 // Exercice 6 :
 
-router.get("/api/user/:id", validateUserId, getUserById);
-router.post("/api/users", validateCreateUser, createUser);
+router.get("/api/infos-user/:id", validateUserId, getUserById);
+router.post("/api/users", validateUserData, createUser);
 
 // Exercice 7 :
 
 router.get("/api/all-users", browseUsers);
+
+// Exercice 10 :
+
+router.put("/api/update-user/:id", validateUserId, validateUserData, editUser);
 
 export default router;

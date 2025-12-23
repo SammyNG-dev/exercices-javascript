@@ -6,6 +6,8 @@ const getUserById = (req, res, next) => {
     const userById = UserRepository.readUserById(id);
     console.log(userById);
     if (userById) {
+      console.log("coucou userById");
+      
       res.status(200).json(userById);
     } else {
       res.status(404).json({ message: "Utilisateur non trouvé" });
@@ -42,4 +44,16 @@ const browseUsers = (req, res, next) => {
   }
 };
 
-export { getUserById, createUser, browseUsers };
+const editUser = (req, res, next) => {
+  const { id } = req.params;
+  const { newName } = req.body;
+  try {
+    const idParsed = Number.parseInt(id, 10);
+    const updatedUser = UserRepository.editUser(idParsed, newName);
+    res.status(200).json(updatedUser);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export { getUserById, createUser, browseUsers, editUser };

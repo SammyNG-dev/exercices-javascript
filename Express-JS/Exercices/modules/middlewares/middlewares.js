@@ -3,9 +3,9 @@ const middleware = (req, res, next) => {
   next();
 };
 
-const validateCreateUser = (req, res, next) => {
+const validateUserData = (req, res, next) => {
   try {
-    const { name } = req.body;
+    const name = req.body.name || req.body.newName;
     if (typeof name === "string" && name.trim().length > 0) {
       next();
     } else {
@@ -29,4 +29,4 @@ const validateUserId = (req, res, next) => {
   }
 };
 
-export { middleware, validateCreateUser, validateUserId };
+export { middleware, validateUserData, validateUserId };
